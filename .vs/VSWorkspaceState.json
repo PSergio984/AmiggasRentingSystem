@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Database",
+    "\\LoginPage"
   ],
-  "SelectedNode": "\\LoginPage.sln",
+  "SelectedNode": "\\Database\\rentingDB.db",
   "PreviewInSolutionExplorer": false
 }

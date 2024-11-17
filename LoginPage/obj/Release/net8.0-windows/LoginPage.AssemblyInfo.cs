@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("HomePage")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("LoginPage")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3f124b6c090b806e54c5b186f5909e0014dac46")]
-[assembly: System.Reflection.AssemblyProductAttribute("HomePage")]
-[assembly: System.Reflection.AssemblyTitleAttribute("HomePage")]
+[assembly: System.Reflection.AssemblyProductAttribute("LoginPage")]
+[assembly: System.Reflection.AssemblyTitleAttribute("LoginPage")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
