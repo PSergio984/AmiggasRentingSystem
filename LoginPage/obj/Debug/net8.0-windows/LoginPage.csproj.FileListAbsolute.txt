@@ -56,3 +56,15 @@ C:\Users\Eric\source\repos\AmiggasRentingSystem\LoginPage\bin\Debug\net8.0-windo
 C:\Users\Eric\source\repos\AmiggasRentingSystem\LoginPage\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\Eric\source\repos\AmiggasRentingSystem\LoginPage\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\Eric\source\repos\AmiggasRentingSystem\LoginPage\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+C:\Users\Eric\source\repos\AmiggasRentingSystem\LoginPage\bin\Debug\net8.0-windows\EntityFramework.SqlServer.dll
+C:\Users\Eric\source\repos\AmiggasRentingSystem\LoginPage\bin\Debug\net8.0-windows\EntityFramework.dll
+C:\Users\Eric\source\repos\AmiggasRentingSystem\LoginPage\bin\Debug\net8.0-windows\Microsoft.Data.Sqlite.dll
+C:\Users\Eric\source\repos\AmiggasRentingSystem\LoginPage\bin\Debug\net8.0-windows\SQLitePCLRaw.core.dll
+C:\Users\Eric\source\repos\AmiggasRentingSystem\LoginPage\bin\Debug\net8.0-windows\System.Data.SQLite.dll
+C:\Users\Eric\source\repos\AmiggasRentingSystem\LoginPage\bin\Debug\net8.0-windows\System.Data.SQLite.EF6.dll
+C:\Users\Eric\source\repos\AmiggasRentingSystem\LoginPage\bin\Debug\net8.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\Eric\source\repos\AmiggasRentingSystem\LoginPage\bin\Debug\net8.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\Eric\source\repos\AmiggasRentingSystem\LoginPage\bin\Debug\net8.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\Eric\source\repos\AmiggasRentingSystem\LoginPage\bin\Debug\net8.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\Eric\source\repos\AmiggasRentingSystem\LoginPage\obj\Debug\net8.0-windows\LoginPage.sourcelink.json
+C:\Users\Eric\source\repos\AmiggasRentingSystem\LoginPage\bin\Debug\net8.0-windows\rentingDB.db

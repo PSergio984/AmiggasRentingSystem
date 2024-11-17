@@ -1,30 +1,29 @@
-
 using System;
 using System.Data;
-using Microsoft.Data.SqlClient;
 using System.Windows.Forms;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using System.Drawing;
+using System.Data.SQLite;
+using System.IO;  // To handle file paths
 
 namespace LoginPage
 {
     public partial class Form1 : Form
     {
-        // Connection string to your database
-
-
-        private string connectionString = @"Data Source=.\SENT4EXPRESS;AttachDbFilename=C:\Users\Eric\source\repos\AmiggasRentingSystem\Database\amiggaRentalDatabase.mdf;Integrated Security = True; Encrypt=False;Trust Server Certificate=True";
-
+        // Build the connection string using relative path
+        private static string connectionString = @"Data Source=rentingDB.db;Version=3;";
 
 
         public Form1()
         {
             InitializeComponent();
+
+           
+          
+
+     
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -39,6 +38,9 @@ namespace LoginPage
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            
+
+
             string email = txtEmail.Text.Trim();
             string password = txtPassword.Text.Trim();
 
@@ -50,15 +52,15 @@ namespace LoginPage
 
             try
             {
-                // Connect to the database
-                using (SqlConnection conn = new SqlConnection(connectionString))
+                // Connect to the SQLite database
+                using (SQLiteConnection conn = new SQLiteConnection(connectionString))
                 {
                     conn.Open();
 
                     // Query to check if the email and password match
                     string query = "SELECT COUNT(*) FROM Users WHERE Email = @Email AND passwordHash = @Password";
 
-                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    using (SQLiteCommand cmd = new SQLiteCommand(query, conn))
                     {
                         // Use parameters to prevent SQL injection
                         cmd.Parameters.AddWithValue("@Email", email);
@@ -79,16 +81,15 @@ namespace LoginPage
                     }
                 }
             }
-            catch (SqlException sqlEx)
+            catch (SQLiteException sqliteEx)
             {
-                MessageBox.Show($"SQL error occurred: {sqlEx.Message}", "SQL Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"SQLite error occurred: {sqliteEx.Message}", "SQLite Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
 
         private void txtPassword_TextChanged(object sender, EventArgs e)
         {

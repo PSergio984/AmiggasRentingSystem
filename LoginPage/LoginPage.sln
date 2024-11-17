@@ -6,9 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginPage", "LoginPage.csproj", "{BF0408BF-60B9-4200-8163-B875CC532A23}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C21C1103-3BDA-4DE8-922D-3D566A7F2DAC}"
-	ProjectSection(SolutionItems) = preProject
-		..\Database\amiggaRentalDatabase.mdf = ..\Database\amiggaRentalDatabase.mdf
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
