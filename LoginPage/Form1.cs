@@ -1,46 +1,55 @@
 using System;
-using System.Data;
-using System.Windows.Forms;
 using System.Data.SQLite;
-using System.IO;  // To handle file paths
+using System.IO;
+using System.Windows.Forms;
 
 namespace LoginPage
 {
     public partial class Form1 : Form
     {
-        // Build the connection string using relative path
-        private static string connectionString = @"Data Source=rentingDB.db;Version=3;";
-
+        private static string connectionString;
 
         public Form1()
         {
             InitializeComponent();
 
-           
-          
+            // Set up the database connection string
+            try
+            {
+                // Navigate up to the correct project root
+                string baseDir = AppDomain.CurrentDomain.BaseDirectory;
+                DirectoryInfo directory = new DirectoryInfo(baseDir);
 
-     
-        }
+                // Explicitly navigate up to "AmiggasRentingSystem"
+                while (directory != null && !directory.Name.Equals("AmiggasRentingSystem", StringComparison.OrdinalIgnoreCase))
+                {
+                    directory = directory.Parent;
+                }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-        }
+                if (directory == null)
+                {
+                    MessageBox.Show("Project root 'AmiggasRentingSystem' could not be determined. Please check the directory structure.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
+                // Construct the database file path
+                string projectRoot = directory.FullName;
+                string dbFilePath = Path.Combine(projectRoot, "Database", "rentingDB.db");
 
-        }
+                // Debug: Show the resolved file path
+                //MessageBox.Show($"Resolved database file path: {dbFilePath}");
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+                // Set the connection string
+                connectionString = $@"Data Source={dbFilePath};Version=3;";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred while setting up the database path: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            
-
-
             string email = txtEmail.Text.Trim();
             string password = txtPassword.Text.Trim();
 
@@ -57,7 +66,7 @@ namespace LoginPage
                 {
                     conn.Open();
 
-                    // Query to check if the email and password match
+                    // Query to check if the email and password hash match
                     string query = "SELECT COUNT(*) FROM Users WHERE Email = @Email AND passwordHash = @Password";
 
                     using (SQLiteCommand cmd = new SQLiteCommand(query, conn))
@@ -83,7 +92,7 @@ namespace LoginPage
             }
             catch (SQLiteException sqliteEx)
             {
-                MessageBox.Show($"SQLite error occurred: {sqliteEx.Message}", "SQLite Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"SQLite error occurred: {sqliteEx.Message}", "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {
@@ -93,7 +102,17 @@ namespace LoginPage
 
         private void txtPassword_TextChanged(object sender, EventArgs e)
         {
+            // Optional: Handle password text changes if needed
+        }
 
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+            // Optional: Handle email text changes if needed
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            // Optional: Handle label click event if needed
         }
     }
 }

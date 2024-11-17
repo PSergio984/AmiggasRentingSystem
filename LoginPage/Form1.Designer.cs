@@ -41,7 +41,7 @@
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(125, 27);
             txtEmail.TabIndex = 0;
-            txtEmail.TextChanged += textBox1_TextChanged;
+            txtEmail.TextChanged += txtEmail_TextChanged;
             // 
             // txtPassword
             // 
@@ -93,7 +93,6 @@
             Controls.Add(txtEmail);
             Name = "Form1";
             Text = "Login Page";
-            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
