@@ -50,19 +50,6 @@
               "EditorCaption": " [Design]"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\Class1.cs",
-              "RelativeDocumentMoniker": "Class1.cs",
-              "ToolTip": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\Class1.cs*",
-              "RelativeToolTip": "Class1.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T16:51:03.315Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:175862880:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
             },
@@ -108,13 +95,26 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\Class1.cs",
+              "RelativeDocumentMoniker": "Class1.cs",
+              "ToolTip": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\Class1.cs",
+              "RelativeToolTip": "Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T16:51:03.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "AddTenants.cs",
               "DocumentMoniker": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\AddTenants.cs",
               "RelativeDocumentMoniker": "AddTenants.cs",
-              "ToolTip": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\AddTenants.cs*",
-              "RelativeToolTip": "AddTenants.cs*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAkwCUAAAABAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\AddTenants.cs",
+              "RelativeToolTip": "AddTenants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T16:37:08.46Z",
               "EditorCaption": ""
@@ -125,8 +125,8 @@
               "Title": "AddTenants.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\AddTenants.cs",
               "RelativeDocumentMoniker": "AddTenants.cs",
-              "ToolTip": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\AddTenants.cs [Design]*",
-              "RelativeToolTip": "AddTenants.cs [Design]*",
+              "ToolTip": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\AddTenants.cs [Design]",
+              "RelativeToolTip": "AddTenants.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T16:31:54.577Z",
               "EditorCaption": " [Design]"
