@@ -8,6 +8,7 @@ namespace LoginPage
 {
     public partial class LoginPageForm : Form
     {
+        // Connection string for the SQLite database
         private static string connectionString;
 
         public LoginPageForm()
@@ -37,9 +38,6 @@ namespace LoginPage
                 string projectRoot = directory.FullName;
                 string dbFilePath = Path.Combine(projectRoot, "Database", "rentingDB.db");
 
-                // Debug: Show the resolved file path
-                //MessageBox.Show($"Resolved database file path: {dbFilePath}");
-
                 // Set the connection string
                 connectionString = $@"Data Source={dbFilePath};Version=3;";
             }
@@ -49,11 +47,13 @@ namespace LoginPage
             }
         }
 
+        // Event handler for the login button click
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string email = txtEmail.Text.Trim();
             string password = txtPassword.Text.Trim();
 
+            // Validate input
             if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
             {
                 MessageBox.Show("Please enter both email and password.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -82,10 +82,11 @@ namespace LoginPage
                         if (count > 0)
                         {
                             MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            // Navigate to the next form 
-                            HomePage homePage = new HomePage();
-                            homePage.Show();
-                            this.Hide();
+                            // Navigate to the HomePage using the singleton instance
+                            HomePage.Instance.Show();
+                            this.Hide(); // Dispose of the current form
+
+
                         }
                         else
                         {
@@ -102,33 +103,61 @@ namespace LoginPage
             {
                 MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
         }
 
+        // Event handler for password text changes (optional)
         private void txtPassword_TextChanged(object sender, EventArgs e)
         {
             // Optional: Handle password text changes if needed
         }
 
+        // Event handler for email text changes (optional)
         private void txtEmail_TextChanged(object sender, EventArgs e)
         {
             // Optional: Handle email text changes if needed
         }
 
+        // Event handler for label click event (optional)
         private void label1_Click(object sender, EventArgs e)
         {
             // Optional: Handle label click event if needed
         }
 
+        // Event handler for form load event (optional)
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            // Optional: Handle form load event if needed
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private bool isExiting = false;
+
+        private void LoginPageForm_FormClosing(object sender, FormClosingEventArgs e)
         {
+            if (isExiting) return;  // Prevent handling if already in the process of exiting
 
+            DialogResult result = MessageBox.Show(
+                "Are you sure you want to close the program?",
+                "Confirm Close",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (result == DialogResult.Yes)
+            {
+                isExiting = true;  // Set the flag to true to prevent re-entering this block
+                MessageBox.Show("Thank you for using our program!", "Goodbye", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Application.Exit();
+            }
+            else
+            {
+                e.Cancel = true; // Cancel the close event
+            }
         }
+
+
+
+
+
     }
 }
+

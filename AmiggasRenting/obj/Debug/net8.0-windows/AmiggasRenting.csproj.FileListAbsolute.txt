@@ -123,8 +123,14 @@ C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\bin\Debug\net8.0-
 C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
 C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
 C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\AmiggasRenting.csproj.AssemblyReference.cache
+C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\AmiggasRenting.AddTenants.resources
 C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\LoginPage.LoginPageForm.resources
+C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\AmiggasRenting.HomePage.resources
 C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\AmiggasRenting.LoadingScreen.resources
+C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\AmiggasRenting.NavigationControl.resources
+C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\AmiggasRenting.Payments.resources
+C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\AmiggasRenting.Properties.Resources.resources
+C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\AmiggasRenting.ViewApartments.resources
 C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\AmiggasRenting.csproj.GenerateResource.cache
 C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\AmiggasRenting.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\AmiggasRenting.AssemblyInfoInputs.cache
@@ -137,8 +143,3 @@ C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-
 C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\AmiggasRenting.pdb
 C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\AmiggasRenting.genruntimeconfig.cache
 C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\ref\AmiggasRenting.dll
-C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\AmiggasRenting.HomePage.resources
-C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\AmiggasRenting.Properties.Resources.resources
-C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\AmiggasRenting.AddTenants.resources
-C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\AmiggasRenting.Payments.resources
-C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\AmiggasRenting.ViewApartments.resources

@@ -36,7 +36,7 @@
             // 
             pbarLoading.BackColor = SystemColors.ActiveCaption;
             pbarLoading.ForeColor = SystemColors.MenuHighlight;
-            pbarLoading.Location = new Point(205, 354);
+            pbarLoading.Location = new Point(300, 414);
             pbarLoading.Name = "pbarLoading";
             pbarLoading.Size = new Size(475, 29);
             pbarLoading.TabIndex = 0;
@@ -46,7 +46,7 @@
             // 
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTitle.Location = new Point(293, 229);
+            lblTitle.Location = new Point(419, 318);
             lblTitle.Name = "lblTitle";
             lblTitle.Size = new Size(228, 28);
             lblTitle.TabIndex = 1;
@@ -56,13 +56,17 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(883, 562);
+            ClientSize = new Size(1062, 673);
             Controls.Add(lblTitle);
             Controls.Add(pbarLoading);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             MinimizeBox = false;
             Name = "LoadingScreen";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "LoadingScreen";
+            
+            FormClosed += LoadingScreen_FormClosed;
             Load += LoadingScreen_Load_1;
             ResumeLayout(false);
             PerformLayout();

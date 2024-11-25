@@ -13,11 +13,19 @@
     <Compile Update="LoadingScreen.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="NavigationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Payments.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ViewApartments.cs">
       <SubType>Form</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

@@ -85,7 +85,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1103, 673);
+            ClientSize = new Size(1062, 673);
             Controls.Add(btnLogin);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -96,6 +96,7 @@
             Name = "LoginPageForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login Page";
+            FormClosing += LoginPageForm_FormClosing;
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();

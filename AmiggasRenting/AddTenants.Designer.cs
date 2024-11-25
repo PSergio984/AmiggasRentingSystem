@@ -29,35 +29,69 @@
         private void InitializeComponent()
         {
             dataGridTenants = new DataGridView();
+            txtSearch = new TextBox();
+            TenantsSidePanel = new NavigationControl();
             ((System.ComponentModel.ISupportInitialize)dataGridTenants).BeginInit();
             SuspendLayout();
             // 
             // dataGridTenants
             // 
+            dataGridTenants.AllowUserToAddRows = false;
+            dataGridTenants.AllowUserToDeleteRows = false;
+            dataGridTenants.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridTenants.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
+            dataGridTenants.BackgroundColor = SystemColors.ActiveCaption;
             dataGridTenants.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridTenants.Location = new Point(93, 46);
+            dataGridTenants.Location = new Point(218, 43);
             dataGridTenants.Name = "dataGridTenants";
+            dataGridTenants.ReadOnly = true;
+            dataGridTenants.RowHeadersVisible = false;
             dataGridTenants.RowHeadersWidth = 51;
-            dataGridTenants.Size = new Size(616, 439);
+            dataGridTenants.Size = new Size(832, 550);
             dataGridTenants.TabIndex = 0;
             dataGridTenants.CellContentClick += dataGridTenants_CellContentClick;
+            // 
+            // txtSearch
+            // 
+            txtSearch.Location = new Point(451, 10);
+            txtSearch.Name = "txtSearch";
+            txtSearch.Size = new Size(283, 27);
+            txtSearch.TabIndex = 7;
+            txtSearch.Text = "Search";
+            txtSearch.TextChanged += txtSearch_TextChanged;
+            // 
+            // TenantsSidePanel
+            // 
+            TenantsSidePanel.Location = new Point(3, 43);
+            TenantsSidePanel.Name = "TenantsSidePanel";
+            TenantsSidePanel.Size = new Size(200, 570);
+            TenantsSidePanel.TabIndex = 10;
+            TenantsSidePanel.Load += navigationControl1_Load;
             // 
             // AddTenants
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(802, 553);
+            ClientSize = new Size(1062, 673);
+            Controls.Add(TenantsSidePanel);
+            Controls.Add(txtSearch);
             Controls.Add(dataGridTenants);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "AddTenants";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "AddTenants";
+            FormClosed += AddTenants_FormClosed;
+            Load += AddTenants_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridTenants).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private DataGridView dataGridTenants;
+        private TextBox txtSearch;
+        private NavigationControl TenantsSidePanel;
     }
 }

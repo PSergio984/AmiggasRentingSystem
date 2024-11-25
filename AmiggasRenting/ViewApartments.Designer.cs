@@ -28,20 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
+            dataGridView1 = new DataGridView();
+            navigationControl1 = new NavigationControl();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(228, 53);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(724, 550);
+            dataGridView1.TabIndex = 0;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // navigationControl1
+            // 
+            navigationControl1.Location = new Point(-3, 38);
+            navigationControl1.Name = "navigationControl1";
+            navigationControl1.Size = new Size(211, 573);
+            navigationControl1.TabIndex = 1;
             // 
             // ViewApartments
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1062, 673);
+            Controls.Add(navigationControl1);
+            Controls.Add(dataGridView1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "ViewApartments";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ViewApartments";
+          
+            Load += ViewApartments_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
+
+        private DataGridView dataGridView1;
+        private NavigationControl navigationControl1;
     }
 }

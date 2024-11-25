@@ -55,5 +55,12 @@ namespace AmiggasRenting
             // Start the Timer when the form loads
             loadingTimer.Start();
         }
+
+        private void LoadingScreen_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //Application.Exit(); // Exit the application when the form is closed
+        }
+
+        
     }
 }

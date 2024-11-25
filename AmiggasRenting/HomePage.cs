@@ -1,41 +1,47 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AmiggasRenting
 {
     public partial class HomePage : Form
     {
+        private static HomePage instance;
+        public static HomePage Instance
+        {
+            get
+            {
+                if (instance == null || instance.IsDisposed)
+                {
+                    instance = new HomePage();
+                }
+                return instance;
+            }
+        }
+
         public HomePage()
         {
             InitializeComponent();
         }
 
-        private void btnAddTenants_Click(object sender, EventArgs e)
+        private void btnDashboard_Click(object sender, EventArgs e)
         {
-            AddTenants addTenants = new AddTenants();
-            addTenants.Show();
-            this.Hide();
+            // Handle dashboard button click
         }
 
-        private void btnViewApartments_Click(object sender, EventArgs e)
+        private void HomePage_Load(object sender, EventArgs e)
         {
-            ViewApartments viewApartments = new ViewApartments();
-            viewApartments.Show();
-            this.Hide();
+            // Initialize any data or settings needed when the form loads
         }
 
-        private void btnPayments_Click(object sender, EventArgs e)
+     
+        private void navigationControl1_Load(object sender, EventArgs e)
         {
-            Payments payments = new Payments();
-            payments.Show();
-            this.Hide();
+            // Handle navigation control load event
+        }
+
+        private void HomePage_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
