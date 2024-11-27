@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Formats.Tar;
 using System.Windows.Forms;
 
 namespace AmiggasRenting
@@ -28,9 +29,10 @@ namespace AmiggasRenting
             dbManager = new DatabaseManager(); // Instantiate the DatabaseManager
             LoadTenants(); // Load tenant data when the form is initialized
         }
+        public static int parentX,parentY;
 
         // Method to load tenant data from the database into the DataGridView
-        private void LoadTenants(string searchTerm = "")
+        public void LoadTenants(string searchTerm = "")
         {
             string query = "SELECT TenantID, Name, Age, Birthday, ContactNumber FROM Tenants";
             Dictionary<string, object> parameters = null;
@@ -94,10 +96,39 @@ namespace AmiggasRenting
             {
                 if (dataGridTenants.Columns[e.ColumnIndex].Name == "EditButton")
                 {
-                    MessageBox.Show("Edit button clicked for tenant row " + e.RowIndex.ToString());
+                    // Retrieve the TenantID of the selected row
+                    var tenantID = dataGridTenants.Rows[e.RowIndex].Cells["TenantID"].Value;
+
+                    // Open the ModalAddTenants form with the TenantID for editing
+                    if (tenantID != null)
+                    {
+                        // Create a semi-transparent background form
+                        Form modalBackground = new Form();
+                        using (ModalAddTenants modal = new ModalAddTenants(Convert.ToInt32(tenantID)))
+                        {
+                            modalBackground.StartPosition = FormStartPosition.Manual;
+                            modalBackground.FormBorderStyle = FormBorderStyle.None;
+                            modalBackground.Opacity = .50d;
+                            modalBackground.BackColor = Color.Black;
+                            modalBackground.Size = this.Size;
+                            modalBackground.Location = this.Location;
+                            modalBackground.ShowInTaskbar = false;
+                            modalBackground.Show();
+                            modal.Owner = modalBackground;
+
+                            // Set the parent location for the animation effect
+                            parentX = this.Location.X;
+                            parentY = this.Location.Y;
+
+                            // Show the modal dialog
+                            modal.ShowDialog();
+                            modalBackground.Dispose();
+                        }
+                    }
                 }
                 else if (dataGridTenants.Columns[e.ColumnIndex].Name == "DeleteButton")
                 {
+                    // Handle delete button logic
                     var tenantID = dataGridTenants.Rows[e.RowIndex].Cells["TenantID"].Value;
                     var tenantName = dataGridTenants.Rows[e.RowIndex].Cells["Name"].Value;
 
@@ -115,6 +146,7 @@ namespace AmiggasRenting
                 }
             }
         }
+
 
         // Method to delete tenant from the database
         private void DeleteTenant(object tenantID)
@@ -137,7 +169,7 @@ namespace AmiggasRenting
             }
         }
 
-        // Event handler for the search button click
+      
 
 
         // Event handler for the search text box text changed
@@ -147,46 +179,15 @@ namespace AmiggasRenting
             LoadTenants(searchTerm);
         }
 
-        private void btnAddTenants_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnViewApartments_Click(object sender, EventArgs e)
-        {
-            ViewApartments viewApartments = new ViewApartments();
-            viewApartments.Show();
-            this.Hide();
-        }
-
-        private void btnPayments_Click(object sender, EventArgs e)
-        {
-            Payments payments = new Payments();
-            payments.Show();
-            this.Hide();
-        }
-
-        private void btnDashboard_Click(object sender, EventArgs e)
-        {
-            HomePage homePage = new HomePage();
-            homePage.Show();
-            this.Dispose(); // Dispose of the current form
-        }
+    
+     
 
         private void AddTenants_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
 
-        private void btnDashboard_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_Tenants(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void navigationControl1_Load(object sender, EventArgs e)
         {
@@ -195,7 +196,39 @@ namespace AmiggasRenting
 
         private void AddTenants_Load(object sender, EventArgs e)
         {
-
+            LoadTenants();
         }
+
+        private void btnAddTenants_Click_1(object sender, EventArgs e)
+        {
+            
+           
+            
+            // Create a semi-transparent background form
+            Form modalBackground = new Form();
+            using (ModalAddTenants modal = new ModalAddTenants())
+            {
+                modalBackground.StartPosition = FormStartPosition.Manual;
+                modalBackground.FormBorderStyle = FormBorderStyle.None;
+                modalBackground.Opacity = .50d;
+                modalBackground.BackColor = Color.Black;
+                modalBackground.Size = this.Size;
+                modalBackground.Location = this.Location;
+                modalBackground.ShowInTaskbar = false;
+                modalBackground.Show();
+                modal.Owner = modalBackground;
+                
+                // Set the parent location for the animation effect
+                parentX = this.Location.X;
+                parentY = this.Location.Y;
+
+                // Show the modal dialog
+                modal.ShowDialog();
+                modalBackground.Dispose();
+            }
+        }
+     
+
+
     }
 }

@@ -31,6 +31,7 @@
             dataGridTenants = new DataGridView();
             txtSearch = new TextBox();
             TenantsSidePanel = new NavigationControl();
+            btnAddTenants = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridTenants).BeginInit();
             SuspendLayout();
             // 
@@ -68,11 +69,22 @@
             TenantsSidePanel.TabIndex = 10;
             TenantsSidePanel.Load += navigationControl1_Load;
             // 
+            // btnAddTenants
+            // 
+            btnAddTenants.Location = new Point(785, 12);
+            btnAddTenants.Name = "btnAddTenants";
+            btnAddTenants.Size = new Size(94, 29);
+            btnAddTenants.TabIndex = 11;
+            btnAddTenants.Text = "Add Tenants";
+            btnAddTenants.UseVisualStyleBackColor = true;
+            btnAddTenants.Click += btnAddTenants_Click_1;
+            // 
             // AddTenants
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1062, 673);
+            Controls.Add(btnAddTenants);
             Controls.Add(TenantsSidePanel);
             Controls.Add(txtSearch);
             Controls.Add(dataGridTenants);
@@ -93,5 +105,6 @@
         private DataGridView dataGridTenants;
         private TextBox txtSearch;
         private NavigationControl TenantsSidePanel;
+        private Button btnAddTenants;
     }
 }
