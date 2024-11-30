@@ -11,7 +11,6 @@ namespace AmiggasRenting
         private DatabaseManager dbManager;
         private int? tenantID; // Nullable int to store tenant ID for editing
         private int i = 0;
-
         public ModalAddTenants(int? tenantID = null)
         {
             InitializeComponent();
@@ -24,7 +23,6 @@ namespace AmiggasRenting
 
             this.tenantID = tenantID;
         }
-
         private void ModalAddTenants_Load(object sender, EventArgs e)
         {
             i = AddTenants.parentY + 50;
@@ -43,7 +41,6 @@ namespace AmiggasRenting
                 btnAdd.Text = "Update";
             }
         }
-
         private void ModalEffect_Timer_Tick(object sender, EventArgs e)
         {
             // Incrementally increase opacity
@@ -67,11 +64,22 @@ namespace AmiggasRenting
 
         private void LoadTenantData(int tenantID)
         {
-            string query = "SELECT Name, Age, Birthday, ContactNumber FROM Tenants WHERE TenantID = @TenantID";
+            string query = @"
+    SELECT 
+        Tenants.Name, 
+        Tenants.Age, 
+        Tenants.Birthday, 
+        Tenants.ContactNumber, 
+        Tenants.RegistrationDate,
+        Units.UnitID AS ApartmentNo
+    FROM Tenants
+    LEFT JOIN Units ON Tenants.TenantID = Units.TenantID
+    WHERE Tenants.TenantID = @TenantID";
+
             var parameters = new Dictionary<string, object>
-            {
-                { "@TenantID", tenantID }
-            };
+    {
+        { "@TenantID", tenantID }
+    };
 
             try
             {
@@ -81,9 +89,11 @@ namespace AmiggasRenting
                     {
                         DataRow row = tenantTable.Rows[0];
                         txtName.Text = row["Name"].ToString();
-                        txtAge.Text = row["Age"].ToString();
-                        txtBirthday.Text = DateTime.Parse(row["Birthday"].ToString()).ToString("yyyy-MM-dd");
+                        numAge.Value = Convert.ToInt32(row["Age"]);
+                        dateBirthday.Value = Convert.ToDateTime(row["Birthday"]).Date; // Strip time part
                         txtContact.Text = row["ContactNumber"].ToString();
+                        dateRegistration.Value = Convert.ToDateTime(row["RegistrationDate"]).Date; // Strip time part
+                        numApartment.Value = Convert.ToInt32(row["ApartmentNo"]);
                     }
                 }
             }
@@ -93,14 +103,16 @@ namespace AmiggasRenting
             }
         }
 
+
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
-           
-            // Gather input data from text boxes
             string name = txtName.Text.Trim();
-            string ageText = txtAge.Text.Trim();
-            string birthdayText = txtBirthday.Text.Trim();
+            int age = (int)numAge.Value;
+            DateTime birthday = dateBirthday.Value.Date; // Strip time part
             string contactNumber = txtContact.Text.Trim();
+            DateTime registrationDate = dateRegistration.Value.Date; // Strip time part
+            int unitID = (int)numApartment.Value;
 
             // Validate inputs
             if (string.IsNullOrEmpty(name))
@@ -109,15 +121,9 @@ namespace AmiggasRenting
                 return;
             }
 
-            if (!int.TryParse(ageText, out int age) || age <= 0)
+            if (birthday > DateTime.Now)
             {
-                MessageBox.Show("Please enter a valid age.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            if (!DateTime.TryParse(birthdayText, out DateTime birthday))
-            {
-                MessageBox.Show("Please enter a valid date for the birthday.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Birthday cannot be in the future.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -127,25 +133,77 @@ namespace AmiggasRenting
                 return;
             }
 
+            if (contactNumber.Length < 10 || contactNumber.Length > 15 || !long.TryParse(contactNumber, out _))
+            {
+                MessageBox.Show("Contact number must be a valid number between 10 and 15 digits.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (registrationDate > DateTime.Now)
+            {
+                MessageBox.Show("Registration date cannot be in the future.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!tenantID.HasValue || (tenantID.HasValue && unitID != GetCurrentTenantUnitID(tenantID.Value)))
+            {
+                string checkUnitQuery = "SELECT COUNT(*) FROM Units WHERE UnitID = @UnitID AND TenantID IS NOT NULL";
+                var checkUnitParams = new Dictionary<string, object>
+        {
+            { "@UnitID", unitID }
+        };
+
+                try
+                {
+                    using (DataTable resultTable = dbManager.ExecuteQuery(checkUnitQuery, checkUnitParams))
+                    {
+                        if (resultTable.Rows.Count > 0 && Convert.ToInt32(resultTable.Rows[0][0]) > 0)
+                        {
+                            MessageBox.Show($"Unit number {unitID} is already occupied.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"An error occurred while checking unit occupancy: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+
             string query;
             var parameters = new Dictionary<string, object>
-            {
-                { "@Name", name },
-                { "@Age", age },
-                { "@Birthday", birthday },
-                { "@ContactNumber", contactNumber }
-            };
+    {
+        { "@Name", name },
+        { "@Age", age },
+        { "@Birthday", birthday },
+        { "@ContactNumber", contactNumber },
+        { "@RegistrationDate", registrationDate },
+        { "@UnitID", unitID }
+    };
 
             if (tenantID.HasValue)
             {
-                // Update existing tenant
-                query = "UPDATE Tenants SET Name = @Name, Age = @Age, Birthday = @Birthday, ContactNumber = @ContactNumber WHERE TenantID = @TenantID";
+                query = @"
+        UPDATE Tenants 
+        SET Name = @Name, Age = @Age, Birthday = @Birthday, ContactNumber = @ContactNumber, RegistrationDate = @RegistrationDate 
+        WHERE TenantID = @TenantID;
+        UPDATE Units 
+        SET TenantID = NULL 
+        WHERE TenantID = @TenantID;
+        UPDATE Units 
+        SET TenantID = @TenantID 
+        WHERE UnitID = @UnitID";
                 parameters.Add("@TenantID", tenantID.Value);
             }
             else
             {
-                // Insert new tenant
-                query = "INSERT INTO Tenants (Name, Age, Birthday, ContactNumber) VALUES (@Name, @Age, @Birthday, @ContactNumber)";
+                query = @"
+        INSERT INTO Tenants (Name, Age, Birthday, ContactNumber, RegistrationDate) 
+        VALUES (@Name, @Age, @Birthday, @ContactNumber, @RegistrationDate);
+        UPDATE Units 
+        SET TenantID = (SELECT last_insert_rowid()) 
+        WHERE UnitID = @UnitID";
             }
 
             try
@@ -153,11 +211,10 @@ namespace AmiggasRenting
                 dbManager.ExecuteNonQuery(query, parameters);
                 MessageBox.Show(tenantID.HasValue ? "Tenant updated successfully!" : "Tenant added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Reload the tenant data in the AddTenants form
                 AddTenants addTenantsForm = (AddTenants)Application.OpenForms["AddTenants"];
                 addTenantsForm.LoadTenants();
-                
-                this.Close(); // Close the modal form
+
+                this.Close();
             }
             catch (Exception ex)
             {
@@ -165,9 +222,44 @@ namespace AmiggasRenting
             }
         }
 
+
+
+
+
+        // Helper method to get the current tenant's unit ID
+        private int GetCurrentTenantUnitID(int tenantID)
+        {
+            string query = "SELECT UnitID FROM Units WHERE TenantID = @TenantID";
+            var parameters = new Dictionary<string, object>
+    {
+        { "@TenantID", tenantID }
+    };
+
+            try
+            {
+                using (DataTable resultTable = dbManager.ExecuteQuery(query, parameters))
+                {
+                    if (resultTable.Rows.Count > 0)
+                    {
+                        return Convert.ToInt32(resultTable.Rows[0]["UnitID"]);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred while retrieving the tenant's unit ID: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            return -1; // Return an invalid unit ID if not found
+        }
         private void btnCancel_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void numApartment_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

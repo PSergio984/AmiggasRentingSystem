@@ -30,8 +30,6 @@
         {
             components = new System.ComponentModel.Container();
             txtName = new TextBox();
-            txtBirthday = new TextBox();
-            txtAge = new TextBox();
             txtContact = new TextBox();
             lblName = new Label();
             lblAge = new Label();
@@ -40,6 +38,14 @@
             btnAdd = new Button();
             ModalEffect_Timer = new System.Windows.Forms.Timer(components);
             btnCancel = new Button();
+            dateBirthday = new DateTimePicker();
+            dateRegistration = new DateTimePicker();
+            lblRegistration = new Label();
+            numApartment = new NumericUpDown();
+            lblApartment = new Label();
+            numAge = new NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)numApartment).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numAge).BeginInit();
             SuspendLayout();
             // 
             // txtName
@@ -49,22 +55,6 @@
             txtName.Name = "txtName";
             txtName.Size = new Size(125, 34);
             txtName.TabIndex = 0;
-            // 
-            // txtBirthday
-            // 
-            txtBirthday.Location = new Point(236, 219);
-            txtBirthday.Multiline = true;
-            txtBirthday.Name = "txtBirthday";
-            txtBirthday.Size = new Size(125, 34);
-            txtBirthday.TabIndex = 1;
-            // 
-            // txtAge
-            // 
-            txtAge.Location = new Point(236, 142);
-            txtAge.Multiline = true;
-            txtAge.Name = "txtAge";
-            txtAge.Size = new Size(125, 34);
-            txtAge.TabIndex = 2;
             // 
             // txtContact
             // 
@@ -112,7 +102,7 @@
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(482, 370);
+            btnAdd.Location = new Point(485, 398);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(94, 29);
             btnAdd.TabIndex = 8;
@@ -127,7 +117,7 @@
             // 
             // btnCancel
             // 
-            btnCancel.Location = new Point(630, 370);
+            btnCancel.Location = new Point(634, 398);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(94, 29);
             btnCancel.TabIndex = 9;
@@ -135,11 +125,69 @@
             btnCancel.UseVisualStyleBackColor = true;
             btnCancel.Click += btnCancel_Click_1;
             // 
+            // dateBirthday
+            // 
+            dateBirthday.Location = new Point(236, 228);
+            dateBirthday.Name = "dateBirthday";
+            dateBirthday.Size = new Size(250, 27);
+            dateBirthday.TabIndex = 11;
+            // 
+            // dateRegistration
+            // 
+            dateRegistration.Location = new Point(236, 350);
+            dateRegistration.Name = "dateRegistration";
+            dateRegistration.Size = new Size(250, 27);
+            dateRegistration.TabIndex = 12;
+            // 
+            // lblRegistration
+            // 
+            lblRegistration.AutoSize = true;
+            lblRegistration.Location = new Point(93, 355);
+            lblRegistration.Name = "lblRegistration";
+            lblRegistration.Size = new Size(125, 20);
+            lblRegistration.TabIndex = 13;
+            lblRegistration.Text = "Registration Date";
+            // 
+            // numApartment
+            // 
+            numApartment.Location = new Point(584, 90);
+            numApartment.Maximum = new decimal(new int[] { 20, 0, 0, 0 });
+            numApartment.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            numApartment.Name = "numApartment";
+            numApartment.Size = new Size(150, 27);
+            numApartment.TabIndex = 14;
+            numApartment.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            numApartment.ValueChanged += numApartment_ValueChanged;
+            // 
+            // lblApartment
+            // 
+            lblApartment.AutoSize = true;
+            lblApartment.Location = new Point(471, 92);
+            lblApartment.Name = "lblApartment";
+            lblApartment.Size = new Size(110, 20);
+            lblApartment.TabIndex = 15;
+            lblApartment.Text = "Apartment No.:";
+            // 
+            // numAge
+            // 
+            numAge.Location = new Point(224, 156);
+            numAge.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            numAge.Name = "numAge";
+            numAge.Size = new Size(150, 27);
+            numAge.TabIndex = 16;
+            numAge.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            // 
             // ModalAddTenants
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(numAge);
+            Controls.Add(lblApartment);
+            Controls.Add(numApartment);
+            Controls.Add(lblRegistration);
+            Controls.Add(dateRegistration);
+            Controls.Add(dateBirthday);
             Controls.Add(btnCancel);
             Controls.Add(btnAdd);
             Controls.Add(lblContact);
@@ -147,13 +195,13 @@
             Controls.Add(lblAge);
             Controls.Add(lblName);
             Controls.Add(txtContact);
-            Controls.Add(txtAge);
-            Controls.Add(txtBirthday);
             Controls.Add(txtName);
             FormBorderStyle = FormBorderStyle.None;
             Name = "ModalAddTenants";
             Opacity = 0D;
             Load += ModalAddTenants_Load;
+            ((System.ComponentModel.ISupportInitialize)numApartment).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numAge).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -161,8 +209,6 @@
         #endregion
 
         private TextBox txtName;
-        private TextBox txtBirthday;
-        private TextBox txtAge;
         private TextBox txtContact;
         private Label lblName;
         private Label lblAge;
@@ -171,5 +217,12 @@
         private Button btnAdd;
         private System.Windows.Forms.Timer ModalEffect_Timer;
         private Button btnCancel;
+        public MonthCalendar monthCalendar1;
+        private DateTimePicker dateBirthday;
+        private DateTimePicker dateRegistration;
+        private Label lblRegistration;
+        private NumericUpDown numApartment;
+        private Label lblApartment;
+        private NumericUpDown numAge;
     }
 }

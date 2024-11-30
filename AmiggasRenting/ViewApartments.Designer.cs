@@ -28,20 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            dataApartments = new DataGridView();
             navigationControl1 = new NavigationControl();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataApartments).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // dataApartments
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(228, 53);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(724, 550);
-            dataGridView1.TabIndex = 0;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            dataApartments.AllowUserToAddRows = false;
+            dataApartments.AllowUserToDeleteRows = false;
+            dataApartments.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataApartments.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
+            dataApartments.BackgroundColor = SystemColors.ActiveCaption;
+            dataApartments.ColumnHeadersHeight = 29;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.Info;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.ButtonHighlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.MenuHighlight;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.False;
+            dataApartments.DefaultCellStyle = dataGridViewCellStyle1;
+            dataApartments.GridColor = SystemColors.Info;
+            dataApartments.Location = new Point(228, 53);
+            dataApartments.Name = "dataApartments";
+            dataApartments.RowHeadersVisible = false;
+            dataApartments.RowHeadersWidth = 51;
+            dataApartments.Size = new Size(724, 550);
+            dataApartments.TabIndex = 0;
+       
             // 
             // navigationControl1
             // 
@@ -56,20 +72,19 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1062, 673);
             Controls.Add(navigationControl1);
-            Controls.Add(dataGridView1);
+            Controls.Add(dataApartments);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "ViewApartments";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ViewApartments";
-          
             Load += ViewApartments_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataApartments).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView dataApartments;
         private NavigationControl navigationControl1;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             dataGridTenants = new DataGridView();
             txtSearch = new TextBox();
             TenantsSidePanel = new NavigationControl();
@@ -43,6 +44,14 @@
             dataGridTenants.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
             dataGridTenants.BackgroundColor = SystemColors.ActiveCaption;
             dataGridTenants.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.Info;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.False;
+            dataGridTenants.DefaultCellStyle = dataGridViewCellStyle1;
             dataGridTenants.Location = new Point(218, 43);
             dataGridTenants.Name = "dataGridTenants";
             dataGridTenants.ReadOnly = true;

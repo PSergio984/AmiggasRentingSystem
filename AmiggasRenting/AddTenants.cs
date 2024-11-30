@@ -29,21 +29,33 @@ namespace AmiggasRenting
             dbManager = new DatabaseManager(); // Instantiate the DatabaseManager
             LoadTenants(); // Load tenant data when the form is initialized
         }
-        public static int parentX,parentY;
+        public static int parentX, parentY;
 
+       
         // Method to load tenant data from the database into the DataGridView
         public void LoadTenants(string searchTerm = "")
         {
-            string query = "SELECT TenantID, Name, Age, Birthday, ContactNumber FROM Tenants";
+            string query = @"
+        SELECT 
+            Tenants.TenantID, 
+            Tenants.Name, 
+            Tenants.Age, 
+            Tenants.Birthday, 
+            Tenants.ContactNumber, 
+            Tenants.RegistrationDate,
+            Units.UnitID AS ApartmentNo
+        FROM Tenants
+        LEFT JOIN Units ON Tenants.TenantID = Units.TenantID";
+
             Dictionary<string, object> parameters = null;
 
             if (!string.IsNullOrEmpty(searchTerm))
             {
-                query += " WHERE Name LIKE @SearchTerm OR ContactNumber LIKE @SearchTerm";
+                query += " WHERE Tenants.Name LIKE @SearchTerm OR Tenants.ContactNumber LIKE @SearchTerm";
                 parameters = new Dictionary<string, object>
-                {
-                    { "@SearchTerm", "%" + searchTerm + "%" }
-                };
+        {
+            { "@SearchTerm", "%" + searchTerm + "%" }
+        };
             }
 
             try
@@ -151,15 +163,17 @@ namespace AmiggasRenting
         // Method to delete tenant from the database
         private void DeleteTenant(object tenantID)
         {
-            string query = "DELETE FROM Tenants WHERE TenantID = @TenantID";
+            string deleteTenantQuery = "DELETE FROM Tenants WHERE TenantID = @TenantID";
+            string updateUnitQuery = "UPDATE Units SET TenantID = NULL WHERE TenantID = @TenantID";
             var parameters = new Dictionary<string, object>
-            {
-                { "@TenantID", tenantID }
-            };
+    {
+        { "@TenantID", tenantID }
+    };
 
             try
             {
-                dbManager.ExecuteNonQuery(query, parameters);
+                dbManager.ExecuteNonQuery(updateUnitQuery, parameters); // Update the unit first
+                dbManager.ExecuteNonQuery(deleteTenantQuery, parameters); // Then delete the tenant
                 MessageBox.Show("Tenant deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LoadTenants();
             }
@@ -169,8 +183,6 @@ namespace AmiggasRenting
             }
         }
 
-      
-
 
         // Event handler for the search text box text changed
         private void txtSearch_TextChanged(object sender, EventArgs e)
@@ -179,15 +191,10 @@ namespace AmiggasRenting
             LoadTenants(searchTerm);
         }
 
-    
-     
-
         private void AddTenants_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
-
-      
 
         private void navigationControl1_Load(object sender, EventArgs e)
         {
@@ -201,9 +208,6 @@ namespace AmiggasRenting
 
         private void btnAddTenants_Click_1(object sender, EventArgs e)
         {
-            
-           
-            
             // Create a semi-transparent background form
             Form modalBackground = new Form();
             using (ModalAddTenants modal = new ModalAddTenants())
@@ -217,7 +221,7 @@ namespace AmiggasRenting
                 modalBackground.ShowInTaskbar = false;
                 modalBackground.Show();
                 modal.Owner = modalBackground;
-                
+
                 // Set the parent location for the animation effect
                 parentX = this.Location.X;
                 parentY = this.Location.Y;
@@ -227,8 +231,5 @@ namespace AmiggasRenting
                 modalBackground.Dispose();
             }
         }
-     
-
-
     }
 }
