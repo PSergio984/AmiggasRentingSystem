@@ -1,4 +1,1 @@
-Nigga
-Bitch as boi
-Small ass
-Big dick
+Welcome To Amiggas Renting System
