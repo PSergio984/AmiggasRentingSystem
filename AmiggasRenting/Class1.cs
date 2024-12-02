@@ -82,5 +82,24 @@ public class DatabaseManager
             }
         }
     }
+    public object ExecuteScalar(string query, Dictionary<string, object> parameters = null)
+    {
+        using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+        {
+            connection.Open();
+            using (SQLiteCommand command = new SQLiteCommand(query, connection))
+            {
+                if (parameters != null)
+                {
+                    foreach (var param in parameters)
+                    {
+                        command.Parameters.AddWithValue(param.Key, param.Value);
+                    }
+                }
+
+                return command.ExecuteScalar();
+            }
+        }
+    }
 }
 

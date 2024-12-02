@@ -28,19 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
+            dataPayments = new DataGridView();
             navigationControl1 = new NavigationControl();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataPayments).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // dataPayments
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(235, 12);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(797, 604);
-            dataGridView1.TabIndex = 0;
+            dataPayments.AllowDrop = true;
+            dataPayments.AllowUserToAddRows = false;
+            dataPayments.AllowUserToDeleteRows = false;
+            dataPayments.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            dataPayments.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dataPayments.BackgroundColor = SystemColors.ButtonFace;
+            dataPayments.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataPayments.GridColor = SystemColors.InfoText;
+            dataPayments.Location = new Point(235, 42);
+            dataPayments.Name = "dataPayments";
+            dataPayments.ReadOnly = true;
+            dataPayments.RowHeadersVisible = false;
+            dataPayments.RowHeadersWidth = 51;
+            dataPayments.Size = new Size(797, 574);
+            dataPayments.TabIndex = 0;
+            dataPayments.CellContentClick += dataPayments_CellContentClick;
             // 
             // navigationControl1
             // 
@@ -48,7 +58,6 @@
             navigationControl1.Name = "navigationControl1";
             navigationControl1.Size = new Size(203, 562);
             navigationControl1.TabIndex = 1;
-            navigationControl1.Load += navigationControl1_Load;
             // 
             // Payments
             // 
@@ -56,23 +65,21 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1062, 673);
             Controls.Add(navigationControl1);
-            Controls.Add(dataGridView1);
+            Controls.Add(dataPayments);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             Name = "Payments";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Payments";
-            
-
             FormClosed += Payments_FormClosed;
             Load += Payments_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataPayments).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView dataPayments;
         private NavigationControl navigationControl1;
     }
 }

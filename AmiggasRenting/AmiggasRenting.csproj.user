@@ -16,6 +16,9 @@
     <Compile Update="ModalAddTenants.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="modalTakeFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="NavigationControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
