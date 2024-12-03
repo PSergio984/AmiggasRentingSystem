@@ -87,7 +87,7 @@ namespace AmiggasRenting
         { "@TenantID", tenantID },
         {"@UnitID",unitID },// Add the UnitID parameter
         { "@AmountPaid", amountPaid },
-        { "@PaymentDate", DateTime.Now.Date }// Use the current date
+        { "@PaymentDate", DateTime.Now.Date }// Use the current date,trimming the time
     };
 
             try

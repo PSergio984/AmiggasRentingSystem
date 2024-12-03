@@ -30,7 +30,7 @@ namespace AmiggasRenting
 
         private void ViewApartments_Load(object sender, EventArgs e)
         {
-            LoadApartments();
+            LoadApartments();//load apartments 
         }
 
         private void ViewApartments_Activated(object sender, EventArgs e)

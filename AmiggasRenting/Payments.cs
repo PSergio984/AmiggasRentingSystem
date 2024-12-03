@@ -48,6 +48,7 @@ namespace AmiggasRenting
         t.TenantID AS 'TenantID',
         t.Name AS 'Tenant Name',
         t.RegistrationDate AS 'Registration Date',
+        t.ContactNumber AS 'ContactNumber', -- Include contact number in the query
         u.MonthlyRent AS 'Monthly Rate',
         ROUND((julianday('now') - julianday(t.RegistrationDate)) / 30 * u.MonthlyRent 
         - IFNULL((SELECT SUM(p.AmountPaid) FROM Payments p WHERE p.TenantID = t.TenantID), 0), 2) 
@@ -140,7 +141,6 @@ namespace AmiggasRenting
                         modalTakeFeeForm.lblApartmentNo.Text = apartmentNo; // Set the apartment number
                         modalTakeFeeForm.lblTenantName.Text = tenantName;  // Set the tenant's name
                         modalTakeFeeForm.lblTotalPaid.Text = totalPaid.ToString("C"); // Format the total paid as currency
-                        modalTakeFeeForm.lblTenantID.Text = tenantID.ToString(); // Set the TenantID for reference  
                         modalTakeFeeForm.tenantID = tenantID; // Set the TenantID for processing
                         modalTakeFeeForm.unitID = unitID;
                         // Configure and display the modal background form
@@ -170,9 +170,88 @@ namespace AmiggasRenting
 
                 }
                 // Placeholder logic for "Receipt" button
+                // Logic for "Receipt" button
                 else if (dataPayments.Columns[e.ColumnIndex].Name == "ReceiptButton")
                 {
-                    MessageBox.Show("Receipt button clicked. Action not implemented yet.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                   
+                    // Retrieve the necessary information from the selected row
+                    string tenantName = dataPayments.Rows[e.RowIndex].Cells["Tenant Name"].Value?.ToString();
+                    string apartmentNo = dataPayments.Rows[e.RowIndex].Cells["Apartment"].Value?.ToString();
+                    string contactNumber = dataPayments.Rows[e.RowIndex].Cells["ContactNumber"].Value?.ToString(); // Retrieve contact number from the selected row
+                    string registrationDate = dataPayments.Rows[e.RowIndex].Cells["Registration Date"].Value?.ToString();
+                    string monthlyRate = dataPayments.Rows[e.RowIndex].Cells["Monthly Rate"].Value?.ToString();
+                    string outstandingBalance = dataPayments.Rows[e.RowIndex].Cells["Outstanding Balance"].Value?.ToString();
+                    int tenantID = Convert.ToInt32(dataPayments.Rows[e.RowIndex].Cells["TenantID"].Value); // Assuming TenantID column exists
+
+                    // SQL query to get the latest payment date and total amount paid by this tenant
+                    string query = @"
+                        SELECT 
+                            MAX(PaymentDate) AS LatestDatePaid,
+                            IFNULL(SUM(AmountPaid), 0) AS TotalPaid
+                        FROM Payments
+                        WHERE TenantID = @TenantID;";
+
+                    // Execute the query using the database manager
+                    var parameters = new Dictionary<string, object>
+                    {
+                        { "@TenantID", tenantID } // Pass the TenantID as a parameter to prevent SQL injection
+                    };
+                    DataTable resultTable = dbManager.ExecuteQuery(query, parameters);
+
+                    string latestDatePaid = resultTable.Rows[0]["LatestDatePaid"]?.ToString();
+                    decimal totalPaid = resultTable.Rows[0]["TotalPaid"] != DBNull.Value ? Convert.ToDecimal(resultTable.Rows[0]["TotalPaid"]) : 0;
+
+                    // SQL query to get the payment details for the receipt
+                    string receiptQuery = @"
+                        SELECT 
+                            PaymentID AS 'Receipt No',
+                            PaymentDate AS 'Date Paid',
+                            AmountPaid AS 'Amount Paid'
+                        FROM Payments
+                        WHERE TenantID = @TenantID;";
+
+                    DataTable receiptTable = dbManager.ExecuteQuery(receiptQuery, parameters);
+
+                    // Create a semi-transparent background form
+                    Form modalBackground = new Form();
+                    using (ModalReceipt modalReceiptForm = new ModalReceipt())
+                    {
+                        // Pass the retrieved data to the modalReceipt form
+                        modalReceiptForm.lblDate.Text = DateTime.Now.ToString("MM/dd/yyyy"); // Set the current date
+                        modalReceiptForm.lblTenantName.Text = tenantName; // Set the tenant's name
+                        modalReceiptForm.lblApartmentNo.Text = apartmentNo; // Set the apartment number
+                        modalReceiptForm.lblContact.Text = contactNumber; // Set the contact number
+                        modalReceiptForm.lblRegistrationDate.Text = registrationDate; // Set the registration date
+                        modalReceiptForm.lblDatePaid.Text = latestDatePaid; // Set the latest date paid
+                        modalReceiptForm.lblMonthly.Text = monthlyRate; // Set the monthly rate
+                        modalReceiptForm.lblOutstanding.Text = outstandingBalance; // Set the outstanding balance
+                        modalReceiptForm.dataReceipt.DataSource = receiptTable; // Set the receipt data
+                        modalReceiptForm.lblTotal.Text = totalPaid.ToString("C"); // Format the total paid as currency
+
+                        // Configure and display the modal background form
+                        modalBackground.StartPosition = FormStartPosition.Manual;
+                        modalBackground.FormBorderStyle = FormBorderStyle.None;
+                        modalBackground.Opacity = .50d;
+                        modalBackground.BackColor = Color.Black;
+                        modalBackground.Size = this.Size;
+                        modalBackground.Location = this.Location;
+                        modalBackground.ShowInTaskbar = false;
+                        modalBackground.Show();
+                        // Set the parent location for the animation effect
+                        parentX = this.Location.X;
+                        parentY = this.Location.Y;
+                        // Set the modal background as the owner of the modalReceipt form
+                        modalReceiptForm.Owner = modalBackground;
+
+                        // Set the start position of the modalReceiptForm to center parent
+                        modalReceiptForm.StartPosition = FormStartPosition.CenterParent;
+
+                        // Display the modal dialog
+                        modalReceiptForm.ShowDialog();
+
+                        // Dispose of the modal background form after closing the dialog
+                        modalBackground.Dispose();
+                    }
                 }
             }
         }

@@ -128,6 +128,7 @@ C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-
 C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\AmiggasRenting.HomePage.resources
 C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\AmiggasRenting.LoadingScreen.resources
 C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\AmiggasRenting.ModalAddTenants.resources
+C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\AmiggasRenting.ModalReceipt.resources
 C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\AmiggasRenting.modalTakeFee.resources
 C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\AmiggasRenting.NavigationControl.resources
 C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\AmiggasRenting.Payments.resources
@@ -145,3 +146,5 @@ C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-
 C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\AmiggasRenting.pdb
 C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\AmiggasRenting.genruntimeconfig.cache
 C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\obj\Debug\net8.0-windows\ref\AmiggasRenting.dll
+C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\Eric\source\repos\AmiggasRentingSystem\AmiggasRenting\bin\Debug\net8.0-windows\itextsharp.dll

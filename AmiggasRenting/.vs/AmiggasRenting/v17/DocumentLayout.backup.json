@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|c:\\users\\eric\\source\\repos\\amiggasrentingsystem\\amiggasrenting\\payments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:payments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|c:\\users\\eric\\source\\repos\\amiggasrentingsystem\\amiggasrenting\\modalreceipt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:modalreceipt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\payments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:payments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|c:\\users\\eric\\source\\repos\\amiggasrentingsystem\\amiggasrenting\\modalreceipt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:modalreceipt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|c:\\users\\eric\\source\\repos\\amiggasrentingsystem\\amiggasrenting\\modalreceipt.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:modalreceipt.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|c:\\users\\eric\\source\\repos\\amiggasrentingsystem\\amiggasrenting\\payments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:payments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|c:\\users\\eric\\source\\repos\\amiggasrentingsystem\\amiggasrenting\\modaltakefee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:modaltakefee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|c:\\users\\eric\\source\\repos\\amiggasrentingsystem\\amiggasrenting\\viewapartments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:viewapartments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|c:\\users\\eric\\source\\repos\\amiggasrentingsystem\\amiggasrenting\\addtenants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:addtenants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\modaltakefee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:modaltakefee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +34,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 12,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Payments.cs",
+              "DocumentMoniker": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\Payments.cs",
+              "RelativeDocumentMoniker": "Payments.cs",
+              "ToolTip": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\Payments.cs*",
+              "RelativeToolTip": "Payments.cs*",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T16:04:09.041Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ModalReceipt.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\ModalReceipt.Designer.cs",
+              "RelativeDocumentMoniker": "ModalReceipt.Designer.cs",
+              "ToolTip": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\ModalReceipt.Designer.cs*",
+              "RelativeToolTip": "ModalReceipt.Designer.cs*",
+              "ViewState": "AgIAAKAAAAAAAAAAAAAYwLQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T02:52:42.506Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -78,66 +105,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AddTenants.cs",
-              "DocumentMoniker": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\AddTenants.cs",
-              "RelativeDocumentMoniker": "AddTenants.cs",
-              "ToolTip": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\AddTenants.cs",
-              "RelativeToolTip": "AddTenants.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAlwM0AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T16:23:49.068Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ViewApartments.cs",
-              "DocumentMoniker": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\ViewApartments.cs",
-              "RelativeDocumentMoniker": "ViewApartments.cs",
-              "ToolTip": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\ViewApartments.cs",
-              "RelativeToolTip": "ViewApartments.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAqwCMAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T16:23:00.278Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Payments.cs",
-              "DocumentMoniker": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\Payments.cs",
-              "RelativeDocumentMoniker": "Payments.cs",
-              "ToolTip": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\Payments.cs*",
-              "RelativeToolTip": "Payments.cs*",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAAB0AAABzAAAAAAAAAA==",
+              "Title": "ModalReceipt.cs",
+              "DocumentMoniker": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\ModalReceipt.cs",
+              "RelativeDocumentMoniker": "ModalReceipt.cs",
+              "ToolTip": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\ModalReceipt.cs*",
+              "RelativeToolTip": "ModalReceipt.cs*",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAQwEsAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T16:04:09.041Z",
+              "WhenOpened": "2024-12-03T02:08:14.36Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "ModalReceipt.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\ModalReceipt.cs",
+              "RelativeDocumentMoniker": "ModalReceipt.cs",
+              "ToolTip": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\ModalReceipt.cs [Design]*",
+              "RelativeToolTip": "ModalReceipt.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T02:04:14.358Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "modalTakeFee.cs",
               "DocumentMoniker": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\modalTakeFee.cs",
               "RelativeDocumentMoniker": "modalTakeFee.cs",
               "ToolTip": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\modalTakeFee.cs",
               "RelativeToolTip": "modalTakeFee.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-02T14:39:46.803Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Payments.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\Payments.cs",
-              "RelativeDocumentMoniker": "Payments.cs",
-              "ToolTip": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\Payments.cs [Design]*",
-              "RelativeToolTip": "Payments.cs [Design]*",
+              "DocumentIndex": 5,
+              "Title": "modalTakeFee.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\modalTakeFee.cs",
+              "RelativeDocumentMoniker": "modalTakeFee.cs",
+              "ToolTip": "C:\\Users\\Eric\\source\\repos\\AmiggasRentingSystem\\AmiggasRenting\\modalTakeFee.cs [Design]",
+              "RelativeToolTip": "modalTakeFee.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T09:22:43.065Z",
+              "WhenOpened": "2024-12-02T16:32:52.134Z",
               "EditorCaption": " [Design]"
             }
           ]
