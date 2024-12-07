@@ -30,6 +30,7 @@
         {
             toolStrip1 = new ToolStrip();
             panel1 = new Panel();
+            lblUser = new Label();
             btnDashboard = new Button();
             picUser = new PictureBox();
             btnPayments = new Button();
@@ -51,6 +52,7 @@
             // panel1
             // 
             panel1.BackColor = SystemColors.ActiveCaption;
+            panel1.Controls.Add(lblUser);
             panel1.Controls.Add(btnDashboard);
             panel1.Controls.Add(picUser);
             panel1.Controls.Add(btnPayments);
@@ -61,10 +63,20 @@
             panel1.Size = new Size(187, 550);
             panel1.TabIndex = 6;
             // 
+            // lblUser
+            // 
+            lblUser.AutoSize = true;
+            lblUser.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblUser.Location = new Point(44, 115);
+            lblUser.Name = "lblUser";
+            lblUser.Size = new Size(103, 28);
+            lblUser.TabIndex = 6;
+            lblUser.Text = "UserName";
+            // 
             // btnDashboard
             // 
             btnDashboard.BackgroundImageLayout = ImageLayout.None;
-            btnDashboard.Location = new Point(7, 146);
+            btnDashboard.Location = new Point(7, 188);
             btnDashboard.Name = "btnDashboard";
             btnDashboard.Size = new Size(177, 37);
             btnDashboard.TabIndex = 5;
@@ -76,9 +88,9 @@
             // 
             picUser.Image = Properties.Resources.MANABAT_GEOMETRIC1;
             picUser.InitialImage = null;
-            picUser.Location = new Point(55, 3);
+            picUser.Location = new Point(64, 3);
             picUser.Name = "picUser";
-            picUser.Size = new Size(78, 114);
+            picUser.Size = new Size(64, 100);
             picUser.SizeMode = PictureBoxSizeMode.Zoom;
             picUser.TabIndex = 4;
             picUser.TabStop = false;
@@ -86,7 +98,7 @@
             // btnPayments
             // 
             btnPayments.BackgroundImageLayout = ImageLayout.None;
-            btnPayments.Location = new Point(3, 284);
+            btnPayments.Location = new Point(3, 326);
             btnPayments.Name = "btnPayments";
             btnPayments.Size = new Size(181, 37);
             btnPayments.TabIndex = 1;
@@ -97,7 +109,7 @@
             // btnViewApartments
             // 
             btnViewApartments.BackgroundImageLayout = ImageLayout.None;
-            btnViewApartments.Location = new Point(3, 241);
+            btnViewApartments.Location = new Point(3, 283);
             btnViewApartments.Name = "btnViewApartments";
             btnViewApartments.Size = new Size(181, 37);
             btnViewApartments.TabIndex = 2;
@@ -108,7 +120,7 @@
             // btnAddTenants
             // 
             btnAddTenants.BackgroundImageLayout = ImageLayout.None;
-            btnAddTenants.Location = new Point(10, 198);
+            btnAddTenants.Location = new Point(10, 240);
             btnAddTenants.Name = "btnAddTenants";
             btnAddTenants.Size = new Size(177, 37);
             btnAddTenants.TabIndex = 0;
@@ -125,6 +137,7 @@
             Name = "NavigationControl";
             Size = new Size(204, 566);
             panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)picUser).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -139,5 +152,6 @@
         private Button btnPayments;
         private Button btnViewApartments;
         private Button btnAddTenants;
+        private Label lblUser;
     }
 }

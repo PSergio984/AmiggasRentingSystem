@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AmiggasRenting")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6db51d611022226ab2fa91cca712a02b29be41d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27a88cceb58e3880dbc157b97e3f824c14b3516a")]
 [assembly: System.Reflection.AssemblyProductAttribute("AmiggasRenting")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AmiggasRenting")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -36,6 +36,9 @@
             lblOccupied = new Label();
             pictureBox1 = new PictureBox();
             homePageSidePanel = new NavigationControl();
+            lblTenantCount = new Label();
+            lblOccApartments = new Label();
+            lblAvlApartment = new Label();
             ((System.ComponentModel.ISupportInitialize)picTenants).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picApartments).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -53,7 +56,7 @@
             // 
             // lblTenants
             // 
-            lblTenants.Location = new Point(285, 112);
+            lblTenants.Location = new Point(296, 112);
             lblTenants.Name = "lblTenants";
             lblTenants.Size = new Size(196, 69);
             lblTenants.TabIndex = 6;
@@ -62,7 +65,7 @@
             // picTenants
             // 
             picTenants.Image = Properties.Resources.apartment;
-            picTenants.Location = new Point(526, 148);
+            picTenants.Location = new Point(639, 148);
             picTenants.Name = "picTenants";
             picTenants.Size = new Size(123, 110);
             picTenants.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -71,7 +74,7 @@
             // 
             // lblApartments
             // 
-            lblApartments.Location = new Point(487, 112);
+            lblApartments.Location = new Point(594, 112);
             lblApartments.Name = "lblApartments";
             lblApartments.Size = new Size(242, 40);
             lblApartments.TabIndex = 8;
@@ -89,7 +92,7 @@
             // 
             // lblOccupied
             // 
-            lblOccupied.Location = new Point(315, 313);
+            lblOccupied.Location = new Point(418, 318);
             lblOccupied.Name = "lblOccupied";
             lblOccupied.Size = new Size(242, 40);
             lblOccupied.TabIndex = 10;
@@ -98,7 +101,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.occupied;
-            pictureBox1.Location = new Point(326, 404);
+            pictureBox1.Location = new Point(464, 377);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(97, 95);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -113,11 +116,42 @@
             homePageSidePanel.TabIndex = 12;
             homePageSidePanel.Load += navigationControl1_Load;
             // 
+            // lblTenantCount
+            // 
+            lblTenantCount.AutoSize = true;
+            lblTenantCount.Location = new Point(240, 112);
+            lblTenantCount.Name = "lblTenantCount";
+            lblTenantCount.Size = new Size(50, 20);
+            lblTenantCount.TabIndex = 13;
+            lblTenantCount.Text = "label2";
+            // 
+            // lblOccApartments
+            // 
+            lblOccApartments.AutoSize = true;
+            lblOccApartments.Location = new Point(362, 318);
+            lblOccApartments.Name = "lblOccApartments";
+            lblOccApartments.Size = new Size(50, 20);
+            lblOccApartments.TabIndex = 14;
+            lblOccApartments.Text = "label3";
+            // 
+            // lblAvlApartment
+            // 
+            lblAvlApartment.AutoSize = true;
+            lblAvlApartment.ImageAlign = ContentAlignment.TopLeft;
+            lblAvlApartment.Location = new Point(538, 112);
+            lblAvlApartment.Name = "lblAvlApartment";
+            lblAvlApartment.Size = new Size(50, 20);
+            lblAvlApartment.TabIndex = 15;
+            lblAvlApartment.Text = "label4";
+            // 
             // HomePage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1062, 673);
+            Controls.Add(lblAvlApartment);
+            Controls.Add(lblOccApartments);
+            Controls.Add(lblTenantCount);
             Controls.Add(homePageSidePanel);
             Controls.Add(pictureBox1);
             Controls.Add(lblOccupied);
@@ -131,7 +165,6 @@
             Name = "HomePage";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "HomePage";
-            
             FormClosed += HomePage_FormClosed;
             Load += HomePage_Load;
             ((System.ComponentModel.ISupportInitialize)picTenants).EndInit();
@@ -150,5 +183,8 @@
         private Label lblOccupied;
         private PictureBox pictureBox1;
         private NavigationControl homePageSidePanel;
+        private Label lblTenantCount;
+        private Label lblOccApartments;
+        private Label lblAvlApartment;
     }
 }

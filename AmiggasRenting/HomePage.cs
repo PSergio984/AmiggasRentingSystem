@@ -3,8 +3,10 @@ using System.Windows.Forms;
 
 namespace AmiggasRenting
 {
+    
     public partial class HomePage : Form
     {
+        DatabaseManager dbManager = new DatabaseManager();
         private static HomePage instance;
         public static HomePage Instance
         {
@@ -22,6 +24,35 @@ namespace AmiggasRenting
         {
             InitializeComponent();
         }
+        private void HomePage_Activated(object sender, EventArgs e)
+        {
+            UpdateStatistics();// Load payment data when the form is activated.
+        }
+        private void UpdateStatistics()
+        {
+            lblAvlApartment.Text = GetAvailableApartments().ToString();
+            lblTenantCount.Text = GetTenantCount().ToString();
+            lblOccApartments.Text = GetOccupiedApartments().ToString();
+        }
+
+        private int GetAvailableApartments()
+        {
+            string query = "SELECT COUNT(*) FROM Units WHERE availability = 1";
+            return Convert.ToInt32(dbManager.ExecuteScalar(query));
+        }
+
+        private int GetTenantCount()
+        {
+            string query = "SELECT COUNT(*) FROM Tenants";
+            return Convert.ToInt32(dbManager.ExecuteScalar(query));
+        }
+
+        private int GetOccupiedApartments()
+        {
+            string query = "SELECT COUNT(*) FROM Units WHERE availability = 0";
+            return Convert.ToInt32(dbManager.ExecuteScalar(query));
+        }
+
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
@@ -30,8 +61,9 @@ namespace AmiggasRenting
 
         private void HomePage_Load(object sender, EventArgs e)
         {
-            // Initialize any data or settings needed when the form loads
+            UpdateStatistics();
         }
+
 
      
         private void navigationControl1_Load(object sender, EventArgs e)

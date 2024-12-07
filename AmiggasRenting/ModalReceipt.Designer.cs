@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             lblTenantName = new Label();
             lblApartmentNo = new Label();
             lblContact = new Label();
@@ -43,6 +44,7 @@
             lblTotal = new Label();
             btnPrint = new Button();
             btnBack = new Button();
+            ModalEffect_Timer = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)dataReceipt).BeginInit();
             SuspendLayout();
             // 
@@ -143,9 +145,13 @@
             // 
             // dataReceipt
             // 
+            dataReceipt.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataReceipt.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dataReceipt.BackgroundColor = SystemColors.ActiveCaption;
             dataReceipt.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataReceipt.Location = new Point(25, 273);
             dataReceipt.Name = "dataReceipt";
+            dataReceipt.RowHeadersVisible = false;
             dataReceipt.RowHeadersWidth = 51;
             dataReceipt.Size = new Size(783, 188);
             dataReceipt.TabIndex = 10;
@@ -189,6 +195,10 @@
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = true;
             btnBack.Click += btnBack_Click;
+            // 
+            // ModalEffect_Timer
+            // 
+            ModalEffect_Timer.Interval = 1;
             // 
             // ModalReceipt
             // 
@@ -235,5 +245,6 @@
         public Button btnPrint;
         public Button btnBack;
         public DataGridView dataReceipt;
+        private System.Windows.Forms.Timer ModalEffect_Timer;
     }
 }

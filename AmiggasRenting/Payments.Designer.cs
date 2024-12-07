@@ -38,7 +38,7 @@
             dataPayments.AllowDrop = true;
             dataPayments.AllowUserToAddRows = false;
             dataPayments.AllowUserToDeleteRows = false;
-            dataPayments.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            dataPayments.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataPayments.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dataPayments.BackgroundColor = SystemColors.ButtonFace;
             dataPayments.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;

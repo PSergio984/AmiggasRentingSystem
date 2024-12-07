@@ -16,9 +16,13 @@ namespace AmiggasRenting
 {
     public partial class ModalReceipt : Form
     {
+        private int i = 0;
         public ModalReceipt()
         {
             InitializeComponent();
+            // Initialize the timer
+            ModalEffect_Timer.Interval = 10; // Set the interval to 20 milliseconds
+            ModalEffect_Timer.Tick += new EventHandler(ModalEffect_Timer_Tick);
         }
 
         private void lblTenantName_Click(object sender, EventArgs e)
@@ -38,7 +42,34 @@ namespace AmiggasRenting
 
         private void ModalReceipt_Load(object sender, EventArgs e)
         {
+            i = Payments.parentY + 50;
 
+            // Set the initial location of the form
+            this.Location = new Point(Payments.parentX + 220, Payments.parentY + 160);
+            Opacity = 0; // Set initial opacity to 0 for fade-in effect
+
+            // Start the timer for the animation effect
+            ModalEffect_Timer.Start();
+        }
+        private void ModalEffect_Timer_Tick(object sender, EventArgs e)
+        {
+            // Incrementally increase opacity
+            if (Opacity < 1)
+            {
+                Opacity += 0.03;
+            }
+
+            // Incrementally move the form upwards
+            if (this.Location.Y > Payments.parentY)
+            {
+                this.Location = new Point(this.Location.X, this.Location.Y - 3);
+            }
+
+            // Stop the timer when the animation is complete
+            if (Opacity >= 1 && this.Location.Y <= Payments.parentY)
+            {
+                ModalEffect_Timer.Stop();
+            }
         }
 
         private void dataReceipt_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -78,16 +109,17 @@ namespace AmiggasRenting
                     pdfDoc.Open();
 
                     // Add receipt content
-                    pdfDoc.Add(new Paragraph("Receipt"));
+                    pdfDoc.Add(new Paragraph("\t\tRECEIPT"));
+                    pdfDoc.Add(new Paragraph("Amiggas Renting System"));
                     pdfDoc.Add(new Paragraph($"Date: {lblDate.Text}"));
                     pdfDoc.Add(new Paragraph($"Tenant Name: {lblTenantName.Text}"));
                     pdfDoc.Add(new Paragraph($"Apartment No: {lblApartmentNo.Text}"));
                     pdfDoc.Add(new Paragraph($"Contact: {lblContact.Text}"));
                     pdfDoc.Add(new Paragraph($"Registration Date: {lblRegistrationDate.Text}"));
-                    pdfDoc.Add(new Paragraph($"Date Paid: {lblDatePaid.Text}"));
+                    pdfDoc.Add(new Paragraph($"Date Paid: {lblDatePaid.Text}\n\n"));
                     pdfDoc.Add(new Paragraph($"Monthly Rate: {lblMonthly.Text}"));
                     pdfDoc.Add(new Paragraph($"Outstanding Balance: {lblOutstanding.Text}"));
-                    pdfDoc.Add(new Paragraph($"Total Paid: {lblTotal.Text}"));
+                    pdfDoc.Add(new Paragraph($"Total Paid: {lblTotal.Text}\n\n"));
 
                     // Add receipt table
                     PdfPTable table = new PdfPTable(dataReceipt.Columns.Count);
