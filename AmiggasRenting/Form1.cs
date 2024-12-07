@@ -105,17 +105,7 @@ namespace LoginPage
             }
         }
 
-        // Event handler for password text changes (optional)
-        private void txtPassword_TextChanged(object sender, EventArgs e)
-        {
-            // Optional: Handle password text changes if needed
-        }
 
-        // Event handler for email text changes (optional)
-        private void txtEmail_TextChanged(object sender, EventArgs e)
-        {
-            // Optional: Handle email text changes if needed
-        }
 
         // Event handler for label click event (optional)
         private void label1_Click(object sender, EventArgs e)
@@ -155,8 +145,23 @@ namespace LoginPage
         }
 
 
+        private void btnShow_Click_1(object sender, EventArgs e)
+        {
+            // Show the password
+            txtPassword.PasswordChar = '\0'; // Remove masking to show the password
 
+            // Bring the hide button to the front
+            btnHide.BringToFront();
+        }
 
+        private void btnHide_Click(object sender, EventArgs e)
+        {
+            // Hide the password
+            txtPassword.PasswordChar = '*'; // Set masking character to hide the password
+
+            // Bring the show button to the front
+            btnShow.BringToFront();
+        }
 
     }
 }

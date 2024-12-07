@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             lblTenantName = new Label();
             lblApartmentNo = new Label();
             lblContact = new Label();
@@ -39,12 +42,13 @@
             lblMonthly = new Label();
             lblDatePaid = new Label();
             label5 = new Label();
-            dataReceipt = new DataGridView();
             label2 = new Label();
             lblTotal = new Label();
             btnPrint = new Button();
             btnBack = new Button();
             ModalEffect_Timer = new System.Windows.Forms.Timer(components);
+            dataReceipt = new Bunifu.UI.WinForms.BunifuDataGridView();
+            ModalCancel_Timer = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)dataReceipt).BeginInit();
             SuspendLayout();
             // 
@@ -143,20 +147,6 @@
             label5.TabIndex = 6;
             label5.Text = "Payment Details";
             // 
-            // dataReceipt
-            // 
-            dataReceipt.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataReceipt.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            dataReceipt.BackgroundColor = SystemColors.ActiveCaption;
-            dataReceipt.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataReceipt.Location = new Point(25, 273);
-            dataReceipt.Name = "dataReceipt";
-            dataReceipt.RowHeadersVisible = false;
-            dataReceipt.RowHeadersWidth = 51;
-            dataReceipt.Size = new Size(783, 188);
-            dataReceipt.TabIndex = 10;
-            dataReceipt.CellContentClick += dataReceipt_CellContentClick;
-            // 
             // label2
             // 
             label2.AutoSize = true;
@@ -200,16 +190,80 @@
             // 
             ModalEffect_Timer.Interval = 1;
             // 
+            // dataReceipt
+            // 
+            dataReceipt.AllowCustomTheming = true;
+            dataReceipt.AllowUserToAddRows = false;
+            dataReceipt.AllowUserToDeleteRows = false;
+            dataReceipt.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(248, 251, 255);
+            dataGridViewCellStyle1.ForeColor = Color.Black;
+            dataReceipt.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataReceipt.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataReceipt.BackgroundColor = SystemColors.ActiveCaption;
+            dataReceipt.BorderStyle = BorderStyle.None;
+            dataReceipt.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dataReceipt.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.Desktop;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI Semibold", 11.75F, FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(24, 115, 204);
+            dataGridViewCellStyle2.SelectionForeColor = Color.White;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dataReceipt.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataReceipt.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataReceipt.CurrentTheme.AlternatingRowsStyle.BackColor = Color.FromArgb(248, 251, 255);
+            dataReceipt.CurrentTheme.AlternatingRowsStyle.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold);
+            dataReceipt.CurrentTheme.AlternatingRowsStyle.ForeColor = Color.Black;
+            dataReceipt.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = Color.FromArgb(210, 232, 255);
+            dataReceipt.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = Color.Black;
+            dataReceipt.CurrentTheme.BackColor = Color.White;
+            dataReceipt.CurrentTheme.GridColor = Color.FromArgb(221, 238, 255);
+            dataReceipt.CurrentTheme.HeaderStyle.BackColor = SystemColors.Desktop;
+            dataReceipt.CurrentTheme.HeaderStyle.Font = new Font("Segoe UI Semibold", 11.75F, FontStyle.Bold);
+            dataReceipt.CurrentTheme.HeaderStyle.ForeColor = Color.White;
+            dataReceipt.CurrentTheme.HeaderStyle.SelectionBackColor = Color.FromArgb(24, 115, 204);
+            dataReceipt.CurrentTheme.HeaderStyle.SelectionForeColor = Color.White;
+            dataReceipt.CurrentTheme.Name = null;
+            dataReceipt.CurrentTheme.RowsStyle.BackColor = Color.White;
+            dataReceipt.CurrentTheme.RowsStyle.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold);
+            dataReceipt.CurrentTheme.RowsStyle.ForeColor = Color.Black;
+            dataReceipt.CurrentTheme.RowsStyle.SelectionBackColor = Color.FromArgb(210, 232, 255);
+            dataReceipt.CurrentTheme.RowsStyle.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.White;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(210, 232, 255);
+            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            dataReceipt.DefaultCellStyle = dataGridViewCellStyle3;
+            dataReceipt.EnableHeadersVisualStyles = false;
+            dataReceipt.GridColor = Color.FromArgb(221, 238, 255);
+            dataReceipt.HeaderBackColor = SystemColors.Desktop;
+            dataReceipt.HeaderBgColor = Color.Empty;
+            dataReceipt.HeaderForeColor = Color.White;
+            dataReceipt.Location = new Point(46, 273);
+            dataReceipt.Name = "dataReceipt";
+            dataReceipt.RowHeadersVisible = false;
+            dataReceipt.RowHeadersWidth = 51;
+            dataReceipt.RowTemplate.Height = 40;
+            dataReceipt.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataReceipt.Size = new Size(752, 171);
+            dataReceipt.TabIndex = 15;
+            dataReceipt.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            // 
             // ModalReceipt
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(842, 539);
+            Controls.Add(dataReceipt);
             Controls.Add(btnBack);
             Controls.Add(btnPrint);
             Controls.Add(lblTotal);
             Controls.Add(label2);
-            Controls.Add(dataReceipt);
             Controls.Add(lblOutstanding);
             Controls.Add(lblMonthly);
             Controls.Add(lblDatePaid);
@@ -244,7 +298,8 @@
         public Label lblTotal;
         public Button btnPrint;
         public Button btnBack;
-        public DataGridView dataReceipt;
         private System.Windows.Forms.Timer ModalEffect_Timer;
+        public Bunifu.UI.WinForms.BunifuDataGridView dataReceipt;
+        private System.Windows.Forms.Timer ModalCancel_Timer;
     }
 }

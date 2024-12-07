@@ -16,6 +16,12 @@ namespace AmiggasRenting
             // Initialize the timer
             ModalEffect_Timer.Interval = 10; // Set the interval to 20 milliseconds
             ModalEffect_Timer.Tick += new EventHandler(ModalEffect_Timer_Tick);
+
+            // Initialize the cancel animation timer
+            ModalCancel_Timer = new System.Windows.Forms.Timer();
+            ModalCancel_Timer.Interval = 10; // 10ms interval for smooth animation
+            ModalCancel_Timer.Tick += new EventHandler(ModalCancel_Timer_Tick);
+
             // Initialize the DatabaseManager
             dbManager = new DatabaseManager();
         }
@@ -106,9 +112,30 @@ namespace AmiggasRenting
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            this.Close();
+            // Start the cancel animation timer
+            ModalCancel_Timer.Start();
         }
+        private void ModalCancel_Timer_Tick(object sender, EventArgs e)
+        {
+            // Decrease opacity for fade-out effect
+            if (Opacity > 0)
+            {
+                Opacity -= 0.03;
+            }
 
+            // Incrementally move the form downwards
+            if (this.Location.Y < Payments.parentY + 160)
+            {
+                this.Location = new Point(this.Location.X, this.Location.Y + 3);
+            }
+
+            // Close the form when the animation completes
+            if (Opacity <= 0)
+            {
+                ModalCancel_Timer.Stop();
+                this.Close();
+            }
+        }
         private void numericUpDown2_ValueChanged(object sender, EventArgs e)
         {
 

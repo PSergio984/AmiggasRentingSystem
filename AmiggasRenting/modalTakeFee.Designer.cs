@@ -39,6 +39,7 @@
             btnAdd = new Button();
             numAmountPaid = new NumericUpDown();
             numReceipt = new NumericUpDown();
+            ModalCancel_Timer = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)numAmountPaid).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numReceipt).BeginInit();
             SuspendLayout();
@@ -175,5 +176,6 @@
         private Button btnAdd;
         private NumericUpDown numAmountPaid;
         private NumericUpDown numReceipt;
+        private System.Windows.Forms.Timer ModalCancel_Timer;
     }
 }

@@ -28,20 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
             label1 = new Label();
             lblTenants = new Label();
             picTenants = new PictureBox();
             lblApartments = new Label();
-            picApartments = new PictureBox();
             lblOccupied = new Label();
             pictureBox1 = new PictureBox();
             homePageSidePanel = new NavigationControl();
             lblTenantCount = new Label();
             lblOccApartments = new Label();
             lblAvlApartment = new Label();
+            bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            bunifuPictureBox3 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            bunifuPictureBox4 = new Bunifu.UI.WinForms.BunifuPictureBox();
             ((System.ComponentModel.ISupportInitialize)picTenants).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)picApartments).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)bunifuPictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)bunifuPictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)bunifuPictureBox4).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -79,16 +84,6 @@
             lblApartments.Size = new Size(242, 40);
             lblApartments.TabIndex = 8;
             lblApartments.Text = "Number of available Apartments";
-            // 
-            // picApartments
-            // 
-            picApartments.Image = Properties.Resources.tenants;
-            picApartments.Location = new Point(315, 148);
-            picApartments.Name = "picApartments";
-            picApartments.Size = new Size(108, 110);
-            picApartments.SizeMode = PictureBoxSizeMode.StretchImage;
-            picApartments.TabIndex = 9;
-            picApartments.TabStop = false;
             // 
             // lblOccupied
             // 
@@ -144,18 +139,68 @@
             lblAvlApartment.TabIndex = 15;
             lblAvlApartment.Text = "label4";
             // 
+            // bunifuPictureBox1
+            // 
+            bunifuPictureBox1.AllowFocused = false;
+            bunifuPictureBox1.Anchor = AnchorStyles.None;
+            bunifuPictureBox1.AutoSizeHeight = true;
+            bunifuPictureBox1.BorderRadius = 64;
+            bunifuPictureBox1.Image = Properties.Resources.occupied;
+            bunifuPictureBox1.IsCircle = true;
+            bunifuPictureBox1.Location = new Point(418, 158);
+            bunifuPictureBox1.Name = "bunifuPictureBox1";
+            bunifuPictureBox1.Size = new Size(129, 129);
+            bunifuPictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            bunifuPictureBox1.TabIndex = 16;
+            bunifuPictureBox1.TabStop = false;
+            bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            // 
+            // bunifuPictureBox3
+            // 
+            bunifuPictureBox3.AllowFocused = false;
+            bunifuPictureBox3.Anchor = AnchorStyles.None;
+            bunifuPictureBox3.AutoSizeHeight = true;
+            bunifuPictureBox3.BorderRadius = 44;
+            bunifuPictureBox3.Image = (Image)resources.GetObject("bunifuPictureBox3.Image");
+            bunifuPictureBox3.IsCircle = true;
+            bunifuPictureBox3.Location = new Point(793, 186);
+            bunifuPictureBox3.Name = "bunifuPictureBox3";
+            bunifuPictureBox3.Size = new Size(88, 88);
+            bunifuPictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            bunifuPictureBox3.TabIndex = 18;
+            bunifuPictureBox3.TabStop = false;
+            bunifuPictureBox3.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            // 
+            // bunifuPictureBox4
+            // 
+            bunifuPictureBox4.AllowFocused = false;
+            bunifuPictureBox4.Anchor = AnchorStyles.None;
+            bunifuPictureBox4.AutoSizeHeight = true;
+            bunifuPictureBox4.BorderRadius = 44;
+            bunifuPictureBox4.Image = (Image)resources.GetObject("bunifuPictureBox4.Image");
+            bunifuPictureBox4.IsCircle = true;
+            bunifuPictureBox4.Location = new Point(296, 186);
+            bunifuPictureBox4.Name = "bunifuPictureBox4";
+            bunifuPictureBox4.Size = new Size(88, 88);
+            bunifuPictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            bunifuPictureBox4.TabIndex = 19;
+            bunifuPictureBox4.TabStop = false;
+            bunifuPictureBox4.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            // 
             // HomePage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1062, 673);
+            Controls.Add(bunifuPictureBox4);
+            Controls.Add(bunifuPictureBox3);
+            Controls.Add(bunifuPictureBox1);
             Controls.Add(lblAvlApartment);
             Controls.Add(lblOccApartments);
             Controls.Add(lblTenantCount);
             Controls.Add(homePageSidePanel);
             Controls.Add(pictureBox1);
             Controls.Add(lblOccupied);
-            Controls.Add(picApartments);
             Controls.Add(lblApartments);
             Controls.Add(picTenants);
             Controls.Add(lblTenants);
@@ -164,12 +209,14 @@
             MaximizeBox = false;
             Name = "HomePage";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "HomePage";
+            Text = "Home Page";
             FormClosed += HomePage_FormClosed;
             Load += HomePage_Load;
             ((System.ComponentModel.ISupportInitialize)picTenants).EndInit();
-            ((System.ComponentModel.ISupportInitialize)picApartments).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)bunifuPictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)bunifuPictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)bunifuPictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -179,12 +226,14 @@
         private Label lblTenants;
         private PictureBox picTenants;
         private Label lblApartments;
-        private PictureBox picApartments;
         private Label lblOccupied;
         private PictureBox pictureBox1;
         private NavigationControl homePageSidePanel;
         private Label lblTenantCount;
         private Label lblOccApartments;
         private Label lblAvlApartment;
+        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
+        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox3;
+        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox4;
     }
 }

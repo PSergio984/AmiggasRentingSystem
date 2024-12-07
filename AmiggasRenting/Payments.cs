@@ -44,15 +44,15 @@ namespace AmiggasRenting
         {
             string query = @"
     SELECT 
-        u.UnitID AS 'Apartment',
-        t.TenantID AS 'TenantID',
-        t.Name AS 'Tenant Name',
-        t.RegistrationDate AS 'Registration Date',
-        t.ContactNumber AS 'ContactNumber', -- Include contact number in the query
-        u.MonthlyRent AS 'Monthly Rate',
+        u.UnitID AS 'Unit',
+        t.TenantID AS 'ID',
+        t.Name AS 'Name',
+        t.RegistrationDate AS 'Registry',
+        t.ContactNumber AS 'Contact', -- Include contact number in the query
+        u.MonthlyRent AS 'Rate',
         ROUND((julianday('now') - julianday(t.RegistrationDate)) / 30 * u.MonthlyRent 
         - IFNULL((SELECT SUM(p.AmountPaid) FROM Payments p WHERE p.TenantID = t.TenantID), 0), 2) 
-        AS 'Outstanding Balance'
+        AS 'Total Balance'
     FROM Tenants t
     JOIN Units u ON t.TenantID = u.TenantID
     WHERE u.Availability = 0;";
@@ -84,8 +84,8 @@ namespace AmiggasRenting
                 DataGridViewButtonColumn takeFeeButtonColumn = new DataGridViewButtonColumn
                 {
                     Name = "TakeFeeButton",
-                    HeaderText = "Take Fee",
-                    Text = "Take Fee",
+                    HeaderText = "Fee",
+                    Text = "Fee",
                     UseColumnTextForButtonValue = true // Ensures button displays text.
                 };
                 dataPayments.Columns.Add(takeFeeButtonColumn);
@@ -114,10 +114,10 @@ namespace AmiggasRenting
                 if (dataPayments.Columns[e.ColumnIndex].Name == "TakeFeeButton")
                 {
                     // Retrieve the necessary information from the selected row
-                    string tenantName = dataPayments.Rows[e.RowIndex].Cells["Tenant Name"].Value?.ToString();
-                    string apartmentNo = dataPayments.Rows[e.RowIndex].Cells["Apartment"].Value?.ToString();
-                    int tenantID = Convert.ToInt32(dataPayments.Rows[e.RowIndex].Cells["TenantID"].Value); // Assuming TenantID column exists
-                    int unitID = Convert.ToInt32(dataPayments.Rows[e.RowIndex].Cells["Apartment"].Value); // Assuming UnitID column exists
+                    string tenantName = dataPayments.Rows[e.RowIndex].Cells["Name"].Value?.ToString();
+                    string apartmentNo = dataPayments.Rows[e.RowIndex].Cells["Unit"].Value?.ToString();
+                    int tenantID = Convert.ToInt32(dataPayments.Rows[e.RowIndex].Cells["ID"].Value); // Assuming TenantID column exists
+                    int unitID = Convert.ToInt32(dataPayments.Rows[e.RowIndex].Cells["Unit"].Value); // Assuming UnitID column exists
                     decimal totalPaid = 0;
 
                     // SQL query to calculate the total amount paid by this tenant
@@ -173,15 +173,15 @@ namespace AmiggasRenting
                 // Logic for "Receipt" button
                 else if (dataPayments.Columns[e.ColumnIndex].Name == "ReceiptButton")
                 {
-                   
+
                     // Retrieve the necessary information from the selected row
-                    string tenantName = dataPayments.Rows[e.RowIndex].Cells["Tenant Name"].Value?.ToString();
-                    string apartmentNo = dataPayments.Rows[e.RowIndex].Cells["Apartment"].Value?.ToString();
-                    string contactNumber = dataPayments.Rows[e.RowIndex].Cells["ContactNumber"].Value?.ToString(); // Retrieve contact number from the selected row
-                    string registrationDate = dataPayments.Rows[e.RowIndex].Cells["Registration Date"].Value?.ToString();
-                    string monthlyRate = dataPayments.Rows[e.RowIndex].Cells["Monthly Rate"].Value?.ToString();
-                    string outstandingBalance = dataPayments.Rows[e.RowIndex].Cells["Outstanding Balance"].Value?.ToString();
-                    int tenantID = Convert.ToInt32(dataPayments.Rows[e.RowIndex].Cells["TenantID"].Value); // Assuming TenantID column exists
+                    string tenantName = dataPayments.Rows[e.RowIndex].Cells["Name"].Value?.ToString();
+                    string apartmentNo = dataPayments.Rows[e.RowIndex].Cells["Unit"].Value?.ToString();
+                    string contactNumber = dataPayments.Rows[e.RowIndex].Cells["Contact"].Value?.ToString(); // Retrieve contact number from the selected row
+                    string registrationDate = dataPayments.Rows[e.RowIndex].Cells["Registry"].Value?.ToString();
+                    string monthlyRate = dataPayments.Rows[e.RowIndex].Cells["Rate"].Value?.ToString();
+                    string outstandingBalance = dataPayments.Rows[e.RowIndex].Cells["Total Balance"].Value?.ToString();
+                    int tenantID = Convert.ToInt32(dataPayments.Rows[e.RowIndex].Cells["ID"].Value); // Assuming TenantID column exists
 
                     // SQL query to get the latest payment date and total amount paid by this tenant
                     string query = @"
@@ -265,6 +265,11 @@ namespace AmiggasRenting
         private void Payments_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit(); // Exit the application when the form is closed.
+        }
+
+        private void dataPayments_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
