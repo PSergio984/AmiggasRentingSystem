@@ -13,7 +13,7 @@ namespace AmiggasRenting
         // Event handler for Add Tenants button click
         private void btnAddTenants_Click(object sender, EventArgs e)
         {
-            NavigateToForm(AddTenants.Instance); // Reuse or create the form
+            NavigateToForm(AddTenants.Instance);
         }
 
         // Event handler for View Apartments button click
@@ -57,6 +57,21 @@ namespace AmiggasRenting
                 currentForm.Hide();
                 targetForm.FormClosed += (s, args) => currentForm.Show();
             }
+        }
+
+        private void TargetForm_FormClosed(object? sender, FormClosedEventArgs e)
+        {
+            Form? currentForm = this.FindForm();
+            currentForm?.Show();
+        }
+
+        // Helper method to create a new instance of a form
+        private Form CreateNewInstance(Type? formType)
+        {
+            if (formType == null)
+                throw new InvalidOperationException("Target form type is null.");
+
+            return (Form)Activator.CreateInstance(formType);
         }
     }
 }

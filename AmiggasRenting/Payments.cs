@@ -271,5 +271,10 @@ namespace AmiggasRenting
         {
 
         }
+
+        private void Payments_FormClosing_1(object sender, FormClosingEventArgs e)
+        {
+            FormClosingHelper.HandleFormClosing(e);
+        }
     }
 }

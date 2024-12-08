@@ -91,6 +91,7 @@ namespace AmiggasRenting
             dataPayments.HeaderForeColor = Color.White;
             dataPayments.Location = new Point(232, 28);
             dataPayments.Name = "dataPayments";
+            dataPayments.ReadOnly = true;
             dataPayments.RowHeadersVisible = false;
             dataPayments.RowHeadersWidth = 51;
             dataPayments.RowTemplate.Height = 40;
@@ -113,6 +114,7 @@ namespace AmiggasRenting
             Name = "Payments";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Payments";
+            FormClosing += Payments_FormClosing_1;
             FormClosed += Payments_FormClosed;
             Load += Payments_Load;
             ((System.ComponentModel.ISupportInitialize)dataPayments).EndInit();

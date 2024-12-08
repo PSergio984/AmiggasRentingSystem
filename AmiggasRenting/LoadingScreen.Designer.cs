@@ -33,6 +33,8 @@
             lblTitle = new Label();
             pbarLoading = new Bunifu.UI.WinForms.BunifuProgressBar();
             bunifuLoader1 = new Bunifu.UI.WinForms.BunifuLoader();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // lblTitle
@@ -95,11 +97,24 @@
             bunifuLoader1.Thickness = 6;
             bunifuLoader1.Transparent = true;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Dock = DockStyle.Fill;
+            pictureBox1.Image = Properties.Resources.rpVisualsTest;
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1062, 673);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
             // LoadingScreen
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1062, 673);
+            Controls.Add(pictureBox1);
             Controls.Add(bunifuLoader1);
             Controls.Add(pbarLoading);
             Controls.Add(lblTitle);
@@ -111,6 +126,7 @@
             Text = "Loading";
             FormClosed += LoadingScreen_FormClosed;
             Load += LoadingScreen_Load_1;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -119,5 +135,6 @@
         private Label lblTitle;
         private Bunifu.UI.WinForms.BunifuProgressBar pbarLoading;
         private Bunifu.UI.WinForms.BunifuLoader bunifuLoader1;
+        private PictureBox pictureBox1;
     }
 }

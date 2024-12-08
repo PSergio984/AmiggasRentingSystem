@@ -296,6 +296,7 @@
             Name = "AddTenants";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Tenants";
+            FormClosing += AddTenants_FormClosing;
             FormClosed += AddTenants_FormClosed;
             Load += AddTenants_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridTenants).EndInit();

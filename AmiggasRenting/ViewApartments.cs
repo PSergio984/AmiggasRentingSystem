@@ -57,7 +57,7 @@ namespace AmiggasRenting
                 {
                     dataApartments.DataSource = apartmentsTable;
 
-                   
+
                 }
             }
             catch (Exception ex)
@@ -68,7 +68,12 @@ namespace AmiggasRenting
 
         private void dataApartments_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+
+        }
+
+        private void ViewApartments_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            FormClosingHelper.HandleFormClosing(e);
         }
     }
 }

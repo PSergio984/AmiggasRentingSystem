@@ -1,13 +1,13 @@
 ﻿using LoginPage;
 using System;
 using System.Windows.Forms;
-
+using System.Media;
 namespace AmiggasRenting
 {
     public partial class LoadingScreen : Form
     {
         private System.Windows.Forms.Timer loadingTimer; // Use System.Windows.Forms.Timer
-
+        private SoundPlayer soundPlayer; // SoundPlayer object for playing the sound
         public LoadingScreen()
         {
             InitializeComponent();
@@ -15,9 +15,14 @@ namespace AmiggasRenting
             // Initialize the Timer
             loadingTimer = new System.Windows.Forms.Timer
             {
-                Interval = 100 // Timer ticks every 100 milliseconds
+                Interval = 500 // Timer ticks every 100 milliseconds
             };
             loadingTimer.Tick += LoadingTimer_Tick; // Attach the Tick event
+            soundPlayer = new SoundPlayer("loadingScreen.wav");
+            soundPlayer.Play();
+
+
+
         }
 
 
@@ -26,11 +31,13 @@ namespace AmiggasRenting
             // Check if progress bar value is less than the maximum
             if (pbarLoading.Value < pbarLoading.Maximum)
             {
+               
                 pbarLoading.Value += 5; // Increment progress bar by 5%
             }
             else
             {
                 // Stop the timer when the progress reaches 100%
+                soundPlayer.Stop();// Stop the sound
                 loadingTimer.Stop();
 
                 // Open the LoginPageForm
@@ -61,6 +68,9 @@ namespace AmiggasRenting
             //Application.Exit(); // Exit the application when the form is closed
         }
 
-        
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

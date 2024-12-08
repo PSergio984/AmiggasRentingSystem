@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace AmiggasRenting
 {
-    
+
     public partial class HomePage : Form
     {
         DatabaseManager dbManager = new DatabaseManager();
@@ -24,6 +24,7 @@ namespace AmiggasRenting
         {
             InitializeComponent();
         }
+
         private void HomePage_Activated(object sender, EventArgs e)
         {
             UpdateStatistics();// Load payment data when the form is activated.
@@ -65,7 +66,7 @@ namespace AmiggasRenting
         }
 
 
-     
+
         private void navigationControl1_Load(object sender, EventArgs e)
         {
             // Handle navigation control load event
@@ -73,7 +74,12 @@ namespace AmiggasRenting
 
         private void HomePage_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+
+        }
+
+        private void HomePage_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            FormClosingHelper.HandleFormClosing(e);
         }
     }
 }

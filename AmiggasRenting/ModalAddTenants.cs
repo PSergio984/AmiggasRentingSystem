@@ -190,27 +190,36 @@ namespace AmiggasRenting
 
             if (tenantID.HasValue)
             {
+                int currentUnitID = GetCurrentTenantUnitID(tenantID.Value);
+
                 query = @"
-        UPDATE Tenants 
-        SET Name = @Name, Age = @Age, Birthday = @Birthday, ContactNumber = @ContactNumber, RegistrationDate = @RegistrationDate 
-        WHERE TenantID = @TenantID;
-        UPDATE Units 
-        SET TenantID = NULL 
-        WHERE TenantID = @TenantID;
-        UPDATE Units 
-        SET TenantID = @TenantID 
-        WHERE UnitID = @UnitID";
+    UPDATE Tenants 
+    SET Name = @Name, Age = @Age, Birthday = @Birthday, ContactNumber = @ContactNumber, RegistrationDate = @RegistrationDate 
+    WHERE TenantID = @TenantID;
+    UPDATE Units 
+    SET TenantID = NULL, Availability = 1
+    WHERE TenantID = @TenantID;
+    UPDATE Units 
+    SET TenantID = @TenantID, Availability = 0
+    WHERE UnitID = @UnitID;
+    UPDATE Units 
+    SET TenantID = NULL, Availability = 1
+    WHERE UnitID = @CurrentUnitID";
                 parameters.Add("@TenantID", tenantID.Value);
+                parameters.Add("@CurrentUnitID", currentUnitID);
             }
             else
             {
                 query = @"
-        INSERT INTO Tenants (Name, Age, Birthday, ContactNumber, RegistrationDate) 
-        VALUES (@Name, @Age, @Birthday, @ContactNumber, @RegistrationDate);
-        UPDATE Units 
-        SET TenantID = (SELECT last_insert_rowid()) 
-        WHERE UnitID = @UnitID";
+    INSERT INTO Tenants (Name, Age, Birthday, ContactNumber, RegistrationDate) 
+    VALUES (@Name, @Age, @Birthday, @ContactNumber, @RegistrationDate);
+    UPDATE Units 
+    SET TenantID = (SELECT last_insert_rowid()), Availability = 0
+    WHERE UnitID = @UnitID;
+    INSERT INTO Payments (TenantID, UnitID, PaymentDate, AmountPaid) 
+    VALUES ((SELECT last_insert_rowid()), @UnitID, @RegistrationDate, 0)";
             }
+
 
             try
             {
@@ -227,8 +236,6 @@ namespace AmiggasRenting
                 MessageBox.Show($"An error occurred while saving the tenant: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-
 
 
 
@@ -260,7 +267,7 @@ namespace AmiggasRenting
         }
         private void btnCancel_Click_1(object sender, EventArgs e)
         {
-            ModalCancel_Timer.Start();   
+            ModalCancel_Timer.Start();
         }
         private void ModalCancel_Timer_Tick(object sender, EventArgs e)
         {
@@ -286,6 +293,21 @@ namespace AmiggasRenting
         private void numApartment_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtContact_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Allow digits (0-9), backspace, and optional decimal point
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)8 && e.KeyChar != '.')
+            {
+                e.Handled = true; // Prevent the character from being entered
+            }
+
+            // Optionally, prevent multiple decimal points
+            if (e.KeyChar == '.' && this.txtContact.Text.Contains("."))
+            {
+                e.Handled = true; // Prevent another decimal point
+            }
         }
     }
 }

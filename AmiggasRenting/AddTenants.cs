@@ -31,7 +31,7 @@ namespace AmiggasRenting
         }
         public static int parentX, parentY;
 
-       
+
         // Method to load tenant data from the database into the DataGridView
         public void LoadTenants(string searchTerm = "")
         {
@@ -230,6 +230,11 @@ namespace AmiggasRenting
                 modal.ShowDialog();
                 modalBackground.Dispose();
             }
+        }
+
+        private void AddTenants_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            FormClosingHelper.HandleFormClosing(e);
         }
     }
 }

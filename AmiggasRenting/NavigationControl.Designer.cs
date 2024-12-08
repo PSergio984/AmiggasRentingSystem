@@ -40,7 +40,6 @@
             btnTenants = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             btnDashboard = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            lblUser = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)bunifuPictureBox1).BeginInit();
             SuspendLayout();
@@ -62,7 +61,6 @@
             panel1.Controls.Add(btnTenants);
             panel1.Controls.Add(btnDashboard);
             panel1.Controls.Add(bunifuPictureBox1);
-            panel1.Controls.Add(lblUser);
             panel1.Location = new Point(8, 7);
             panel1.Name = "panel1";
             panel1.Size = new Size(187, 550);
@@ -155,7 +153,7 @@
             btnPayments.TextMarginLeft = 0;
             btnPayments.TextPadding = new Padding(0);
             btnPayments.UseDefaultRadiusAndThickness = true;
-            btnPayments.Click += this.btnPayments_Click;
+            btnPayments.Click += btnPayments_Click;
             // 
             // btnApartments
             // 
@@ -440,16 +438,6 @@
             bunifuPictureBox1.TabStop = false;
             bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // lblUser
-            // 
-            lblUser.AutoSize = true;
-            lblUser.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblUser.Location = new Point(44, 115);
-            lblUser.Name = "lblUser";
-            lblUser.Size = new Size(103, 28);
-            lblUser.TabIndex = 6;
-            lblUser.Text = "UserName";
-            // 
             // NavigationControl
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -459,7 +447,6 @@
             Name = "NavigationControl";
             Size = new Size(204, 566);
             panel1.ResumeLayout(false);
-            panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)bunifuPictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -469,7 +456,6 @@
 
         private ToolStrip toolStrip1;
         private Panel panel1;
-        private Label lblUser;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnDashboard;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnTenants;

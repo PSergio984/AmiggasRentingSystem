@@ -83,8 +83,10 @@ namespace LoginPage
                         {
                             MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             // Navigate to the HomePage using the singleton instance
+                            HomePage.Instance.lblUser.Text = email;
                             HomePage.Instance.Show();
-                            this.Hide(); // Dispose of the current form
+                            
+                            this.Dispose(); // Dispose of the current form
 
 
                         }
@@ -123,26 +125,9 @@ namespace LoginPage
 
         private void LoginPageForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (isExiting) return;  // Prevent handling if already in the process of exiting
-
-            DialogResult result = MessageBox.Show(
-                "Are you sure you want to close the program?",
-                "Confirm Close",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question
-            );
-
-            if (result == DialogResult.Yes)
-            {
-                isExiting = true;  // Set the flag to true to prevent re-entering this block
-                MessageBox.Show("Thank you for using our program!", "Goodbye", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Application.Exit();
-            }
-            else
-            {
-                e.Cancel = true; // Cancel the close event
-            }
+            FormClosingHelper.HandleFormClosing(e);
         }
+
 
 
         private void btnShow_Click_1(object sender, EventArgs e)

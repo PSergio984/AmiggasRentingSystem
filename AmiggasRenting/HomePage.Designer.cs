@@ -42,6 +42,7 @@
             bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             bunifuPictureBox3 = new Bunifu.UI.WinForms.BunifuPictureBox();
             bunifuPictureBox4 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            lblUser = new Label();
             ((System.ComponentModel.ISupportInitialize)picTenants).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bunifuPictureBox1).BeginInit();
@@ -187,11 +188,22 @@
             bunifuPictureBox4.TabStop = false;
             bunifuPictureBox4.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
+            // lblUser
+            // 
+            lblUser.AutoSize = true;
+            lblUser.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblUser.Location = new Point(485, 50);
+            lblUser.Name = "lblUser";
+            lblUser.Size = new Size(103, 28);
+            lblUser.TabIndex = 20;
+            lblUser.Text = "UserName";
+            // 
             // HomePage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1062, 673);
+            Controls.Add(lblUser);
             Controls.Add(bunifuPictureBox4);
             Controls.Add(bunifuPictureBox3);
             Controls.Add(bunifuPictureBox1);
@@ -210,6 +222,7 @@
             Name = "HomePage";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Home Page";
+            FormClosing += HomePage_FormClosing;
             FormClosed += HomePage_FormClosed;
             Load += HomePage_Load;
             ((System.ComponentModel.ISupportInitialize)picTenants).EndInit();
@@ -220,6 +233,7 @@
             ResumeLayout(false);
             PerformLayout();
         }
+
 
         #endregion
         private Label label1;
@@ -235,5 +249,7 @@
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox3;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox4;
+        public Label lblUser;
+
     }
 }

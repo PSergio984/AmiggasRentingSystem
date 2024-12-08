@@ -118,6 +118,7 @@
             Name = "ViewApartments";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Apartments";
+            FormClosing += ViewApartments_FormClosing;
             Load += ViewApartments_Load;
             ((System.ComponentModel.ISupportInitialize)dataApartments).EndInit();
             ResumeLayout(false);
