@@ -236,7 +236,7 @@
             btnLogin.AllowMouseEffects = true;
             btnLogin.AllowToggling = true;
             btnLogin.AnimationSpeed = 200;
-            btnLogin.AutoGenerateColors = true;
+            btnLogin.AutoGenerateColors = false;
             btnLogin.AutoRoundBorders = true;
             btnLogin.AutoSizeLeftIcon = true;
             btnLogin.AutoSizeRightIcon = true;
@@ -287,7 +287,7 @@
             btnLogin.OnDisabledState.ForeColor = Color.FromArgb(168, 160, 168);
             btnLogin.OnDisabledState.IconLeftImage = null;
             btnLogin.OnDisabledState.IconRightImage = null;
-            btnLogin.onHoverState.BorderColor = Color.FromArgb(220, 220, 114);
+            btnLogin.onHoverState.BorderColor = Color.Black;
             btnLogin.onHoverState.BorderRadius = 20;
             btnLogin.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             btnLogin.onHoverState.BorderThickness = 1;

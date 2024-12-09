@@ -49,7 +49,7 @@
             toolStrip1.ImageScalingSize = new Size(20, 20);
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(204, 25);
+            toolStrip1.Size = new Size(178, 25);
             toolStrip1.TabIndex = 0;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -61,9 +61,10 @@
             panel1.Controls.Add(btnTenants);
             panel1.Controls.Add(btnDashboard);
             panel1.Controls.Add(bunifuPictureBox1);
-            panel1.Location = new Point(8, 7);
+            panel1.Location = new Point(7, 5);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(187, 550);
+            panel1.Size = new Size(164, 412);
             panel1.TabIndex = 6;
             // 
             // btnPayments
@@ -106,13 +107,14 @@
             btnPayments.IconRightPadding = new Padding(3, 3, 7, 3);
             btnPayments.IconSize = 25;
             btnPayments.IdleBorderColor = Color.DodgerBlue;
-            btnPayments.IdleBorderRadius = 34;
+            btnPayments.IdleBorderRadius = 25;
             btnPayments.IdleBorderThickness = 1;
             btnPayments.IdleFillColor = Color.DodgerBlue;
             btnPayments.IdleIconLeftImage = null;
             btnPayments.IdleIconRightImage = null;
             btnPayments.IndicateFocus = false;
-            btnPayments.Location = new Point(8, 343);
+            btnPayments.Location = new Point(20, 330);
+            btnPayments.Margin = new Padding(3, 2, 3, 2);
             btnPayments.Name = "btnPayments";
             btnPayments.OnDisabledState.BorderColor = Color.FromArgb(191, 191, 191);
             btnPayments.OnDisabledState.BorderRadius = 1;
@@ -146,7 +148,7 @@
             btnPayments.OnPressedState.ForeColor = Color.White;
             btnPayments.OnPressedState.IconLeftImage = null;
             btnPayments.OnPressedState.IconRightImage = null;
-            btnPayments.Size = new Size(161, 36);
+            btnPayments.Size = new Size(141, 27);
             btnPayments.TabIndex = 11;
             btnPayments.TextAlign = ContentAlignment.MiddleCenter;
             btnPayments.TextAlignment = HorizontalAlignment.Center;
@@ -195,13 +197,14 @@
             btnApartments.IconRightPadding = new Padding(3, 3, 7, 3);
             btnApartments.IconSize = 25;
             btnApartments.IdleBorderColor = Color.DodgerBlue;
-            btnApartments.IdleBorderRadius = 40;
+            btnApartments.IdleBorderRadius = 30;
             btnApartments.IdleBorderThickness = 1;
             btnApartments.IdleFillColor = Color.DodgerBlue;
             btnApartments.IdleIconLeftImage = null;
             btnApartments.IdleIconRightImage = null;
             btnApartments.IndicateFocus = false;
-            btnApartments.Location = new Point(8, 278);
+            btnApartments.Location = new Point(20, 245);
+            btnApartments.Margin = new Padding(3, 2, 3, 2);
             btnApartments.Name = "btnApartments";
             btnApartments.OnDisabledState.BorderColor = Color.FromArgb(191, 191, 191);
             btnApartments.OnDisabledState.BorderRadius = 1;
@@ -235,7 +238,7 @@
             btnApartments.OnPressedState.ForeColor = Color.White;
             btnApartments.OnPressedState.IconLeftImage = null;
             btnApartments.OnPressedState.IconRightImage = null;
-            btnApartments.Size = new Size(176, 42);
+            btnApartments.Size = new Size(126, 32);
             btnApartments.TabIndex = 10;
             btnApartments.TextAlign = ContentAlignment.MiddleCenter;
             btnApartments.TextAlignment = HorizontalAlignment.Center;
@@ -284,13 +287,14 @@
             btnTenants.IconRightPadding = new Padding(3, 3, 7, 3);
             btnTenants.IconSize = 25;
             btnTenants.IdleBorderColor = Color.DodgerBlue;
-            btnTenants.IdleBorderRadius = 33;
+            btnTenants.IdleBorderRadius = 24;
             btnTenants.IdleBorderThickness = 1;
             btnTenants.IdleFillColor = Color.DodgerBlue;
             btnTenants.IdleIconLeftImage = null;
             btnTenants.IdleIconRightImage = null;
             btnTenants.IndicateFocus = false;
-            btnTenants.Location = new Point(21, 223);
+            btnTenants.Location = new Point(24, 186);
+            btnTenants.Margin = new Padding(3, 2, 3, 2);
             btnTenants.Name = "btnTenants";
             btnTenants.OnDisabledState.BorderColor = Color.FromArgb(191, 191, 191);
             btnTenants.OnDisabledState.BorderRadius = 1;
@@ -324,7 +328,7 @@
             btnTenants.OnPressedState.ForeColor = Color.White;
             btnTenants.OnPressedState.IconLeftImage = null;
             btnTenants.OnPressedState.IconRightImage = null;
-            btnTenants.Size = new Size(140, 35);
+            btnTenants.Size = new Size(122, 26);
             btnTenants.TabIndex = 9;
             btnTenants.TextAlign = ContentAlignment.MiddleCenter;
             btnTenants.TextAlignment = HorizontalAlignment.Center;
@@ -373,13 +377,14 @@
             btnDashboard.IconRightPadding = new Padding(3, 3, 7, 3);
             btnDashboard.IconSize = 25;
             btnDashboard.IdleBorderColor = Color.DodgerBlue;
-            btnDashboard.IdleBorderRadius = 47;
+            btnDashboard.IdleBorderRadius = 35;
             btnDashboard.IdleBorderThickness = 1;
             btnDashboard.IdleFillColor = Color.DodgerBlue;
             btnDashboard.IdleIconLeftImage = null;
             btnDashboard.IdleIconRightImage = null;
             btnDashboard.IndicateFocus = false;
-            btnDashboard.Location = new Point(21, 168);
+            btnDashboard.Location = new Point(18, 108);
+            btnDashboard.Margin = new Padding(3, 2, 3, 2);
             btnDashboard.Name = "btnDashboard";
             btnDashboard.OnDisabledState.BorderColor = Color.FromArgb(191, 191, 191);
             btnDashboard.OnDisabledState.BorderRadius = 1;
@@ -413,7 +418,7 @@
             btnDashboard.OnPressedState.ForeColor = Color.White;
             btnDashboard.OnPressedState.IconLeftImage = null;
             btnDashboard.OnPressedState.IconRightImage = null;
-            btnDashboard.Size = new Size(146, 49);
+            btnDashboard.Size = new Size(128, 37);
             btnDashboard.TabIndex = 8;
             btnDashboard.TextAlign = ContentAlignment.MiddleCenter;
             btnDashboard.TextAlignment = HorizontalAlignment.Center;
@@ -427,12 +432,13 @@
             bunifuPictureBox1.AllowFocused = false;
             bunifuPictureBox1.Anchor = AnchorStyles.None;
             bunifuPictureBox1.AutoSizeHeight = true;
-            bunifuPictureBox1.BorderRadius = 44;
+            bunifuPictureBox1.BorderRadius = 38;
             bunifuPictureBox1.Image = (Image)resources.GetObject("bunifuPictureBox1.Image");
             bunifuPictureBox1.IsCircle = true;
-            bunifuPictureBox1.Location = new Point(44, 21);
+            bunifuPictureBox1.Location = new Point(41, 13);
+            bunifuPictureBox1.Margin = new Padding(3, 2, 3, 2);
             bunifuPictureBox1.Name = "bunifuPictureBox1";
-            bunifuPictureBox1.Size = new Size(88, 88);
+            bunifuPictureBox1.Size = new Size(77, 77);
             bunifuPictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             bunifuPictureBox1.TabIndex = 7;
             bunifuPictureBox1.TabStop = false;
@@ -440,12 +446,13 @@
             // 
             // NavigationControl
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(panel1);
             Controls.Add(toolStrip1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "NavigationControl";
-            Size = new Size(204, 566);
+            Size = new Size(178, 424);
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)bunifuPictureBox1).EndInit();
             ResumeLayout(false);
