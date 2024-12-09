@@ -176,5 +176,26 @@ namespace AmiggasRenting
                 MessageBox.Show("Receipt saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void dataReceipt_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            dataReceipt.GridColor = Color.Yellow;
+            dataReceipt.HeaderBackColor = Color.Gold;
+            dataReceipt.HeaderForeColor = Color.Black;
+
+            dataReceipt.ColumnHeadersDefaultCellStyle.BackColor = Color.Gold;
+            dataReceipt.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
+
+            dataReceipt.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.Gold;
+            dataReceipt.ColumnHeadersDefaultCellStyle.SelectionForeColor = Color.Black;
+
+            dataReceipt.RowsDefaultCellStyle.SelectionBackColor = Color.Gold;
+            dataReceipt.RowsDefaultCellStyle.SelectionForeColor = Color.Black;
+        }
+
+        private void lblDate_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

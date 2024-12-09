@@ -8,7 +8,7 @@ namespace AmiggasRenting
     public partial class modalTakeFee : Form
     {
         private DatabaseManager dbManager;
-        public int? tenantID,unitID; // Nullable int to store tenant ID 
+        public int? tenantID, unitID; // Nullable int to store tenant ID 
         private int i = 0;
         public modalTakeFee(int tenantID)
         {
@@ -142,6 +142,11 @@ namespace AmiggasRenting
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblAmountPaid_Click(object sender, EventArgs e)
         {
 
         }

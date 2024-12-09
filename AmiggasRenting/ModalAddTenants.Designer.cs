@@ -63,36 +63,40 @@
             // lblName
             // 
             lblName.AutoSize = true;
-            lblName.Location = new Point(123, 77);
+            lblName.Font = new Font("Roboto Black", 12F, FontStyle.Bold);
+            lblName.Location = new Point(70, 42);
             lblName.Name = "lblName";
-            lblName.Size = new Size(56, 20);
+            lblName.Size = new Size(61, 19);
             lblName.TabIndex = 4;
             lblName.Text = "Name: ";
             // 
             // lblAge
             // 
             lblAge.AutoSize = true;
-            lblAge.Location = new Point(123, 156);
+            lblAge.Font = new Font("Roboto Black", 12F, FontStyle.Bold);
+            lblAge.Location = new Point(70, 83);
             lblAge.Name = "lblAge";
-            lblAge.Size = new Size(39, 20);
+            lblAge.Size = new Size(43, 19);
             lblAge.TabIndex = 5;
             lblAge.Text = "Age:";
             // 
             // lblBirthday
             // 
             lblBirthday.AutoSize = true;
-            lblBirthday.Location = new Point(123, 233);
+            lblBirthday.Font = new Font("Roboto Black", 12F, FontStyle.Bold);
+            lblBirthday.Location = new Point(70, 127);
             lblBirthday.Name = "lblBirthday";
-            lblBirthday.Size = new Size(67, 20);
+            lblBirthday.Size = new Size(75, 19);
             lblBirthday.TabIndex = 6;
             lblBirthday.Text = "Birthday:";
             // 
             // lblContact
             // 
             lblContact.AutoSize = true;
-            lblContact.Location = new Point(109, 300);
+            lblContact.Font = new Font("Roboto Black", 12F, FontStyle.Bold);
+            lblContact.Location = new Point(70, 179);
             lblContact.Name = "lblContact";
-            lblContact.Size = new Size(121, 20);
+            lblContact.Size = new Size(134, 19);
             lblContact.TabIndex = 7;
             lblContact.Text = "Contact Number:";
             // 
@@ -104,19 +108,23 @@
             // lblRegistration
             // 
             lblRegistration.AutoSize = true;
-            lblRegistration.Location = new Point(93, 355);
+            lblRegistration.Font = new Font("Roboto Black", 12F, FontStyle.Bold);
+            lblRegistration.Location = new Point(70, 227);
             lblRegistration.Name = "lblRegistration";
-            lblRegistration.Size = new Size(125, 20);
+            lblRegistration.Size = new Size(136, 19);
             lblRegistration.TabIndex = 13;
             lblRegistration.Text = "Registration Date";
             // 
             // numApartment
             // 
-            numApartment.Location = new Point(584, 90);
+            numApartment.BackColor = Color.White;
+            numApartment.Font = new Font("Roboto Black", 9F, FontStyle.Bold);
+            numApartment.Location = new Point(212, 267);
+            numApartment.Margin = new Padding(3, 2, 3, 2);
             numApartment.Maximum = new decimal(new int[] { 20, 0, 0, 0 });
             numApartment.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             numApartment.Name = "numApartment";
-            numApartment.Size = new Size(150, 27);
+            numApartment.Size = new Size(241, 22);
             numApartment.TabIndex = 14;
             numApartment.Value = new decimal(new int[] { 1, 0, 0, 0 });
             numApartment.ValueChanged += numApartment_ValueChanged;
@@ -124,18 +132,23 @@
             // lblApartment
             // 
             lblApartment.AutoSize = true;
-            lblApartment.Location = new Point(471, 92);
+            lblApartment.Font = new Font("Roboto Black", 12F, FontStyle.Bold);
+            lblApartment.Location = new Point(70, 267);
             lblApartment.Name = "lblApartment";
-            lblApartment.Size = new Size(110, 20);
+            lblApartment.Size = new Size(122, 19);
             lblApartment.TabIndex = 15;
             lblApartment.Text = "Apartment No.:";
             // 
             // numAge
             // 
-            numAge.Location = new Point(224, 156);
+            numAge.BackColor = Color.White;
+            numAge.BorderStyle = BorderStyle.FixedSingle;
+            numAge.Font = new Font("Roboto Black", 9F, FontStyle.Bold);
+            numAge.Location = new Point(212, 79);
+            numAge.Margin = new Padding(3, 2, 3, 2);
             numAge.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             numAge.Name = "numAge";
-            numAge.Size = new Size(150, 27);
+            numAge.Size = new Size(241, 22);
             numAge.TabIndex = 16;
             numAge.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
@@ -149,15 +162,15 @@
             txtName.AutoSizeHeight = true;
             txtName.BackColor = Color.Transparent;
             txtName.BackgroundImage = (Image)resources.GetObject("txtName.BackgroundImage");
-            txtName.BorderColorActive = Color.DodgerBlue;
+            txtName.BorderColorActive = Color.Gold;
             txtName.BorderColorDisabled = Color.FromArgb(204, 204, 204);
-            txtName.BorderColorHover = Color.FromArgb(105, 181, 255);
-            txtName.BorderColorIdle = Color.Silver;
+            txtName.BorderColorHover = Color.Black;
+            txtName.BorderColorIdle = Color.FromArgb(192, 192, 0);
             txtName.BorderRadius = 1;
             txtName.BorderThickness = 1;
             txtName.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
             txtName.CharacterCasing = CharacterCasing.Normal;
-            txtName.DefaultFont = new Font("Segoe UI", 9.25F);
+            txtName.DefaultFont = new Font("Roboto Black", 9F, FontStyle.Bold);
             txtName.DefaultText = "";
             txtName.FillColor = Color.White;
             txtName.HideSelection = true;
@@ -166,13 +179,14 @@
             txtName.IconPadding = 10;
             txtName.IconRight = null;
             txtName.IconRightCursor = Cursors.IBeam;
-            txtName.Location = new Point(192, 77);
+            txtName.Location = new Point(212, 25);
+            txtName.Margin = new Padding(3, 2, 3, 2);
             txtName.MaxLength = 32767;
             txtName.MinimumSize = new Size(1, 1);
             txtName.Modified = false;
             txtName.Multiline = false;
             txtName.Name = "txtName";
-            stateProperties1.BorderColor = Color.DodgerBlue;
+            stateProperties1.BorderColor = Color.Gold;
             stateProperties1.FillColor = Color.Empty;
             stateProperties1.ForeColor = Color.Empty;
             stateProperties1.PlaceholderForeColor = Color.Empty;
@@ -182,17 +196,17 @@
             stateProperties2.ForeColor = Color.FromArgb(109, 109, 109);
             stateProperties2.PlaceholderForeColor = Color.DarkGray;
             txtName.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = Color.FromArgb(105, 181, 255);
+            stateProperties3.BorderColor = Color.Black;
             stateProperties3.FillColor = Color.Empty;
             stateProperties3.ForeColor = Color.Empty;
             stateProperties3.PlaceholderForeColor = Color.Empty;
             txtName.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = Color.Silver;
+            stateProperties4.BorderColor = Color.FromArgb(192, 192, 0);
             stateProperties4.FillColor = Color.White;
             stateProperties4.ForeColor = Color.Empty;
             stateProperties4.PlaceholderForeColor = Color.Empty;
             txtName.OnIdleState = stateProperties4;
-            txtName.Padding = new Padding(3);
+            txtName.Padding = new Padding(3, 2, 3, 2);
             txtName.PasswordChar = '\0';
             txtName.PlaceholderForeColor = Color.Silver;
             txtName.PlaceholderText = "Enter Name";
@@ -202,7 +216,7 @@
             txtName.SelectionLength = 0;
             txtName.SelectionStart = 0;
             txtName.ShortcutsEnabled = true;
-            txtName.Size = new Size(169, 35);
+            txtName.Size = new Size(241, 34);
             txtName.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             txtName.TabIndex = 17;
             txtName.TextAlign = HorizontalAlignment.Left;
@@ -223,15 +237,15 @@
             txtContact.AutoSizeHeight = true;
             txtContact.BackColor = Color.Transparent;
             txtContact.BackgroundImage = (Image)resources.GetObject("txtContact.BackgroundImage");
-            txtContact.BorderColorActive = Color.DodgerBlue;
+            txtContact.BorderColorActive = Color.Gold;
             txtContact.BorderColorDisabled = Color.FromArgb(204, 204, 204);
-            txtContact.BorderColorHover = Color.FromArgb(105, 181, 255);
-            txtContact.BorderColorIdle = Color.Silver;
+            txtContact.BorderColorHover = Color.Black;
+            txtContact.BorderColorIdle = Color.FromArgb(192, 192, 0);
             txtContact.BorderRadius = 1;
             txtContact.BorderThickness = 1;
             txtContact.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
             txtContact.CharacterCasing = CharacterCasing.Normal;
-            txtContact.DefaultFont = new Font("Segoe UI", 9.25F);
+            txtContact.DefaultFont = new Font("Roboto Black", 9F, FontStyle.Bold);
             txtContact.DefaultText = "";
             txtContact.FillColor = Color.White;
             txtContact.HideSelection = true;
@@ -240,13 +254,14 @@
             txtContact.IconPadding = 10;
             txtContact.IconRight = null;
             txtContact.IconRightCursor = Cursors.IBeam;
-            txtContact.Location = new Point(255, 289);
+            txtContact.Location = new Point(212, 162);
+            txtContact.Margin = new Padding(3, 2, 3, 2);
             txtContact.MaxLength = 32767;
             txtContact.MinimumSize = new Size(1, 1);
             txtContact.Modified = false;
             txtContact.Multiline = false;
             txtContact.Name = "txtContact";
-            stateProperties5.BorderColor = Color.DodgerBlue;
+            stateProperties5.BorderColor = Color.Gold;
             stateProperties5.FillColor = Color.Empty;
             stateProperties5.ForeColor = Color.Empty;
             stateProperties5.PlaceholderForeColor = Color.Empty;
@@ -256,17 +271,17 @@
             stateProperties6.ForeColor = Color.FromArgb(109, 109, 109);
             stateProperties6.PlaceholderForeColor = Color.DarkGray;
             txtContact.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = Color.FromArgb(105, 181, 255);
+            stateProperties7.BorderColor = Color.Black;
             stateProperties7.FillColor = Color.Empty;
             stateProperties7.ForeColor = Color.Empty;
             stateProperties7.PlaceholderForeColor = Color.Empty;
             txtContact.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = Color.Silver;
+            stateProperties8.BorderColor = Color.FromArgb(192, 192, 0);
             stateProperties8.FillColor = Color.White;
             stateProperties8.ForeColor = Color.Empty;
             stateProperties8.PlaceholderForeColor = Color.Empty;
             txtContact.OnIdleState = stateProperties8;
-            txtContact.Padding = new Padding(3);
+            txtContact.Padding = new Padding(3, 2, 3, 2);
             txtContact.PasswordChar = '\0';
             txtContact.PlaceholderForeColor = Color.Silver;
             txtContact.PlaceholderText = "Enter Contact Number";
@@ -276,7 +291,7 @@
             txtContact.SelectionLength = 0;
             txtContact.SelectionStart = 0;
             txtContact.ShortcutsEnabled = true;
-            txtContact.Size = new Size(195, 31);
+            txtContact.Size = new Size(241, 34);
             txtContact.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             txtContact.TabIndex = 18;
             txtContact.TextAlign = HorizontalAlignment.Left;
@@ -290,10 +305,10 @@
             // 
             // dateBirthday
             // 
-            dateBirthday.BackColor = Color.Transparent;
-            dateBirthday.BorderColor = Color.Silver;
+            dateBirthday.BackColor = Color.White;
+            dateBirthday.BorderColor = Color.FromArgb(192, 192, 0);
             dateBirthday.BorderRadius = 1;
-            dateBirthday.Color = Color.Silver;
+            dateBirthday.Color = Color.FromArgb(192, 192, 0);
             dateBirthday.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
             dateBirthday.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
             dateBirthday.DisabledColor = Color.Gray;
@@ -301,24 +316,25 @@
             dateBirthday.DPHeight = 0;
             dateBirthday.DropDownAlign = LeftRightAlignment.Right;
             dateBirthday.FillDatePicker = false;
-            dateBirthday.Font = new Font("Segoe UI", 9F);
+            dateBirthday.Font = new Font("Roboto Black", 9F, FontStyle.Bold);
             dateBirthday.ForeColor = Color.Black;
             dateBirthday.Icon = (Image)resources.GetObject("dateBirthday.Icon");
             dateBirthday.IconColor = Color.Gray;
             dateBirthday.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             dateBirthday.LeftTextMargin = 5;
-            dateBirthday.Location = new Point(224, 233);
-            dateBirthday.MinimumSize = new Size(0, 32);
+            dateBirthday.Location = new Point(212, 114);
+            dateBirthday.Margin = new Padding(3, 2, 3, 2);
+            dateBirthday.MinimumSize = new Size(4, 32);
             dateBirthday.Name = "dateBirthday";
-            dateBirthday.Size = new Size(275, 32);
+            dateBirthday.Size = new Size(241, 32);
             dateBirthday.TabIndex = 19;
             // 
             // dateRegistration
             // 
-            dateRegistration.BackColor = Color.Transparent;
-            dateRegistration.BorderColor = Color.Silver;
+            dateRegistration.BackColor = Color.White;
+            dateRegistration.BorderColor = Color.FromArgb(192, 192, 0);
             dateRegistration.BorderRadius = 1;
-            dateRegistration.Color = Color.Silver;
+            dateRegistration.Color = Color.FromArgb(192, 192, 0);
             dateRegistration.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
             dateRegistration.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
             dateRegistration.DisabledColor = Color.Gray;
@@ -326,16 +342,17 @@
             dateRegistration.DPHeight = 0;
             dateRegistration.DropDownAlign = LeftRightAlignment.Right;
             dateRegistration.FillDatePicker = false;
-            dateRegistration.Font = new Font("Segoe UI", 9F);
+            dateRegistration.Font = new Font("Roboto Black", 9F, FontStyle.Bold);
             dateRegistration.ForeColor = Color.Black;
             dateRegistration.Icon = (Image)resources.GetObject("dateRegistration.Icon");
             dateRegistration.IconColor = Color.Gray;
             dateRegistration.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             dateRegistration.LeftTextMargin = 5;
-            dateRegistration.Location = new Point(235, 355);
-            dateRegistration.MinimumSize = new Size(0, 32);
+            dateRegistration.Location = new Point(212, 221);
+            dateRegistration.Margin = new Padding(3, 2, 3, 2);
+            dateRegistration.MinimumSize = new Size(4, 32);
             dateRegistration.Name = "dateRegistration";
-            dateRegistration.Size = new Size(275, 32);
+            dateRegistration.Size = new Size(241, 32);
             dateRegistration.TabIndex = 20;
             // 
             // btnAdd
@@ -344,12 +361,12 @@
             btnAdd.AllowMouseEffects = true;
             btnAdd.AllowToggling = false;
             btnAdd.AnimationSpeed = 200;
-            btnAdd.AutoGenerateColors = true;
+            btnAdd.AutoGenerateColors = false;
             btnAdd.AutoRoundBorders = true;
             btnAdd.AutoSizeLeftIcon = true;
             btnAdd.AutoSizeRightIcon = true;
             btnAdd.BackColor = Color.Transparent;
-            btnAdd.BackColor1 = Color.DodgerBlue;
+            btnAdd.BackColor1 = Color.Gold;
             btnAdd.BackgroundImage = (Image)resources.GetObject("btnAdd.BackgroundImage");
             btnAdd.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             btnAdd.ButtonText = "Add";
@@ -367,7 +384,7 @@
             btnAdd.DisabledForecolor = Color.FromArgb(168, 160, 168);
             btnAdd.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
             btnAdd.Font = new Font("Segoe UI", 9F);
-            btnAdd.ForeColor = Color.White;
+            btnAdd.ForeColor = Color.Black;
             btnAdd.IconLeftAlign = ContentAlignment.MiddleLeft;
             btnAdd.IconLeftCursor = Cursors.Default;
             btnAdd.IconLeftPadding = new Padding(11, 3, 3, 3);
@@ -377,14 +394,15 @@
             btnAdd.IconRightCursor = Cursors.Default;
             btnAdd.IconRightPadding = new Padding(3, 3, 7, 3);
             btnAdd.IconSize = 25;
-            btnAdd.IdleBorderColor = Color.DodgerBlue;
-            btnAdd.IdleBorderRadius = 32;
+            btnAdd.IdleBorderColor = Color.FromArgb(192, 192, 0);
+            btnAdd.IdleBorderRadius = 24;
             btnAdd.IdleBorderThickness = 1;
-            btnAdd.IdleFillColor = Color.DodgerBlue;
+            btnAdd.IdleFillColor = Color.Gold;
             btnAdd.IdleIconLeftImage = null;
             btnAdd.IdleIconRightImage = null;
             btnAdd.IndicateFocus = false;
-            btnAdd.Location = new Point(489, 404);
+            btnAdd.Location = new Point(547, 220);
+            btnAdd.Margin = new Padding(3, 2, 3, 2);
             btnAdd.Name = "btnAdd";
             btnAdd.OnDisabledState.BorderColor = Color.FromArgb(191, 191, 191);
             btnAdd.OnDisabledState.BorderRadius = 1;
@@ -394,31 +412,31 @@
             btnAdd.OnDisabledState.ForeColor = Color.FromArgb(168, 160, 168);
             btnAdd.OnDisabledState.IconLeftImage = null;
             btnAdd.OnDisabledState.IconRightImage = null;
-            btnAdd.onHoverState.BorderColor = Color.FromArgb(131, 193, 255);
+            btnAdd.onHoverState.BorderColor = Color.FromArgb(220, 220, 114);
             btnAdd.onHoverState.BorderRadius = 1;
             btnAdd.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             btnAdd.onHoverState.BorderThickness = 1;
-            btnAdd.onHoverState.FillColor = Color.FromArgb(131, 193, 255);
+            btnAdd.onHoverState.FillColor = Color.FromArgb(255, 233, 114);
             btnAdd.onHoverState.ForeColor = Color.White;
             btnAdd.onHoverState.IconLeftImage = null;
             btnAdd.onHoverState.IconRightImage = null;
-            btnAdd.OnIdleState.BorderColor = Color.DodgerBlue;
+            btnAdd.OnIdleState.BorderColor = Color.FromArgb(192, 192, 0);
             btnAdd.OnIdleState.BorderRadius = 1;
             btnAdd.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             btnAdd.OnIdleState.BorderThickness = 1;
-            btnAdd.OnIdleState.FillColor = Color.DodgerBlue;
-            btnAdd.OnIdleState.ForeColor = Color.White;
+            btnAdd.OnIdleState.FillColor = Color.Gold;
+            btnAdd.OnIdleState.ForeColor = Color.Black;
             btnAdd.OnIdleState.IconLeftImage = null;
             btnAdd.OnIdleState.IconRightImage = null;
-            btnAdd.OnPressedState.BorderColor = Color.FromArgb(16, 79, 140);
+            btnAdd.OnPressedState.BorderColor = Color.FromArgb(192, 192, 0);
             btnAdd.OnPressedState.BorderRadius = 1;
             btnAdd.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             btnAdd.OnPressedState.BorderThickness = 1;
-            btnAdd.OnPressedState.FillColor = Color.FromArgb(16, 79, 140);
-            btnAdd.OnPressedState.ForeColor = Color.White;
+            btnAdd.OnPressedState.FillColor = Color.Gold;
+            btnAdd.OnPressedState.ForeColor = Color.Black;
             btnAdd.OnPressedState.IconLeftImage = null;
             btnAdd.OnPressedState.IconRightImage = null;
-            btnAdd.Size = new Size(103, 34);
+            btnAdd.Size = new Size(96, 26);
             btnAdd.TabIndex = 21;
             btnAdd.TextAlign = ContentAlignment.MiddleCenter;
             btnAdd.TextAlignment = HorizontalAlignment.Center;
@@ -456,7 +474,7 @@
             btnCancel.DisabledForecolor = Color.Empty;
             btnCancel.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
             btnCancel.Font = new Font("Segoe UI", 9F);
-            btnCancel.ForeColor = Color.White;
+            btnCancel.ForeColor = Color.Black;
             btnCancel.IconLeft = null;
             btnCancel.IconLeftAlign = ContentAlignment.MiddleLeft;
             btnCancel.IconLeftCursor = Cursors.Default;
@@ -475,41 +493,42 @@
             btnCancel.IdleIconLeftImage = null;
             btnCancel.IdleIconRightImage = null;
             btnCancel.IndicateFocus = false;
-            btnCancel.Location = new Point(638, 404);
+            btnCancel.Location = new Point(547, 260);
+            btnCancel.Margin = new Padding(3, 2, 3, 2);
             btnCancel.Name = "btnCancel";
             btnCancel.OnDisabledState.BorderColor = Color.FromArgb(191, 191, 191);
-            btnCancel.OnDisabledState.BorderRadius = 34;
+            btnCancel.OnDisabledState.BorderRadius = 26;
             btnCancel.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             btnCancel.OnDisabledState.BorderThickness = 1;
             btnCancel.OnDisabledState.FillColor = Color.FromArgb(204, 204, 204);
             btnCancel.OnDisabledState.ForeColor = Color.FromArgb(168, 160, 168);
             btnCancel.OnDisabledState.IconLeftImage = null;
             btnCancel.OnDisabledState.IconRightImage = null;
-            btnCancel.onHoverState.BorderColor = Color.FromArgb(131, 193, 255);
-            btnCancel.onHoverState.BorderRadius = 34;
+            btnCancel.onHoverState.BorderColor = Color.Black;
+            btnCancel.onHoverState.BorderRadius = 26;
             btnCancel.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             btnCancel.onHoverState.BorderThickness = 1;
-            btnCancel.onHoverState.FillColor = Color.FromArgb(131, 193, 255);
+            btnCancel.onHoverState.FillColor = Color.FromArgb(255, 233, 114);
             btnCancel.onHoverState.ForeColor = Color.White;
             btnCancel.onHoverState.IconLeftImage = null;
             btnCancel.onHoverState.IconRightImage = null;
-            btnCancel.OnIdleState.BorderColor = Color.DodgerBlue;
-            btnCancel.OnIdleState.BorderRadius = 34;
+            btnCancel.OnIdleState.BorderColor = Color.FromArgb(192, 192, 0);
+            btnCancel.OnIdleState.BorderRadius = 26;
             btnCancel.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             btnCancel.OnIdleState.BorderThickness = 1;
-            btnCancel.OnIdleState.FillColor = Color.DodgerBlue;
-            btnCancel.OnIdleState.ForeColor = Color.White;
+            btnCancel.OnIdleState.FillColor = Color.Gold;
+            btnCancel.OnIdleState.ForeColor = Color.Black;
             btnCancel.OnIdleState.IconLeftImage = null;
             btnCancel.OnIdleState.IconRightImage = null;
-            btnCancel.OnPressedState.BorderColor = Color.FromArgb(16, 79, 140);
-            btnCancel.OnPressedState.BorderRadius = 34;
+            btnCancel.OnPressedState.BorderColor = Color.Transparent;
+            btnCancel.OnPressedState.BorderRadius = 26;
             btnCancel.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             btnCancel.OnPressedState.BorderThickness = 1;
-            btnCancel.OnPressedState.FillColor = Color.FromArgb(16, 79, 140);
-            btnCancel.OnPressedState.ForeColor = Color.White;
+            btnCancel.OnPressedState.FillColor = Color.Transparent;
+            btnCancel.OnPressedState.ForeColor = Color.Black;
             btnCancel.OnPressedState.IconLeftImage = null;
             btnCancel.OnPressedState.IconRightImage = null;
-            btnCancel.Size = new Size(110, 34);
+            btnCancel.Size = new Size(96, 26);
             btnCancel.TabIndex = 22;
             btnCancel.TextAlign = ContentAlignment.MiddleCenter;
             btnCancel.TextAlignment = HorizontalAlignment.Center;
@@ -520,9 +539,10 @@
             // 
             // ModalAddTenants
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.LemonChiffon;
+            ClientSize = new Size(700, 338);
             Controls.Add(btnCancel);
             Controls.Add(btnAdd);
             Controls.Add(dateRegistration);
@@ -538,6 +558,7 @@
             Controls.Add(lblAge);
             Controls.Add(lblName);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "ModalAddTenants";
             Opacity = 0D;
             Load += ModalAddTenants_Load;

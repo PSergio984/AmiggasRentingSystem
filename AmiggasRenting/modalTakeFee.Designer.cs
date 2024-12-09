@@ -47,30 +47,30 @@
             // lblTenantName
             // 
             lblTenantName.AutoSize = true;
-            lblTenantName.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTenantName.Location = new Point(94, 61);
+            lblTenantName.Font = new Font("Roboto Black", 14.25F, FontStyle.Bold);
+            lblTenantName.Location = new Point(179, 36);
             lblTenantName.Name = "lblTenantName";
-            lblTenantName.Size = new Size(76, 31);
+            lblTenantName.Size = new Size(62, 23);
             lblTenantName.TabIndex = 0;
             lblTenantName.Text = "label1";
             // 
             // lblApartmentNo
             // 
             lblApartmentNo.AutoSize = true;
-            lblApartmentNo.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblApartmentNo.Location = new Point(94, 119);
+            lblApartmentNo.Font = new Font("Roboto Black", 14.25F, FontStyle.Bold);
+            lblApartmentNo.Location = new Point(179, 79);
             lblApartmentNo.Name = "lblApartmentNo";
-            lblApartmentNo.Size = new Size(76, 31);
+            lblApartmentNo.Size = new Size(62, 23);
             lblApartmentNo.TabIndex = 1;
             lblApartmentNo.Text = "label1";
             // 
             // lblTotalPaid
             // 
             lblTotalPaid.AutoSize = true;
-            lblTotalPaid.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTotalPaid.Location = new Point(94, 174);
+            lblTotalPaid.Font = new Font("Roboto Black", 14.25F, FontStyle.Bold);
+            lblTotalPaid.Location = new Point(179, 120);
             lblTotalPaid.Name = "lblTotalPaid";
-            lblTotalPaid.Size = new Size(76, 31);
+            lblTotalPaid.Size = new Size(62, 23);
             lblTotalPaid.TabIndex = 2;
             lblTotalPaid.Text = "label1";
             // 
@@ -81,29 +81,33 @@
             // lblReceipt
             // 
             lblReceipt.AutoSize = true;
-            lblReceipt.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblReceipt.Location = new Point(94, 230);
+            lblReceipt.Font = new Font("Roboto Black", 14.25F, FontStyle.Bold);
+            lblReceipt.Location = new Point(179, 162);
             lblReceipt.Name = "lblReceipt";
-            lblReceipt.Size = new Size(137, 31);
+            lblReceipt.Size = new Size(115, 23);
             lblReceipt.TabIndex = 3;
             lblReceipt.Text = "Receipt No :";
             // 
             // lblAmountPaid
             // 
             lblAmountPaid.AutoSize = true;
-            lblAmountPaid.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblAmountPaid.Location = new Point(94, 319);
+            lblAmountPaid.Font = new Font("Roboto Black", 14.25F, FontStyle.Bold);
+            lblAmountPaid.Location = new Point(179, 209);
             lblAmountPaid.Name = "lblAmountPaid";
-            lblAmountPaid.Size = new Size(151, 31);
+            lblAmountPaid.Size = new Size(128, 23);
             lblAmountPaid.TabIndex = 3;
             lblAmountPaid.Text = "Amount Paid:";
+            lblAmountPaid.Click += lblAmountPaid_Click;
             // 
             // btnCancel
             // 
-            btnCancel.BackColor = Color.Lime;
-            btnCancel.Location = new Point(681, 409);
+            btnCancel.BackColor = Color.Gold;
+            btnCancel.FlatStyle = FlatStyle.Popup;
+            btnCancel.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCancel.Location = new Point(347, 272);
+            btnCancel.Margin = new Padding(3, 2, 3, 2);
             btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(94, 29);
+            btnCancel.Size = new Size(95, 32);
             btnCancel.TabIndex = 11;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = false;
@@ -111,10 +115,13 @@
             // 
             // btnAdd
             // 
-            btnAdd.BackColor = SystemColors.ActiveCaption;
-            btnAdd.Location = new Point(532, 409);
+            btnAdd.BackColor = Color.Gold;
+            btnAdd.FlatStyle = FlatStyle.Popup;
+            btnAdd.Font = new Font("Roboto Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAdd.Location = new Point(212, 272);
+            btnAdd.Margin = new Padding(3, 2, 3, 2);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(94, 29);
+            btnAdd.Size = new Size(95, 32);
             btnAdd.TabIndex = 10;
             btnAdd.Text = "Add";
             btnAdd.UseVisualStyleBackColor = false;
@@ -122,27 +129,32 @@
             // 
             // numAmountPaid
             // 
-            numAmountPaid.Location = new Point(105, 374);
+            numAmountPaid.Font = new Font("Roboto Black", 9F, FontStyle.Bold);
+            numAmountPaid.Location = new Point(313, 209);
+            numAmountPaid.Margin = new Padding(3, 2, 3, 2);
             numAmountPaid.Maximum = new decimal(new int[] { 1569325055, 23283064, 0, 0 });
             numAmountPaid.Name = "numAmountPaid";
-            numAmountPaid.Size = new Size(430, 27);
+            numAmountPaid.Size = new Size(193, 22);
             numAmountPaid.TabIndex = 12;
             numAmountPaid.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // numReceipt
             // 
             numReceipt.BackColor = SystemColors.HighlightText;
-            numReceipt.Location = new Point(105, 278);
+            numReceipt.Font = new Font("Roboto Black", 9F, FontStyle.Bold);
+            numReceipt.Location = new Point(313, 166);
+            numReceipt.Margin = new Padding(3, 2, 3, 2);
             numReceipt.Name = "numReceipt";
-            numReceipt.Size = new Size(430, 27);
+            numReceipt.Size = new Size(193, 22);
             numReceipt.TabIndex = 13;
             numReceipt.ValueChanged += numericUpDown2_ValueChanged;
             // 
             // modalTakeFee
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.LemonChiffon;
+            ClientSize = new Size(700, 338);
             ControlBox = false;
             Controls.Add(numReceipt);
             Controls.Add(numAmountPaid);
@@ -154,6 +166,7 @@
             Controls.Add(lblApartmentNo);
             Controls.Add(lblTenantName);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "modalTakeFee";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "modalTakeFee";
