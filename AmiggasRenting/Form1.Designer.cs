@@ -241,7 +241,7 @@
             btnLogin.AutoSizeLeftIcon = true;
             btnLogin.AutoSizeRightIcon = true;
             btnLogin.BackColor = Color.Transparent;
-            btnLogin.BackColor1 = Color.FromArgb(255, 255, 128);
+            btnLogin.BackColor1 = Color.Gold;
             btnLogin.BackgroundImage = (Image)resources.GetObject("btnLogin.BackgroundImage");
             btnLogin.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             btnLogin.ButtonText = "Login";
@@ -272,7 +272,7 @@
             btnLogin.IdleBorderColor = Color.FromArgb(192, 192, 0);
             btnLogin.IdleBorderRadius = 41;
             btnLogin.IdleBorderThickness = 1;
-            btnLogin.IdleFillColor = Color.FromArgb(255, 255, 128);
+            btnLogin.IdleFillColor = Color.Gold;
             btnLogin.IdleIconLeftImage = null;
             btnLogin.IdleIconRightImage = null;
             btnLogin.IndicateFocus = true;
@@ -299,7 +299,7 @@
             btnLogin.OnIdleState.BorderRadius = 20;
             btnLogin.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             btnLogin.OnIdleState.BorderThickness = 1;
-            btnLogin.OnIdleState.FillColor = Color.FromArgb(255, 255, 128);
+            btnLogin.OnIdleState.FillColor = Color.Gold;
             btnLogin.OnIdleState.ForeColor = Color.Black;
             btnLogin.OnIdleState.IconLeftImage = null;
             btnLogin.OnIdleState.IconRightImage = null;
@@ -327,7 +327,7 @@
             btnShow.AllowMouseEffects = true;
             btnShow.AnimationSpeed = 200;
             btnShow.BackColor = Color.Transparent;
-            btnShow.BackgroundColor = Color.FromArgb(255, 255, 128);
+            btnShow.BackgroundColor = Color.Gold;
             btnShow.BorderColor = Color.FromArgb(192, 192, 0);
             btnShow.BorderRadius = 1;
             btnShow.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderStyles.Solid;
@@ -359,7 +359,7 @@
             btnHide.AllowMouseEffects = true;
             btnHide.AnimationSpeed = 200;
             btnHide.BackColor = Color.Transparent;
-            btnHide.BackgroundColor = Color.FromArgb(255, 255, 128);
+            btnHide.BackgroundColor = Color.Gold;
             btnHide.BorderColor = Color.FromArgb(192, 192, 0);
             btnHide.BorderRadius = 1;
             btnHide.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderStyles.Solid;
@@ -386,7 +386,7 @@
             // 
             // bunifuPanel1
             // 
-            bunifuPanel1.BackgroundColor = Color.FromArgb(255, 255, 128);
+            bunifuPanel1.BackgroundColor = Color.Gold;
             bunifuPanel1.BackgroundImage = (Image)resources.GetObject("bunifuPanel1.BackgroundImage");
             bunifuPanel1.BackgroundImageLayout = ImageLayout.Stretch;
             bunifuPanel1.BorderColor = Color.FromArgb(192, 192, 0);
@@ -430,7 +430,7 @@
             // 
             // bunifuPanel2
             // 
-            bunifuPanel2.BackgroundColor = Color.FromArgb(255, 255, 128);
+            bunifuPanel2.BackgroundColor = Color.Gold;
             bunifuPanel2.BackgroundImage = (Image)resources.GetObject("bunifuPanel2.BackgroundImage");
             bunifuPanel2.BackgroundImageLayout = ImageLayout.Stretch;
             bunifuPanel2.BorderColor = Color.FromArgb(192, 192, 0);
@@ -444,7 +444,7 @@
             // 
             // bunifuPanel3
             // 
-            bunifuPanel3.BackgroundColor = Color.FromArgb(255, 255, 128);
+            bunifuPanel3.BackgroundColor = Color.Gold;
             bunifuPanel3.BackgroundImage = (Image)resources.GetObject("bunifuPanel3.BackgroundImage");
             bunifuPanel3.BackgroundImageLayout = ImageLayout.Stretch;
             bunifuPanel3.BorderColor = Color.FromArgb(192, 192, 0);
@@ -460,7 +460,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
+            BackColor = Color.LemonChiffon;
             ClientSize = new Size(929, 505);
             Controls.Add(bunifuPanel3);
             Controls.Add(bunifuPanel2);

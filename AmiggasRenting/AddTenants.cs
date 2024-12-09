@@ -104,6 +104,18 @@ namespace AmiggasRenting
         // Event handler for button clicks in the DataGridView
         private void dataGridTenants_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            dataGridTenants.GridColor = Color.Yellow;
+            dataGridTenants.HeaderBackColor = Color.Gold;
+            dataGridTenants.HeaderForeColor = Color.Black;
+
+            dataGridTenants.ColumnHeadersDefaultCellStyle.BackColor = Color.Gold;
+            dataGridTenants.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
+
+            dataGridTenants.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.Olive;
+            dataGridTenants.ColumnHeadersDefaultCellStyle.SelectionForeColor = Color.White;
+
+            dataGridTenants.RowsDefaultCellStyle.SelectionBackColor = Color.Olive;
+            dataGridTenants.RowsDefaultCellStyle.SelectionForeColor = Color.White;
             if (e.RowIndex >= 0)
             {
                 if (dataGridTenants.Columns[e.ColumnIndex].Name == "EditButton")

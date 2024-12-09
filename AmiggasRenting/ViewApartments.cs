@@ -68,7 +68,18 @@ namespace AmiggasRenting
 
         private void dataApartments_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            dataApartments.GridColor = Color.Yellow;
+            dataApartments.HeaderBackColor = Color.Gold;
+            dataApartments.HeaderForeColor = Color.Black;
 
+            dataApartments.ColumnHeadersDefaultCellStyle.BackColor = Color.Gold;
+            dataApartments.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
+
+            dataApartments.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.Olive;
+            dataApartments.ColumnHeadersDefaultCellStyle.SelectionForeColor = Color.White;
+
+            dataApartments.RowsDefaultCellStyle.SelectionBackColor = Color.Olive;
+            dataApartments.RowsDefaultCellStyle.SelectionForeColor = Color.White;
         }
 
         private void ViewApartments_FormClosing(object sender, FormClosingEventArgs e)
