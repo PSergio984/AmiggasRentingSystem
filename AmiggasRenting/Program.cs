@@ -14,7 +14,7 @@ namespace LoginPage
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             // Use the singleton instance of HomePage
-            Application.Run(new LoginPageForm());
+            Application.Run(new HomePage());
         }
     }
 }

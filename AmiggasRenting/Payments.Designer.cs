@@ -30,9 +30,11 @@ namespace AmiggasRenting
             // 
             // navigationControl1
             // 
-            navigationControl1.Location = new Point(12, 42);
+            navigationControl1.BackColor = Color.Transparent;
+            navigationControl1.Location = new Point(-6, -4);
+            navigationControl1.Margin = new Padding(3, 2, 3, 2);
             navigationControl1.Name = "navigationControl1";
-            navigationControl1.Size = new Size(203, 562);
+            navigationControl1.Size = new Size(168, 514);
             navigationControl1.TabIndex = 1;
             // 
             // dataPayments
@@ -89,14 +91,15 @@ namespace AmiggasRenting
             dataPayments.HeaderBackColor = Color.DodgerBlue;
             dataPayments.HeaderBgColor = Color.Empty;
             dataPayments.HeaderForeColor = Color.White;
-            dataPayments.Location = new Point(232, 28);
+            dataPayments.Location = new Point(203, 21);
+            dataPayments.Margin = new Padding(3, 2, 3, 2);
             dataPayments.Name = "dataPayments";
             dataPayments.ReadOnly = true;
             dataPayments.RowHeadersVisible = false;
             dataPayments.RowHeadersWidth = 51;
             dataPayments.RowTemplate.Height = 40;
             dataPayments.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataPayments.Size = new Size(799, 602);
+            dataPayments.Size = new Size(699, 452);
             dataPayments.TabIndex = 2;
             dataPayments.Theme = BunifuDataGridView.PresetThemes.Light;
             dataPayments.CellClick += dataPayments_CellContentClick;
@@ -104,12 +107,13 @@ namespace AmiggasRenting
             // 
             // Payments
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1062, 673);
+            ClientSize = new Size(929, 505);
             Controls.Add(dataPayments);
             Controls.Add(navigationControl1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             Name = "Payments";
             StartPosition = FormStartPosition.CenterScreen;

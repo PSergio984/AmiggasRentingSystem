@@ -46,9 +46,11 @@
             // 
             // TenantsSidePanel
             // 
-            TenantsSidePanel.Location = new Point(3, 43);
+            TenantsSidePanel.BackColor = Color.Transparent;
+            TenantsSidePanel.Location = new Point(-6, -4);
+            TenantsSidePanel.Margin = new Padding(3, 2, 3, 2);
             TenantsSidePanel.Name = "TenantsSidePanel";
-            TenantsSidePanel.Size = new Size(200, 570);
+            TenantsSidePanel.Size = new Size(169, 512);
             TenantsSidePanel.TabIndex = 10;
             TenantsSidePanel.Load += navigationControl1_Load;
             // 
@@ -106,14 +108,15 @@
             dataGridTenants.HeaderBackColor = Color.DodgerBlue;
             dataGridTenants.HeaderBgColor = Color.Empty;
             dataGridTenants.HeaderForeColor = Color.White;
-            dataGridTenants.Location = new Point(209, 47);
+            dataGridTenants.Location = new Point(183, 35);
+            dataGridTenants.Margin = new Padding(3, 2, 3, 2);
             dataGridTenants.Name = "dataGridTenants";
             dataGridTenants.ReadOnly = true;
             dataGridTenants.RowHeadersVisible = false;
             dataGridTenants.RowHeadersWidth = 51;
             dataGridTenants.RowTemplate.Height = 40;
             dataGridTenants.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridTenants.Size = new Size(841, 554);
+            dataGridTenants.Size = new Size(736, 416);
             dataGridTenants.TabIndex = 12;
             dataGridTenants.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             dataGridTenants.CellContentClick += dataGridTenants_CellContentClick;
@@ -145,7 +148,8 @@
             txtSearch.IconPadding = 10;
             txtSearch.IconRight = null;
             txtSearch.IconRightCursor = Cursors.IBeam;
-            txtSearch.Location = new Point(381, 8);
+            txtSearch.Location = new Point(333, 6);
+            txtSearch.Margin = new Padding(3, 2, 3, 2);
             txtSearch.MaxLength = 32767;
             txtSearch.MinimumSize = new Size(1, 1);
             txtSearch.Modified = false;
@@ -171,7 +175,7 @@
             stateProperties4.ForeColor = Color.Empty;
             stateProperties4.PlaceholderForeColor = Color.Empty;
             txtSearch.OnIdleState = stateProperties4;
-            txtSearch.Padding = new Padding(3);
+            txtSearch.Padding = new Padding(3, 2, 3, 2);
             txtSearch.PasswordChar = '\0';
             txtSearch.PlaceholderForeColor = Color.Silver;
             txtSearch.PlaceholderText = "Search Here";
@@ -181,7 +185,7 @@
             txtSearch.SelectionLength = 0;
             txtSearch.SelectionStart = 0;
             txtSearch.ShortcutsEnabled = true;
-            txtSearch.Size = new Size(282, 33);
+            txtSearch.Size = new Size(247, 25);
             txtSearch.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             txtSearch.TabIndex = 13;
             txtSearch.TextAlign = HorizontalAlignment.Left;
@@ -233,13 +237,14 @@
             btnAdd.IconRightPadding = new Padding(3, 3, 7, 3);
             btnAdd.IconSize = 25;
             btnAdd.IdleBorderColor = Color.DodgerBlue;
-            btnAdd.IdleBorderRadius = 26;
+            btnAdd.IdleBorderRadius = 19;
             btnAdd.IdleBorderThickness = 1;
             btnAdd.IdleFillColor = Color.DodgerBlue;
             btnAdd.IdleIconLeftImage = null;
             btnAdd.IdleIconRightImage = null;
             btnAdd.IndicateFocus = false;
-            btnAdd.Location = new Point(799, 13);
+            btnAdd.Location = new Point(699, 10);
+            btnAdd.Margin = new Padding(3, 2, 3, 2);
             btnAdd.Name = "btnAdd";
             btnAdd.OnDisabledState.BorderColor = Color.FromArgb(191, 191, 191);
             btnAdd.OnDisabledState.BorderRadius = 1;
@@ -273,7 +278,7 @@
             btnAdd.OnPressedState.ForeColor = Color.White;
             btnAdd.OnPressedState.IconLeftImage = null;
             btnAdd.OnPressedState.IconRightImage = null;
-            btnAdd.Size = new Size(173, 28);
+            btnAdd.Size = new Size(151, 21);
             btnAdd.TabIndex = 14;
             btnAdd.TextAlign = ContentAlignment.MiddleCenter;
             btnAdd.TextAlignment = HorizontalAlignment.Center;
@@ -284,14 +289,15 @@
             // 
             // AddTenants
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1062, 673);
+            ClientSize = new Size(929, 505);
             Controls.Add(btnAdd);
             Controls.Add(txtSearch);
             Controls.Add(dataGridTenants);
             Controls.Add(TenantsSidePanel);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             Name = "AddTenants";
             StartPosition = FormStartPosition.CenterScreen;

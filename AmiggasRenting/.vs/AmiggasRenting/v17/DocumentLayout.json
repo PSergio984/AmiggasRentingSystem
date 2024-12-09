@@ -3,52 +3,28 @@
   "WorkspaceRootPath": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\programs\\microsoft visual studio\\ms visual studio saved data\\amiggasrentingsystem\\amiggasrenting\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\addtenants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:addtenants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\loadingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:loadingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\programs\\microsoft visual studio\\ms visual studio saved data\\amiggasrentingsystem\\amiggasrenting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\programs\\microsoft visual studio\\ms visual studio saved data\\amiggasrentingsystem\\amiggasrenting\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\navigationcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:navigationcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\modaltakefee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:modaltakefee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\modalreceipt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:modalreceipt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\modaladdtenants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:modaladdtenants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\viewapartments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:viewapartments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\addtenants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:addtenants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\payments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:payments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\programs\\microsoft visual studio\\ms visual studio saved data\\amiggasrentingsystem\\amiggasrenting\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\navigationcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:navigationcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\programs\\microsoft visual studio\\ms visual studio saved data\\amiggasrentingsystem\\amiggasrenting\\homepage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:homepage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\programs\\microsoft visual studio\\ms visual studio saved data\\amiggasrentingsystem\\amiggasrenting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\programs\\microsoft visual studio\\ms visual studio saved data\\amiggasrentingsystem\\amiggasrenting\\loadingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,22 +43,6 @@
       "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:viewapartments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\payments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:payments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\viewapartments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:viewapartments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\programs\\microsoft visual studio\\ms visual studio saved data\\amiggasrentingsystem\\amiggasrenting\\navigationcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:navigationcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\programs\\microsoft visual studio\\ms visual studio saved data\\amiggasrentingsystem\\amiggasrenting\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\programs\\microsoft visual studio\\ms visual studio saved data\\amiggasrentingsystem\\amiggasrenting\\viewapartments.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:viewapartments.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -94,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -146,76 +106,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T05:33:04.093Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoadingScreen.cs [Design]",
-              "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\LoadingScreen.cs",
-              "RelativeDocumentMoniker": "LoadingScreen.cs",
-              "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\LoadingScreen.cs [Design]",
-              "RelativeToolTip": "LoadingScreen.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T01:00:24.7Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ModalReceipt.cs [Design]",
-              "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\ModalReceipt.cs",
-              "RelativeDocumentMoniker": "ModalReceipt.cs",
-              "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\ModalReceipt.cs [Design]",
-              "RelativeToolTip": "ModalReceipt.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T01:02:31.224Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "modalTakeFee.cs [Design]",
-              "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\modalTakeFee.cs",
-              "RelativeDocumentMoniker": "modalTakeFee.cs",
-              "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\modalTakeFee.cs [Design]",
-              "RelativeToolTip": "modalTakeFee.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T01:02:29.513Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "Form1.Designer.cs",
-              "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\Form1.Designer.cs",
-              "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T05:03:01.89Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T18:22:33.714Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
               "Title": "NavigationControl.cs [Design]",
               "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\NavigationControl.cs",
@@ -223,92 +113,85 @@
               "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\NavigationControl.cs [Design]",
               "RelativeToolTip": "NavigationControl.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T05:15:18.859Z"
+              "WhenOpened": "2024-12-08T05:15:18.859Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ModalAddTenants.cs [Design]",
-              "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\ModalAddTenants.cs",
-              "RelativeDocumentMoniker": "ModalAddTenants.cs",
-              "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\ModalAddTenants.cs [Design]",
-              "RelativeToolTip": "ModalAddTenants.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T07:51:14.212Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "HomePage.cs [Design]",
               "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\HomePage.cs",
               "RelativeDocumentMoniker": "HomePage.cs",
               "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\HomePage.cs [Design]",
               "RelativeToolTip": "HomePage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T05:10:49.516Z"
+              "WhenOpened": "2024-12-08T05:10:49.516Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "AddTenants.cs [Design]",
               "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\AddTenants.cs",
               "RelativeDocumentMoniker": "AddTenants.cs",
               "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\AddTenants.cs [Design]",
               "RelativeToolTip": "AddTenants.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T18:22:43.802Z"
+              "WhenOpened": "2024-12-07T18:22:43.802Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAI0AAAAAAAAAAAAwwKIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ViewApartments.cs [Design]",
+              "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\ViewApartments.cs",
+              "RelativeDocumentMoniker": "ViewApartments.cs",
+              "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\ViewApartments.cs [Design]",
+              "RelativeToolTip": "ViewApartments.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T17:17:16.838Z"
+              "WhenOpened": "2024-12-08T04:40:57.456Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "HomePage.Designer.cs",
-              "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\HomePage.Designer.cs",
-              "RelativeDocumentMoniker": "HomePage.Designer.cs",
-              "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\HomePage.Designer.cs",
-              "RelativeToolTip": "HomePage.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Payments.cs [Design]",
+              "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\Payments.cs",
+              "RelativeDocumentMoniker": "Payments.cs",
+              "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\Payments.cs [Design]",
+              "RelativeToolTip": "Payments.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T05:05:04.344Z"
+              "WhenOpened": "2024-12-08T04:59:07.317Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "HomePage.cs",
-              "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\HomePage.cs",
-              "RelativeDocumentMoniker": "HomePage.cs",
-              "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\HomePage.cs",
-              "RelativeToolTip": "HomePage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAzAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T05:05:07.036Z"
+              "WhenOpened": "2024-12-09T05:33:04.093Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "NavigationControl.cs",
-              "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\NavigationControl.cs",
-              "RelativeDocumentMoniker": "NavigationControl.cs",
-              "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\NavigationControl.cs",
-              "RelativeToolTip": "NavigationControl.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAEwDkAAAAKAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "ModalAddTenants.cs",
+              "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\ModalAddTenants.cs",
+              "RelativeDocumentMoniker": "ModalAddTenants.cs",
+              "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\ModalAddTenants.cs",
+              "RelativeToolTip": "ModalAddTenants.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAmwN0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T18:01:26.453Z"
+              "WhenOpened": "2024-12-08T07:54:49.594Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 9,
               "Title": "ViewApartments.cs",
               "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\ViewApartments.cs",
               "RelativeDocumentMoniker": "ViewApartments.cs",
@@ -321,19 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ModalAddTenants.cs",
-              "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\ModalAddTenants.cs",
-              "RelativeDocumentMoniker": "ModalAddTenants.cs",
-              "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\ModalAddTenants.cs",
-              "RelativeToolTip": "ModalAddTenants.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAmwN0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T07:54:49.594Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 7,
               "Title": "AddTenants.cs",
               "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\AddTenants.cs",
               "RelativeDocumentMoniker": "AddTenants.cs",
@@ -345,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 6,
               "Title": "LoadingScreen.cs",
               "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\LoadingScreen.cs",
               "RelativeDocumentMoniker": "LoadingScreen.cs",
@@ -357,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 10,
               "Title": "ViewApartments.Designer.cs",
               "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\ViewApartments.Designer.cs",
               "RelativeDocumentMoniker": "ViewApartments.Designer.cs",
@@ -365,29 +236,8 @@
               "RelativeToolTip": "ViewApartments.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T04:40:55.861Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Payments.cs [Design]",
-              "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\Payments.cs",
-              "RelativeDocumentMoniker": "Payments.cs",
-              "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\Payments.cs [Design]",
-              "RelativeToolTip": "Payments.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T04:59:07.317Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ViewApartments.cs [Design]",
-              "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\ViewApartments.cs",
-              "RelativeDocumentMoniker": "ViewApartments.cs",
-              "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\ViewApartments.cs [Design]",
-              "RelativeToolTip": "ViewApartments.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T04:40:57.456Z"
+              "WhenOpened": "2024-12-08T04:40:55.861Z",
+              "EditorCaption": ""
             }
           ]
         }
