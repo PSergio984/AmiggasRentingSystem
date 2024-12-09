@@ -2,12 +2,15 @@
 using System;
 using System.Windows.Forms;
 using System.Media;
+
 namespace AmiggasRenting
 {
     public partial class LoadingScreen : Form
     {
         private System.Windows.Forms.Timer loadingTimer; // Use System.Windows.Forms.Timer
         private SoundPlayer soundPlayer; // SoundPlayer object for playing the sound
+        private int elapsedTime; // Variable to track elapsed time
+
         public LoadingScreen()
         {
             InitializeComponent();
@@ -15,29 +18,23 @@ namespace AmiggasRenting
             // Initialize the Timer
             loadingTimer = new System.Windows.Forms.Timer
             {
-                Interval = 500 // Timer ticks every 100 milliseconds
+                Interval = 1000 // Timer ticks every 1000 milliseconds (1 second)
             };
             loadingTimer.Tick += LoadingTimer_Tick; // Attach the Tick event
             soundPlayer = new SoundPlayer("loadingScreen.wav");
             soundPlayer.Play();
-
-
-
         }
-
 
         private void LoadingTimer_Tick(object sender, EventArgs e)
         {
-            // Check if progress bar value is less than the maximum
-            if (pbarLoading.Value < pbarLoading.Maximum)
+            // Increment elapsed time by 1 second
+            elapsedTime += 1;
+
+            // Check if 10 seconds have passed
+            if (elapsedTime >= 10)
             {
-               
-                pbarLoading.Value += 5; // Increment progress bar by 5%
-            }
-            else
-            {
-                // Stop the timer when the progress reaches 100%
-                soundPlayer.Stop();// Stop the sound
+                // Stop the timer when 10 seconds have passed
+                soundPlayer.Stop(); // Stop the sound
                 loadingTimer.Stop();
 
                 // Open the LoginPageForm
@@ -49,15 +46,10 @@ namespace AmiggasRenting
             }
         }
 
-        private void pbarLoading_Click(object sender, EventArgs e)
-        {
-            // Optional event handler for progress bar clicks
-        }
-
         private void LoadingScreen_Load_1(object sender, EventArgs e)
         {
-            // Set initial progress bar value to 0
-            pbarLoading.Value = 0;
+            // Initialize elapsed time to 0
+            elapsedTime = 0;
 
             // Start the Timer when the form loads
             loadingTimer.Start();
@@ -70,7 +62,7 @@ namespace AmiggasRenting
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            // Optional event handler for picture box clicks
         }
     }
 }
