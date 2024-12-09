@@ -47,24 +47,36 @@
             btnLogin = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             btnShow = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
             btnHide = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
+            bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            label4 = new Label();
+            label3 = new Label();
+            bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
+            bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
+            bunifuPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(433, 204);
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Unispace", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(485, 119);
             label1.Name = "label1";
-            label1.Size = new Size(73, 20);
+            label1.Size = new Size(89, 19);
             label1.TabIndex = 2;
-            label1.Text = "username";
+            label1.Text = "Username";
             label1.Click += label1_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(433, 270);
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Unispace", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(485, 239);
             label2.Name = "label2";
-            label2.Size = new Size(70, 20);
+            label2.Size = new Size(89, 19);
             label2.TabIndex = 3;
             label2.Text = "Password";
             // 
@@ -78,30 +90,31 @@
             txtPassword.AutoSizeHeight = true;
             txtPassword.BackColor = Color.Transparent;
             txtPassword.BackgroundImage = (Image)resources.GetObject("txtPassword.BackgroundImage");
-            txtPassword.BorderColorActive = Color.DodgerBlue;
+            txtPassword.BorderColorActive = Color.Yellow;
             txtPassword.BorderColorDisabled = Color.FromArgb(204, 204, 204);
-            txtPassword.BorderColorHover = Color.FromArgb(105, 181, 255);
-            txtPassword.BorderColorIdle = Color.Silver;
+            txtPassword.BorderColorHover = Color.Black;
+            txtPassword.BorderColorIdle = Color.FromArgb(192, 192, 0);
             txtPassword.BorderRadius = 20;
             txtPassword.BorderThickness = 1;
             txtPassword.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
             txtPassword.CharacterCasing = CharacterCasing.Normal;
-            txtPassword.DefaultFont = new Font("Segoe UI", 9.25F);
+            txtPassword.DefaultFont = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtPassword.DefaultText = "";
-            txtPassword.FillColor = Color.White;
+            txtPassword.FillColor = Color.FromArgb(255, 255, 192);
             txtPassword.HideSelection = true;
             txtPassword.IconLeft = null;
             txtPassword.IconLeftCursor = Cursors.IBeam;
             txtPassword.IconPadding = 10;
             txtPassword.IconRight = null;
             txtPassword.IconRightCursor = Cursors.IBeam;
-            txtPassword.Location = new Point(532, 256);
+            txtPassword.Location = new Point(572, 262);
+            txtPassword.Margin = new Padding(3, 2, 3, 2);
             txtPassword.MaxLength = 32767;
             txtPassword.MinimumSize = new Size(1, 1);
             txtPassword.Modified = false;
             txtPassword.Multiline = false;
             txtPassword.Name = "txtPassword";
-            stateProperties1.BorderColor = Color.DodgerBlue;
+            stateProperties1.BorderColor = Color.Yellow;
             stateProperties1.FillColor = Color.Empty;
             stateProperties1.ForeColor = Color.Empty;
             stateProperties1.PlaceholderForeColor = Color.Empty;
@@ -111,17 +124,17 @@
             stateProperties2.ForeColor = Color.FromArgb(109, 109, 109);
             stateProperties2.PlaceholderForeColor = Color.DarkGray;
             txtPassword.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = Color.FromArgb(105, 181, 255);
+            stateProperties3.BorderColor = Color.Black;
             stateProperties3.FillColor = Color.Empty;
             stateProperties3.ForeColor = Color.Empty;
             stateProperties3.PlaceholderForeColor = Color.Empty;
             txtPassword.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = Color.Silver;
-            stateProperties4.FillColor = Color.White;
+            stateProperties4.BorderColor = Color.FromArgb(192, 192, 0);
+            stateProperties4.FillColor = Color.FromArgb(255, 255, 192);
             stateProperties4.ForeColor = Color.Empty;
             stateProperties4.PlaceholderForeColor = Color.Empty;
             txtPassword.OnIdleState = stateProperties4;
-            txtPassword.Padding = new Padding(3);
+            txtPassword.Padding = new Padding(3, 2, 3, 2);
             txtPassword.PasswordChar = '*';
             txtPassword.PlaceholderForeColor = Color.Silver;
             txtPassword.PlaceholderText = "Enter Password";
@@ -131,7 +144,7 @@
             txtPassword.SelectionLength = 0;
             txtPassword.SelectionStart = 0;
             txtPassword.ShortcutsEnabled = true;
-            txtPassword.Size = new Size(146, 48);
+            txtPassword.Size = new Size(240, 35);
             txtPassword.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             txtPassword.TabIndex = 6;
             txtPassword.TextAlign = HorizontalAlignment.Left;
@@ -152,30 +165,31 @@
             txtEmail.AutoSizeHeight = true;
             txtEmail.BackColor = Color.Transparent;
             txtEmail.BackgroundImage = (Image)resources.GetObject("txtEmail.BackgroundImage");
-            txtEmail.BorderColorActive = Color.DodgerBlue;
+            txtEmail.BorderColorActive = Color.Yellow;
             txtEmail.BorderColorDisabled = Color.FromArgb(204, 204, 204);
-            txtEmail.BorderColorHover = Color.FromArgb(105, 181, 255);
-            txtEmail.BorderColorIdle = Color.Silver;
+            txtEmail.BorderColorHover = Color.Black;
+            txtEmail.BorderColorIdle = Color.FromArgb(192, 192, 0);
             txtEmail.BorderRadius = 20;
             txtEmail.BorderThickness = 1;
             txtEmail.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
             txtEmail.CharacterCasing = CharacterCasing.Normal;
-            txtEmail.DefaultFont = new Font("Segoe UI", 9.25F);
+            txtEmail.DefaultFont = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtEmail.DefaultText = "";
-            txtEmail.FillColor = Color.White;
+            txtEmail.FillColor = Color.FromArgb(255, 255, 192);
             txtEmail.HideSelection = true;
             txtEmail.IconLeft = null;
             txtEmail.IconLeftCursor = Cursors.IBeam;
             txtEmail.IconPadding = 10;
             txtEmail.IconRight = null;
             txtEmail.IconRightCursor = Cursors.IBeam;
-            txtEmail.Location = new Point(532, 195);
+            txtEmail.Location = new Point(572, 151);
+            txtEmail.Margin = new Padding(3, 2, 3, 2);
             txtEmail.MaxLength = 32767;
             txtEmail.MinimumSize = new Size(1, 1);
             txtEmail.Modified = false;
             txtEmail.Multiline = false;
             txtEmail.Name = "txtEmail";
-            stateProperties5.BorderColor = Color.DodgerBlue;
+            stateProperties5.BorderColor = Color.Yellow;
             stateProperties5.FillColor = Color.Empty;
             stateProperties5.ForeColor = Color.Empty;
             stateProperties5.PlaceholderForeColor = Color.Empty;
@@ -185,17 +199,17 @@
             stateProperties6.ForeColor = Color.FromArgb(109, 109, 109);
             stateProperties6.PlaceholderForeColor = Color.DarkGray;
             txtEmail.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = Color.FromArgb(105, 181, 255);
+            stateProperties7.BorderColor = Color.Black;
             stateProperties7.FillColor = Color.Empty;
             stateProperties7.ForeColor = Color.Empty;
             stateProperties7.PlaceholderForeColor = Color.Empty;
             txtEmail.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = Color.Silver;
-            stateProperties8.FillColor = Color.White;
+            stateProperties8.BorderColor = Color.FromArgb(192, 192, 0);
+            stateProperties8.FillColor = Color.FromArgb(255, 255, 192);
             stateProperties8.ForeColor = Color.Empty;
             stateProperties8.PlaceholderForeColor = Color.Empty;
             txtEmail.OnIdleState = stateProperties8;
-            txtEmail.Padding = new Padding(3);
+            txtEmail.Padding = new Padding(3, 2, 3, 2);
             txtEmail.PasswordChar = '\0';
             txtEmail.PlaceholderForeColor = Color.Silver;
             txtEmail.PlaceholderText = "Enter Username";
@@ -205,7 +219,7 @@
             txtEmail.SelectionLength = 0;
             txtEmail.SelectionStart = 0;
             txtEmail.ShortcutsEnabled = true;
-            txtEmail.Size = new Size(154, 41);
+            txtEmail.Size = new Size(240, 35);
             txtEmail.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             txtEmail.TabIndex = 7;
             txtEmail.TextAlign = HorizontalAlignment.Left;
@@ -227,7 +241,7 @@
             btnLogin.AutoSizeLeftIcon = true;
             btnLogin.AutoSizeRightIcon = true;
             btnLogin.BackColor = Color.Transparent;
-            btnLogin.BackColor1 = Color.DodgerBlue;
+            btnLogin.BackColor1 = Color.FromArgb(255, 255, 128);
             btnLogin.BackgroundImage = (Image)resources.GetObject("btnLogin.BackgroundImage");
             btnLogin.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             btnLogin.ButtonText = "Login";
@@ -244,8 +258,8 @@
             btnLogin.DisabledFillColor = Color.FromArgb(204, 204, 204);
             btnLogin.DisabledForecolor = Color.FromArgb(168, 160, 168);
             btnLogin.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
-            btnLogin.Font = new Font("Segoe UI", 9F);
-            btnLogin.ForeColor = Color.White;
+            btnLogin.Font = new Font("Unispace", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLogin.ForeColor = Color.Black;
             btnLogin.IconLeftAlign = ContentAlignment.MiddleLeft;
             btnLogin.IconLeftCursor = Cursors.Default;
             btnLogin.IconLeftPadding = new Padding(11, 3, 3, 3);
@@ -255,14 +269,15 @@
             btnLogin.IconRightCursor = Cursors.Default;
             btnLogin.IconRightPadding = new Padding(3, 3, 7, 3);
             btnLogin.IconSize = 25;
-            btnLogin.IdleBorderColor = Color.Cyan;
-            btnLogin.IdleBorderRadius = 34;
+            btnLogin.IdleBorderColor = Color.FromArgb(192, 192, 0);
+            btnLogin.IdleBorderRadius = 41;
             btnLogin.IdleBorderThickness = 1;
-            btnLogin.IdleFillColor = Color.DodgerBlue;
+            btnLogin.IdleFillColor = Color.FromArgb(255, 255, 128);
             btnLogin.IdleIconLeftImage = null;
             btnLogin.IdleIconRightImage = null;
             btnLogin.IndicateFocus = true;
-            btnLogin.Location = new Point(527, 325);
+            btnLogin.Location = new Point(615, 319);
+            btnLogin.Margin = new Padding(3, 2, 3, 2);
             btnLogin.Name = "btnLogin";
             btnLogin.OnDisabledState.BorderColor = Color.FromArgb(191, 191, 191);
             btnLogin.OnDisabledState.BorderRadius = 20;
@@ -272,31 +287,31 @@
             btnLogin.OnDisabledState.ForeColor = Color.FromArgb(168, 160, 168);
             btnLogin.OnDisabledState.IconLeftImage = null;
             btnLogin.OnDisabledState.IconRightImage = null;
-            btnLogin.onHoverState.BorderColor = Color.FromArgb(114, 255, 255);
+            btnLogin.onHoverState.BorderColor = Color.FromArgb(220, 220, 114);
             btnLogin.onHoverState.BorderRadius = 20;
             btnLogin.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             btnLogin.onHoverState.BorderThickness = 1;
-            btnLogin.onHoverState.FillColor = Color.FromArgb(131, 193, 255);
+            btnLogin.onHoverState.FillColor = Color.FromArgb(255, 255, 185);
             btnLogin.onHoverState.ForeColor = Color.White;
             btnLogin.onHoverState.IconLeftImage = null;
             btnLogin.onHoverState.IconRightImage = null;
-            btnLogin.OnIdleState.BorderColor = Color.Cyan;
+            btnLogin.OnIdleState.BorderColor = Color.FromArgb(192, 192, 0);
             btnLogin.OnIdleState.BorderRadius = 20;
             btnLogin.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             btnLogin.OnIdleState.BorderThickness = 1;
-            btnLogin.OnIdleState.FillColor = Color.DodgerBlue;
-            btnLogin.OnIdleState.ForeColor = Color.White;
+            btnLogin.OnIdleState.FillColor = Color.FromArgb(255, 255, 128);
+            btnLogin.OnIdleState.ForeColor = Color.Black;
             btnLogin.OnIdleState.IconLeftImage = null;
             btnLogin.OnIdleState.IconRightImage = null;
-            btnLogin.OnPressedState.BorderColor = Color.FromArgb(0, 140, 140);
+            btnLogin.OnPressedState.BorderColor = Color.FromArgb(105, 105, 0);
             btnLogin.OnPressedState.BorderRadius = 20;
             btnLogin.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             btnLogin.OnPressedState.BorderThickness = 1;
-            btnLogin.OnPressedState.FillColor = Color.FromArgb(16, 79, 140);
+            btnLogin.OnPressedState.FillColor = Color.FromArgb(140, 140, 70);
             btnLogin.OnPressedState.ForeColor = Color.GhostWhite;
             btnLogin.OnPressedState.IconLeftImage = null;
             btnLogin.OnPressedState.IconRightImage = null;
-            btnLogin.Size = new Size(159, 36);
+            btnLogin.Size = new Size(139, 43);
             btnLogin.TabIndex = 8;
             btnLogin.TextAlign = ContentAlignment.MiddleCenter;
             btnLogin.TextAlignment = HorizontalAlignment.Center;
@@ -312,8 +327,8 @@
             btnShow.AllowMouseEffects = true;
             btnShow.AnimationSpeed = 200;
             btnShow.BackColor = Color.Transparent;
-            btnShow.BackgroundColor = Color.DodgerBlue;
-            btnShow.BorderColor = Color.DodgerBlue;
+            btnShow.BackgroundColor = Color.FromArgb(255, 255, 128);
+            btnShow.BorderColor = Color.FromArgb(192, 192, 0);
             btnShow.BorderRadius = 1;
             btnShow.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderStyles.Solid;
             btnShow.BorderThickness = 1;
@@ -327,11 +342,12 @@
             btnShow.DialogResult = DialogResult.None;
             btnShow.Image = AmiggasRenting.Properties.Resources.view;
             btnShow.ImageMargin = new Padding(0);
-            btnShow.Location = new Point(687, 263);
+            btnShow.Location = new Point(820, 258);
+            btnShow.Margin = new Padding(3, 2, 3, 2);
             btnShow.Name = "btnShow";
             btnShow.RoundBorders = true;
             btnShow.ShowBorders = true;
-            btnShow.Size = new Size(44, 44);
+            btnShow.Size = new Size(39, 39);
             btnShow.Style = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.ButtonStyles.Round;
             btnShow.TabIndex = 9;
             btnShow.Click += btnShow_Click_1;
@@ -343,8 +359,8 @@
             btnHide.AllowMouseEffects = true;
             btnHide.AnimationSpeed = 200;
             btnHide.BackColor = Color.Transparent;
-            btnHide.BackgroundColor = Color.DodgerBlue;
-            btnHide.BorderColor = Color.DodgerBlue;
+            btnHide.BackgroundColor = Color.FromArgb(255, 255, 128);
+            btnHide.BorderColor = Color.FromArgb(192, 192, 0);
             btnHide.BorderRadius = 1;
             btnHide.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderStyles.Solid;
             btnHide.BorderThickness = 1;
@@ -358,34 +374,114 @@
             btnHide.DialogResult = DialogResult.None;
             btnHide.Image = AmiggasRenting.Properties.Resources.eye_password;
             btnHide.ImageMargin = new Padding(0);
-            btnHide.Location = new Point(684, 260);
+            btnHide.Location = new Point(818, 256);
+            btnHide.Margin = new Padding(3, 2, 3, 2);
             btnHide.Name = "btnHide";
             btnHide.RoundBorders = true;
             btnHide.ShowBorders = true;
-            btnHide.Size = new Size(48, 48);
+            btnHide.Size = new Size(42, 42);
             btnHide.Style = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.ButtonStyles.Round;
             btnHide.TabIndex = 10;
             btnHide.Click += btnHide_Click;
             // 
+            // bunifuPanel1
+            // 
+            bunifuPanel1.BackgroundColor = Color.FromArgb(255, 255, 128);
+            bunifuPanel1.BackgroundImage = (Image)resources.GetObject("bunifuPanel1.BackgroundImage");
+            bunifuPanel1.BackgroundImageLayout = ImageLayout.Stretch;
+            bunifuPanel1.BorderColor = Color.FromArgb(192, 192, 0);
+            bunifuPanel1.BorderRadius = 3;
+            bunifuPanel1.BorderThickness = 1;
+            bunifuPanel1.Controls.Add(label4);
+            bunifuPanel1.Controls.Add(label3);
+            bunifuPanel1.ForeColor = Color.FromArgb(255, 255, 128);
+            bunifuPanel1.Location = new Point(-4, -6);
+            bunifuPanel1.Name = "bunifuPanel1";
+            bunifuPanel1.ShowBorders = true;
+            bunifuPanel1.Size = new Size(483, 517);
+            bunifuPanel1.TabIndex = 11;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.FlatStyle = FlatStyle.Popup;
+            label4.Font = new Font("Verdana", 36F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 162);
+            label4.ForeColor = Color.Black;
+            label4.Location = new Point(211, 245);
+            label4.Name = "label4";
+            label4.Size = new Size(238, 59);
+            label4.TabIndex = 13;
+            label4.Text = "RENTAL";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.FlatStyle = FlatStyle.Flat;
+            label3.Font = new Font("Verdana", 36F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 162);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(40, 159);
+            label3.Name = "label3";
+            label3.Size = new Size(283, 59);
+            label3.TabIndex = 12;
+            label3.Text = "AMIGGAS";
+            label3.Click += label3_Click;
+            // 
+            // bunifuPanel2
+            // 
+            bunifuPanel2.BackgroundColor = Color.FromArgb(255, 255, 128);
+            bunifuPanel2.BackgroundImage = (Image)resources.GetObject("bunifuPanel2.BackgroundImage");
+            bunifuPanel2.BackgroundImageLayout = ImageLayout.Stretch;
+            bunifuPanel2.BorderColor = Color.FromArgb(192, 192, 0);
+            bunifuPanel2.BorderRadius = 3;
+            bunifuPanel2.BorderThickness = 1;
+            bunifuPanel2.Location = new Point(485, 105);
+            bunifuPanel2.Name = "bunifuPanel2";
+            bunifuPanel2.ShowBorders = true;
+            bunifuPanel2.Size = new Size(105, 10);
+            bunifuPanel2.TabIndex = 12;
+            // 
+            // bunifuPanel3
+            // 
+            bunifuPanel3.BackgroundColor = Color.FromArgb(255, 255, 128);
+            bunifuPanel3.BackgroundImage = (Image)resources.GetObject("bunifuPanel3.BackgroundImage");
+            bunifuPanel3.BackgroundImageLayout = ImageLayout.Stretch;
+            bunifuPanel3.BorderColor = Color.FromArgb(192, 192, 0);
+            bunifuPanel3.BorderRadius = 3;
+            bunifuPanel3.BorderThickness = 1;
+            bunifuPanel3.Location = new Point(485, 226);
+            bunifuPanel3.Name = "bunifuPanel3";
+            bunifuPanel3.ShowBorders = true;
+            bunifuPanel3.Size = new Size(105, 10);
+            bunifuPanel3.TabIndex = 13;
+            // 
             // LoginPageForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1062, 673);
+            BackColor = Color.White;
+            ClientSize = new Size(929, 505);
+            Controls.Add(bunifuPanel3);
+            Controls.Add(bunifuPanel2);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(btnShow);
             Controls.Add(btnHide);
             Controls.Add(btnLogin);
             Controls.Add(txtEmail);
             Controls.Add(txtPassword);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(bunifuPanel1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             Name = "LoginPageForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login Page";
             FormClosing += LoginPageForm_FormClosing;
             Load += Form1_Load;
+            bunifuPanel1.ResumeLayout(false);
+            bunifuPanel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -399,5 +495,10 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnLogin;
         private Bunifu.UI.WinForms.BunifuButton.BunifuIconButton btnShow;
         private Bunifu.UI.WinForms.BunifuButton.BunifuIconButton btnHide;
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
+        private Label label3;
+        private Label label4;
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel3;
     }
 }

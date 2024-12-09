@@ -85,7 +85,7 @@ namespace LoginPage
                             // Navigate to the HomePage using the singleton instance
                             HomePage.Instance.lblUser.Text = email;
                             HomePage.Instance.Show();
-                            
+
                             this.Dispose(); // Dispose of the current form
 
 
@@ -148,6 +148,20 @@ namespace LoginPage
             btnShow.BringToFront();
         }
 
+        private void bunifuLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuShadowPanel1_ControlAdded(object sender, ControlEventArgs e)
+        {
+
+        }
     }
 }
 
