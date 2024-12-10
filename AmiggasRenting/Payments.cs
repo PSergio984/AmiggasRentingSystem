@@ -42,6 +42,18 @@ namespace AmiggasRenting
         // Method to load payment data into the DataGridView.
         public void LoadPayments()
         {
+            dataPayments.GridColor = Color.Yellow;
+            dataPayments.HeaderBackColor = Color.Gold;
+            dataPayments.HeaderForeColor = Color.Black;
+
+            dataPayments.ColumnHeadersDefaultCellStyle.BackColor = Color.Gold;
+            dataPayments.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
+
+            dataPayments.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.Olive;
+            dataPayments.ColumnHeadersDefaultCellStyle.SelectionForeColor = Color.White;
+
+            dataPayments.RowsDefaultCellStyle.SelectionBackColor = Color.Olive;
+            dataPayments.RowsDefaultCellStyle.SelectionForeColor = Color.White;
             string query = @"
     SELECT 
         u.UnitID AS 'Unit',
@@ -269,18 +281,7 @@ namespace AmiggasRenting
 
         private void dataPayments_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            dataPayments.GridColor = Color.Yellow;
-            dataPayments.HeaderBackColor = Color.Gold;
-            dataPayments.HeaderForeColor = Color.Black;
 
-            dataPayments.ColumnHeadersDefaultCellStyle.BackColor = Color.Gold;
-            dataPayments.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
-
-            dataPayments.ColumnHeadersDefaultCellStyle.SelectionBackColor  = Color.Olive;
-            dataPayments.ColumnHeadersDefaultCellStyle.SelectionForeColor = Color.White;
-
-            dataPayments.RowsDefaultCellStyle.SelectionBackColor = Color.Olive;
-            dataPayments.RowsDefaultCellStyle.SelectionForeColor = Color.White;
         }
 
         private void Payments_FormClosing_1(object sender, FormClosingEventArgs e)

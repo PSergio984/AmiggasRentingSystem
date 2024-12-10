@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\programs\\microsoft visual studio\\ms visual studio saved data\\amiggasrentingsystem\\amiggasrenting\\modaladdtenants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:modaladdtenants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\programs\\microsoft visual studio\\ms visual studio saved data\\amiggasrentingsystem\\amiggasrenting\\viewapartments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:viewapartments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\programs\\microsoft visual studio\\ms visual studio saved data\\amiggasrentingsystem\\amiggasrenting\\modalreceipt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:modalreceipt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\programs\\microsoft visual studio\\ms visual studio saved data\\amiggasrentingsystem\\amiggasrenting\\modaltakefee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:modaltakefee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\programs\\microsoft visual studio\\ms visual studio saved data\\amiggasrentingsystem\\amiggasrenting\\viewapartments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:viewapartments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\programs\\microsoft visual studio\\ms visual studio saved data\\amiggasrentingsystem\\amiggasrenting\\modaltakefee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:modaltakefee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\programs\\microsoft visual studio\\ms visual studio saved data\\amiggasrentingsystem\\amiggasrenting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\programs\\microsoft visual studio\\ms visual studio saved data\\amiggasrentingsystem\\amiggasrenting\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,52 +82,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "ViewApartments.cs",
+              "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\ViewApartments.cs",
+              "RelativeDocumentMoniker": "ViewApartments.cs",
+              "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\ViewApartments.cs*",
+              "RelativeToolTip": "ViewApartments.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T15:14:22.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ViewApartments.cs [Design]",
+              "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\ViewApartments.cs",
+              "RelativeDocumentMoniker": "ViewApartments.cs",
+              "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\ViewApartments.cs [Design]*",
+              "RelativeToolTip": "ViewApartments.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T15:14:12.935Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "modalTakeFee.cs",
               "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\modalTakeFee.cs",
               "RelativeDocumentMoniker": "modalTakeFee.cs",
-              "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\modalTakeFee.cs*",
-              "RelativeToolTip": "modalTakeFee.cs*",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAAwJYAAAAAAAAAAAAAAA==",
+              "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\modalTakeFee.cs",
+              "RelativeToolTip": "modalTakeFee.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAAwIUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-09T15:21:38.878Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "modalTakeFee.cs [Design]",
-              "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\modalTakeFee.cs",
-              "RelativeDocumentMoniker": "modalTakeFee.cs",
-              "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\modalTakeFee.cs [Design]*",
-              "RelativeToolTip": "modalTakeFee.cs [Design]*",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:41:27.111Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-10T15:06:35.431Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ModalReceipt.cs [Design]",
-              "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\ModalReceipt.cs",
-              "RelativeDocumentMoniker": "ModalReceipt.cs",
-              "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\ModalReceipt.cs [Design]",
-              "RelativeToolTip": "ModalReceipt.cs [Design]",
+              "DocumentIndex": 4,
+              "Title": "HomePage.cs",
+              "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\HomePage.cs",
+              "RelativeDocumentMoniker": "HomePage.cs",
+              "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\HomePage.cs",
+              "RelativeToolTip": "HomePage.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAIwEcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:41:27.08Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ModalAddTenants.cs [Design]",
-              "DocumentMoniker": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\ModalAddTenants.cs",
-              "RelativeDocumentMoniker": "ModalAddTenants.cs",
-              "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\ModalAddTenants.cs [Design]*",
-              "RelativeToolTip": "ModalAddTenants.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:41:27.039Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-10T15:07:31.762Z",
+              "EditorCaption": ""
             }
           ]
         }

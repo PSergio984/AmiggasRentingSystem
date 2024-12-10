@@ -13,7 +13,9 @@ namespace AmiggasRenting
         // Event handler for Add Tenants button click
         private void btnAddTenants_Click(object sender, EventArgs e)
         {
+
             NavigateToForm(AddTenants.Instance);
+
         }
 
         // Event handler for View Apartments button click
