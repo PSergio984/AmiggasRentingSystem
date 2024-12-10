@@ -43,11 +43,6 @@
             bunifuPictureBox3 = new Bunifu.UI.WinForms.BunifuPictureBox();
             bunifuPictureBox4 = new Bunifu.UI.WinForms.BunifuPictureBox();
             lblUser = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
             ((System.ComponentModel.ISupportInitialize)picTenants).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bunifuPictureBox1).BeginInit();
@@ -58,16 +53,17 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Unispace", 20.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(227, 34);
+            label1.Font = new Font("Roboto", 27.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(208, 28);
             label1.Name = "label1";
-            label1.Size = new Size(111, 33);
+            label1.Size = new Size(492, 44);
             label1.TabIndex = 3;
-            label1.Text = "MIGGAS";
+            label1.Text = "AMIGGAS RENTING SYSTEM";
+            label1.Click += label1_Click_1;
             // 
             // lblTenants
             // 
-            lblTenants.Font = new Font("Unispace", 11.9999981F, FontStyle.Bold);
+            lblTenants.Font = new Font("Roboto", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTenants.Location = new Point(270, 95);
             lblTenants.Name = "lblTenants";
             lblTenants.Size = new Size(280, 28);
@@ -87,7 +83,7 @@
             // 
             // lblApartments
             // 
-            lblApartments.Font = new Font("Unispace", 11.9999981F, FontStyle.Bold);
+            lblApartments.Font = new Font("Roboto", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblApartments.Location = new Point(638, 95);
             lblApartments.Name = "lblApartments";
             lblApartments.Size = new Size(212, 30);
@@ -96,8 +92,8 @@
             // 
             // lblOccupied
             // 
-            lblOccupied.Font = new Font("Unispace", 11.9999981F, FontStyle.Bold);
-            lblOccupied.Location = new Point(269, 304);
+            lblOccupied.Font = new Font("Roboto", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblOccupied.Location = new Point(270, 304);
             lblOccupied.Name = "lblOccupied";
             lblOccupied.Size = new Size(212, 30);
             lblOccupied.TabIndex = 10;
@@ -107,7 +103,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.occupied;
-            pictureBox1.Location = new Point(310, 367);
+            pictureBox1.Location = new Point(296, 361);
             pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(85, 71);
@@ -128,7 +124,7 @@
             // lblTenantCount
             // 
             lblTenantCount.AutoSize = true;
-            lblTenantCount.Font = new Font("Unispace", 15.7499981F, FontStyle.Bold);
+            lblTenantCount.Font = new Font("Microsoft Sans Serif", 15.7499981F, FontStyle.Bold);
             lblTenantCount.Location = new Point(238, 94);
             lblTenantCount.Name = "lblTenantCount";
             lblTenantCount.Size = new Size(38, 25);
@@ -138,7 +134,7 @@
             // lblOccApartments
             // 
             lblOccApartments.AutoSize = true;
-            lblOccApartments.Font = new Font("Unispace", 15.7499981F, FontStyle.Bold);
+            lblOccApartments.Font = new Font("Microsoft Sans Serif", 15.7499981F, FontStyle.Bold);
             lblOccApartments.Location = new Point(238, 304);
             lblOccApartments.Name = "lblOccApartments";
             lblOccApartments.Size = new Size(38, 25);
@@ -149,7 +145,7 @@
             // lblAvlApartment
             // 
             lblAvlApartment.AutoSize = true;
-            lblAvlApartment.Font = new Font("Unispace", 15.7499981F, FontStyle.Bold);
+            lblAvlApartment.Font = new Font("Microsoft Sans Serif", 15.7499981F, FontStyle.Bold);
             lblAvlApartment.ImageAlign = ContentAlignment.TopLeft;
             lblAvlApartment.Location = new Point(607, 94);
             lblAvlApartment.Name = "lblAvlApartment";
@@ -211,66 +207,12 @@
             // lblUser
             // 
             lblUser.AutoSize = true;
-            lblUser.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblUser.Location = new Point(735, 37);
+            lblUser.Font = new Font("Roboto", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblUser.Location = new Point(776, 37);
             lblUser.Name = "lblUser";
-            lblUser.Size = new Size(87, 21);
+            lblUser.Size = new Size(88, 19);
             lblUser.TabIndex = 20;
             lblUser.Text = "Username";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Unispace", 54.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(168, 5);
-            label2.Name = "label2";
-            label2.Size = new Size(82, 88);
-            label2.TabIndex = 21;
-            label2.Text = "A";
-            label2.Click += label2_Click;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Unispace", 20.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(389, 33);
-            label3.Name = "label3";
-            label3.Size = new Size(111, 33);
-            label3.TabIndex = 22;
-            label3.Text = "ENTING";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Unispace", 54.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(332, 4);
-            label4.Name = "label4";
-            label4.Size = new Size(82, 88);
-            label4.TabIndex = 23;
-            label4.Text = "R";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Unispace", 20.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(548, 32);
-            label5.Name = "label5";
-            label5.Size = new Size(95, 33);
-            label5.TabIndex = 24;
-            label5.Text = "YSTEM";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.BackColor = Color.Transparent;
-            label6.Font = new Font("Unispace", 54.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(489, 6);
-            label6.Name = "label6";
-            label6.Size = new Size(82, 88);
-            label6.TabIndex = 25;
-            label6.Text = "S";
             // 
             // HomePage
             // 
@@ -278,11 +220,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LemonChiffon;
             ClientSize = new Size(929, 505);
-            Controls.Add(label5);
-            Controls.Add(label3);
-            Controls.Add(label4);
             Controls.Add(label1);
-            Controls.Add(label2);
             Controls.Add(lblUser);
             Controls.Add(bunifuPictureBox4);
             Controls.Add(bunifuPictureBox3);
@@ -296,7 +234,6 @@
             Controls.Add(lblApartments);
             Controls.Add(picTenants);
             Controls.Add(lblTenants);
-            Controls.Add(label6);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
@@ -331,10 +268,5 @@
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox3;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox4;
         public Label lblUser;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
     }
 }

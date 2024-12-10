@@ -60,11 +60,11 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Unispace", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Microsoft Sans Serif", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Black;
             label1.Location = new Point(485, 119);
             label1.Name = "label1";
-            label1.Size = new Size(89, 19);
+            label1.Size = new Size(91, 20);
             label1.TabIndex = 2;
             label1.Text = "Username";
             label1.Click += label1_Click;
@@ -73,11 +73,11 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Unispace", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Microsoft Sans Serif", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.Black;
             label2.Location = new Point(485, 239);
             label2.Name = "label2";
-            label2.Size = new Size(89, 19);
+            label2.Size = new Size(86, 20);
             label2.TabIndex = 3;
             label2.Text = "Password";
             // 
@@ -259,7 +259,7 @@
             btnLogin.DisabledFillColor = Color.FromArgb(204, 204, 204);
             btnLogin.DisabledForecolor = Color.FromArgb(168, 160, 168);
             btnLogin.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
-            btnLogin.Font = new Font("Unispace", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLogin.Font = new Font("Microsoft Sans Serif", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnLogin.ForeColor = Color.Black;
             btnLogin.IconLeftAlign = ContentAlignment.MiddleLeft;
             btnLogin.IconLeftCursor = Cursors.Default;
@@ -409,7 +409,7 @@
             label4.FlatStyle = FlatStyle.Popup;
             label4.Font = new Font("Verdana", 36F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 162);
             label4.ForeColor = Color.Black;
-            label4.Location = new Point(211, 245);
+            label4.Location = new Point(215, 262);
             label4.Name = "label4";
             label4.Size = new Size(238, 59);
             label4.TabIndex = 13;
@@ -422,7 +422,7 @@
             label3.FlatStyle = FlatStyle.Flat;
             label3.Font = new Font("Verdana", 36F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 162);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(40, 159);
+            label3.Location = new Point(16, 183);
             label3.Name = "label3";
             label3.Size = new Size(283, 59);
             label3.TabIndex = 12;

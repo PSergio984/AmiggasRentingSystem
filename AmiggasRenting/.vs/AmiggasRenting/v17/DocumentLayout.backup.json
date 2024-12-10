@@ -3,20 +3,56 @@
   "WorkspaceRootPath": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\school\\oop\\proj\\amiggasrentingsystem\\amiggasrenting\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\school\\oop\\proj\\amiggasrentingsystem\\amiggasrenting\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\school\\oop\\proj\\amiggasrentingsystem\\amiggasrenting\\addtenants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:addtenants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\school\\oop\\proj\\amiggasrentingsystem\\amiggasrenting\\homepage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:homepage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\school\\oop\\proj\\amiggasrentingsystem\\amiggasrenting\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\school\\oop\\proj\\amiggasrentingsystem\\amiggasrenting\\loadingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:loadingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\school\\oop\\proj\\amiggasrentingsystem\\amiggasrenting\\loadingscreen.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:loadingscreen.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\school\\oop\\proj\\amiggasrentingsystem\\amiggasrenting\\viewapartments.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:viewapartments.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\school\\oop\\proj\\amiggasrentingsystem\\amiggasrenting\\loadingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:loadingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\school\\oop\\proj\\amiggasrentingsystem\\amiggasrenting\\modaladdtenants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:modaladdtenants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\school\\oop\\proj\\amiggasrentingsystem\\amiggasrenting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\school\\oop\\proj\\amiggasrentingsystem\\amiggasrenting\\modaladdtenants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:modaladdtenants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\school\\oop\\proj\\amiggasrentingsystem\\amiggasrenting\\viewapartments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,24 +71,8 @@
       "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:payments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\school\\oop\\proj\\amiggasrentingsystem\\amiggasrenting\\addtenants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:addtenants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\addtenants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:addtenants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\school\\oop\\proj\\amiggasrentingsystem\\amiggasrenting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|f:\\school\\oop\\proj\\amiggasrentingsystem\\amiggasrenting\\viewapartments.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF0408BF-60B9-4200-8163-B875CC532A23}|AmiggasRenting.csproj|solutionrelative:viewapartments.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,11 +82,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 21,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "ViewApartments.cs [Design]",
               "DocumentMoniker": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\ViewApartments.cs",
               "RelativeDocumentMoniker": "ViewApartments.cs",
@@ -74,21 +94,20 @@
               "RelativeToolTip": "ViewApartments.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-08T04:40:57.456Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "Form1.Designer.cs",
-              "ToolTip": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\Form1.Designer.cs",
-              "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "ModalAddTenants.cs",
+              "DocumentMoniker": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\ModalAddTenants.cs",
+              "RelativeDocumentMoniker": "ModalAddTenants.cs",
+              "ToolTip": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\ModalAddTenants.cs",
+              "RelativeToolTip": "ModalAddTenants.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAmwN0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T00:26:14.165Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T07:54:49.594Z",
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -139,16 +158,58 @@
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ViewApartments.cs",
-              "DocumentMoniker": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\ViewApartments.cs",
-              "RelativeDocumentMoniker": "ViewApartments.cs",
-              "ToolTip": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\ViewApartments.cs",
-              "RelativeToolTip": "ViewApartments.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAIwEwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "HomePage.cs",
+              "DocumentMoniker": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\HomePage.cs",
+              "RelativeDocumentMoniker": "HomePage.cs",
+              "ToolTip": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\HomePage.cs",
+              "RelativeToolTip": "HomePage.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAA2wD8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T05:29:07.27Z",
+              "WhenOpened": "2024-12-10T00:36:35.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\Form1.Designer.cs",
+              "RelativeToolTip": "Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:26:14.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T08:07:24.973Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoadingScreen.cs",
+              "DocumentMoniker": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\LoadingScreen.cs",
+              "RelativeDocumentMoniker": "LoadingScreen.cs",
+              "ToolTip": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\LoadingScreen.cs",
+              "RelativeToolTip": "LoadingScreen.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAwEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T00:45:43.394Z",
               "EditorCaption": ""
             },
             {
@@ -161,65 +222,12 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T05:33:04.093Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ModalAddTenants.cs",
-              "DocumentMoniker": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\ModalAddTenants.cs",
-              "RelativeDocumentMoniker": "ModalAddTenants.cs",
-              "ToolTip": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\ModalAddTenants.cs",
-              "RelativeToolTip": "ModalAddTenants.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAmwN0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T07:54:49.594Z",
+              "WhenOpened": "2024-12-09T05:33:04.093Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoadingScreen.cs",
-              "DocumentMoniker": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\LoadingScreen.cs",
-              "RelativeDocumentMoniker": "LoadingScreen.cs",
-              "ToolTip": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\LoadingScreen.cs",
-              "RelativeToolTip": "LoadingScreen.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAzwEQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T00:45:43.394Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ViewApartments.Designer.cs",
-              "DocumentMoniker": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\ViewApartments.Designer.cs",
-              "RelativeDocumentMoniker": "ViewApartments.Designer.cs",
-              "ToolTip": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\ViewApartments.Designer.cs",
-              "RelativeToolTip": "ViewApartments.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T04:40:55.861Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T08:07:24.973Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "AddTenants.cs",
               "DocumentMoniker": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\AddTenants.cs",
               "RelativeDocumentMoniker": "AddTenants.cs",
@@ -227,11 +235,88 @@
               "RelativeToolTip": "AddTenants.cs",
               "ViewState": "AgIAAFIAAAAAAAAAAAAuwG4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T18:18:38.283Z"
+              "WhenOpened": "2024-12-07T18:18:38.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomePage.cs [Design]",
+              "DocumentMoniker": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\HomePage.cs",
+              "RelativeDocumentMoniker": "HomePage.cs",
+              "ToolTip": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\HomePage.cs [Design]",
+              "RelativeToolTip": "HomePage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T05:10:49.516Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ViewApartments.Designer.cs",
+              "DocumentMoniker": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\ViewApartments.Designer.cs",
+              "RelativeDocumentMoniker": "ViewApartments.Designer.cs",
+              "ToolTip": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\ViewApartments.Designer.cs",
+              "RelativeToolTip": "ViewApartments.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T04:40:55.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoadingScreen.Designer.cs",
+              "DocumentMoniker": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\LoadingScreen.Designer.cs",
+              "RelativeDocumentMoniker": "LoadingScreen.Designer.cs",
+              "ToolTip": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\LoadingScreen.Designer.cs",
+              "RelativeToolTip": "LoadingScreen.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:32:49.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAUwEwAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:33:19.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomePage.Designer.cs",
+              "DocumentMoniker": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\HomePage.Designer.cs",
+              "RelativeDocumentMoniker": "HomePage.Designer.cs",
+              "ToolTip": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\HomePage.Designer.cs*",
+              "RelativeToolTip": "HomePage.Designer.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:34:16.243Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "LoadingScreen.cs [Design]",
+              "DocumentMoniker": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\LoadingScreen.cs",
+              "RelativeDocumentMoniker": "LoadingScreen.cs",
+              "ToolTip": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\LoadingScreen.cs [Design]",
+              "RelativeToolTip": "LoadingScreen.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:32:52.279Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "Payments.cs",
               "DocumentMoniker": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\Payments.cs",
               "RelativeDocumentMoniker": "Payments.cs",
@@ -239,11 +324,24 @@
               "RelativeToolTip": "Payments.cs",
               "ViewState": "AgIAAPkAAAAAAAAAAAAcwA8BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T09:37:39.647Z"
+              "WhenOpened": "2024-12-09T09:37:39.647Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
+              "Title": "ViewApartments.cs",
+              "DocumentMoniker": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\ViewApartments.cs",
+              "RelativeDocumentMoniker": "ViewApartments.cs",
+              "ToolTip": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\ViewApartments.cs",
+              "RelativeToolTip": "ViewApartments.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAIwEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T05:29:07.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "AddTenants.cs [Design]",
               "DocumentMoniker": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\AddTenants.cs",
               "RelativeDocumentMoniker": "AddTenants.cs",
@@ -254,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
               "Title": "Payments.cs [Design]",
               "DocumentMoniker": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\Payments.cs",
               "RelativeDocumentMoniker": "Payments.cs",
@@ -262,17 +360,6 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\Payments.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-08T04:59:07.317Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "HomePage.cs [Design]",
-              "DocumentMoniker": "F:\\School\\OOP\\PROJ\\AmiggasRentingSystem\\AmiggasRenting\\HomePage.cs",
-              "RelativeDocumentMoniker": "HomePage.cs",
-              "ToolTip": "F:\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\HomePage.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\PROGRAMS\\Microsoft Visual Studio\\MS Visual Studio Saved Data\\AmiggasRentingSystem\\AmiggasRenting\\HomePage.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T05:10:49.516Z"
             }
           ]
         }
