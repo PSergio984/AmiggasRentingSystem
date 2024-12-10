@@ -48,12 +48,8 @@
             btnLogin = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             btnShow = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
             btnHide = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
-            bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
-            label4 = new Label();
-            label3 = new Label();
             bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
             bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
-            bunifuPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -62,7 +58,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Microsoft Sans Serif", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(485, 119);
+            label1.Location = new Point(532, 158);
             label1.Name = "label1";
             label1.Size = new Size(91, 20);
             label1.TabIndex = 2;
@@ -75,7 +71,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Microsoft Sans Serif", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.Black;
-            label2.Location = new Point(485, 239);
+            label2.Location = new Point(532, 278);
             label2.Name = "label2";
             label2.Size = new Size(86, 20);
             label2.TabIndex = 3;
@@ -108,7 +104,7 @@
             txtPassword.IconPadding = 10;
             txtPassword.IconRight = null;
             txtPassword.IconRightCursor = Cursors.IBeam;
-            txtPassword.Location = new Point(572, 262);
+            txtPassword.Location = new Point(619, 301);
             txtPassword.Margin = new Padding(3, 2, 3, 2);
             txtPassword.MaxLength = 32767;
             txtPassword.MinimumSize = new Size(1, 1);
@@ -183,7 +179,7 @@
             txtEmail.IconPadding = 10;
             txtEmail.IconRight = null;
             txtEmail.IconRightCursor = Cursors.IBeam;
-            txtEmail.Location = new Point(572, 151);
+            txtEmail.Location = new Point(619, 190);
             txtEmail.Margin = new Padding(3, 2, 3, 2);
             txtEmail.MaxLength = 32767;
             txtEmail.MinimumSize = new Size(1, 1);
@@ -277,7 +273,7 @@
             btnLogin.IdleIconLeftImage = null;
             btnLogin.IdleIconRightImage = null;
             btnLogin.IndicateFocus = true;
-            btnLogin.Location = new Point(615, 319);
+            btnLogin.Location = new Point(662, 358);
             btnLogin.Margin = new Padding(3, 2, 3, 2);
             btnLogin.Name = "btnLogin";
             btnLogin.OnDisabledState.BorderColor = Color.FromArgb(191, 191, 191);
@@ -343,7 +339,7 @@
             btnShow.DialogResult = DialogResult.None;
             btnShow.Image = AmiggasRenting.Properties.Resources.view;
             btnShow.ImageMargin = new Padding(0);
-            btnShow.Location = new Point(820, 258);
+            btnShow.Location = new Point(865, 296);
             btnShow.Margin = new Padding(3, 2, 3, 2);
             btnShow.Name = "btnShow";
             btnShow.RoundBorders = true;
@@ -375,7 +371,7 @@
             btnHide.DialogResult = DialogResult.None;
             btnHide.Image = AmiggasRenting.Properties.Resources.eye_password;
             btnHide.ImageMargin = new Padding(0);
-            btnHide.Location = new Point(818, 256);
+            btnHide.Location = new Point(863, 294);
             btnHide.Margin = new Padding(3, 2, 3, 2);
             btnHide.Name = "btnHide";
             btnHide.RoundBorders = true;
@@ -385,50 +381,6 @@
             btnHide.TabIndex = 10;
             btnHide.Click += btnHide_Click;
             // 
-            // bunifuPanel1
-            // 
-            bunifuPanel1.BackgroundColor = Color.Gold;
-            bunifuPanel1.BackgroundImage = (Image)resources.GetObject("bunifuPanel1.BackgroundImage");
-            bunifuPanel1.BackgroundImageLayout = ImageLayout.Stretch;
-            bunifuPanel1.BorderColor = Color.FromArgb(192, 192, 0);
-            bunifuPanel1.BorderRadius = 3;
-            bunifuPanel1.BorderThickness = 1;
-            bunifuPanel1.Controls.Add(label4);
-            bunifuPanel1.Controls.Add(label3);
-            bunifuPanel1.ForeColor = Color.FromArgb(255, 255, 128);
-            bunifuPanel1.Location = new Point(-4, -6);
-            bunifuPanel1.Name = "bunifuPanel1";
-            bunifuPanel1.ShowBorders = true;
-            bunifuPanel1.Size = new Size(483, 517);
-            bunifuPanel1.TabIndex = 11;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
-            label4.FlatStyle = FlatStyle.Popup;
-            label4.Font = new Font("Verdana", 36F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 162);
-            label4.ForeColor = Color.Black;
-            label4.Location = new Point(215, 262);
-            label4.Name = "label4";
-            label4.Size = new Size(238, 59);
-            label4.TabIndex = 13;
-            label4.Text = "RENTAL";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.Transparent;
-            label3.FlatStyle = FlatStyle.Flat;
-            label3.Font = new Font("Verdana", 36F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 162);
-            label3.ForeColor = Color.Black;
-            label3.Location = new Point(16, 183);
-            label3.Name = "label3";
-            label3.Size = new Size(283, 59);
-            label3.TabIndex = 12;
-            label3.Text = "AMIGGAS";
-            label3.Click += label3_Click;
-            // 
             // bunifuPanel2
             // 
             bunifuPanel2.BackgroundColor = Color.Gold;
@@ -437,7 +389,7 @@
             bunifuPanel2.BorderColor = Color.FromArgb(192, 192, 0);
             bunifuPanel2.BorderRadius = 3;
             bunifuPanel2.BorderThickness = 1;
-            bunifuPanel2.Location = new Point(485, 105);
+            bunifuPanel2.Location = new Point(532, 144);
             bunifuPanel2.Name = "bunifuPanel2";
             bunifuPanel2.ShowBorders = true;
             bunifuPanel2.Size = new Size(105, 10);
@@ -451,7 +403,7 @@
             bunifuPanel3.BorderColor = Color.FromArgb(192, 192, 0);
             bunifuPanel3.BorderRadius = 3;
             bunifuPanel3.BorderThickness = 1;
-            bunifuPanel3.Location = new Point(485, 226);
+            bunifuPanel3.Location = new Point(532, 265);
             bunifuPanel3.Name = "bunifuPanel3";
             bunifuPanel3.ShowBorders = true;
             bunifuPanel3.Size = new Size(105, 10);
@@ -462,6 +414,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LemonChiffon;
+            BackgroundImage = AmiggasRenting.Properties.Resources.asd;
             ClientSize = new Size(929, 505);
             Controls.Add(bunifuPanel3);
             Controls.Add(bunifuPanel2);
@@ -472,7 +425,6 @@
             Controls.Add(btnLogin);
             Controls.Add(txtEmail);
             Controls.Add(txtPassword);
-            Controls.Add(bunifuPanel1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
@@ -481,8 +433,6 @@
             Text = "Login Page";
             FormClosing += LoginPageForm_FormClosing;
             Load += Form1_Load;
-            bunifuPanel1.ResumeLayout(false);
-            bunifuPanel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -496,9 +446,6 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnLogin;
         private Bunifu.UI.WinForms.BunifuButton.BunifuIconButton btnShow;
         private Bunifu.UI.WinForms.BunifuButton.BunifuIconButton btnHide;
-        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
-        private Label label3;
-        private Label label4;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel3;
     }
